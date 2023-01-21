@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Deposit- Bitcoin </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller"> 
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="page.html">
+            <img src="images/ICM-logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="page.html">
+            <img src="images/logofirst.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome to <span class="text-black fw-bold"><span style="color: #12e612; margin: 0px;">IC</span>Markets</span></h1>
+            <h3 class="welcome-sub-text">Start exploring investment opertunities by copying people and investing in markets or CopyPortfolios </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Popular Investors </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Popular Investors</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">News Feed </p>
+                  <p class="fw-light small-text mb-0">Those who will start purchasing more <br> shares for a long-term investment.
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Pubic English Feed</p>
+                  <p class="fw-light small-text mb-0">Now only down 3.5% since I <br> started investing last March!</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Saved posts</p>
+                  <p class="fw-light small-text mb-0">Your saved posts feed is empty</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Popular Investors</p>
+                  <p class="fw-light small-text mb-0">Bitcoin finally walking up!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Verify your account</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success">$Soybeans </strong> Future rise over 2.1% <br> trading at 1,524.70</h6>
+                  <p class="fw-light small-text mb-0">about 3 hours ago </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success"> $VIX</strong> Future reaches another low, <br> trading at 2016</h6>
+                  <p class="fw-light small-text mb-0"> about 5 hours ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 3 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Luca Meier </p>
+                  <p class="fw-light small-text mb-0"> I invest mostly in companies that pay dividends</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Wesly Willie Roy Koenders </p>
+                  <p class="fw-light small-text mb-0"> My passive income investment strategy focuses <br> on dividend income</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">borisaka </p>
+                  <p class="fw-light small-text mb-0"> Perché sono passato ad avere un portafoglio di <br> sole azioni ad alto dividendo?
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li id="firstdown" class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle"   src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"  style="width: 30%;"  src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a href="mdi.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a href="#" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a href="page.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a href="faq.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a href="try.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel" style="display: none;">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating </p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call </p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">
+              <i class="mdi mdi-grid-large menu-icon" class="menu-icon mdi mdi-floor-plan" style="
+              -webkit-tap-highlight-color: transparent;
+              font-family: 'Roboto',sans-serif;
+              list-style: none;
+              box-sizing: border-box;
+              color: #34e834;"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <link rel="stylesheet" href="https://icons8.com/icon/6476/candlestick-chart">
+
+          <li class="nav-item nav-category">Trades</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+             <img   style="width: 20%; margin-right: 6px;" src="images/icons8-candlestick-chart-50.png"></i>
+              
+              
+              <span class="menu-title">Trades</span>
+              <i class="menu-arrow"></i> 
+            </a>
+
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buttons.html">CryptoPortfolio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="dropdowns.html">CryptoEqual 
+                  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="typography.html">RenewableEnergy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Trading tools
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <img style="width: 20%; margin-right: 6px;" src="images/icons8-hand-shake-64.png" >
+              <span class="menu-title">Partners</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="basic_elements.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-withdrawal-30.png" >
+              <span class="menu-title">Withdrawal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="bank.html">Bitcoin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chartjs.html">Bank Transfer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-deposit-30.png" >
+              <span class="menu-title">Deposit</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Bitcoin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-settings-50.png" >
+              <span class="menu-title">Settings
+              </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="mdi.html">Account</a></li>
+                <li class="nav-item"> <a class="nav-link" href="help.html">Help</a></li>
+                <li class="nav-item"> <a class="nav-link" href="invite-friend.html">Invite Friends</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Help</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <img  style="width: 16%; margin-right: 6px;"  src="images/icons8-contacts-50.png" >
+              <span class="menu-title">Contact</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="contactus.html"> Contact us </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+           
+            <a class="nav-link" href="try.html">
+              <img style="width: 16%; margin-right: 6px;" src="images/icons8-logout-50.png" >
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="faq.html">
+            <img style="width: 16%; margin-right: 6px;" src="images/icons8-help-50.png" >
+            <span class="menu-title">FAQ</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">ETH 0.00</h4>
+                  
+                  <div class="table-responsive">
+                    <div class="firstbuydiv" style="text-align: center;">
+                     <div class="firstbuytext"><img src="images/icons8-ethereum-50.png" alt="bitcoin">
+                      <h3 class="firstbuyh3">
+                        Buy ETH 
+                      </h3>
+                      <p class="card-description"><code>You can only receive ETH to this address
+
+                      </code></p>
+                     </div>
+                      <div class="scaniddiv">
+                        <h3>
+                          Scan to receive
+                        </h3>
+                        <img src="images/ethqrcode.png" >
+                      </div>
+
+
+                      <div>
+                        <label class="col-sm-3 col-form-label" for="text">ADDRESS</label>
+                        <input class="form-control" id="text-1"  type="text" value="0x7171ed53F25EeD7dacee780C4acAC100717081D4" id="myInput">
+                        <button onclick="copy('text-1')" class="btn-primary" style="margin-top: 9px;" >Copy Text</button>
+                      </div>
+                      <div class="lasttext" style="margin-top: 23px;">
+                        <p class="lastp text-center ">
+                          Receiving cryptocurrency to your  wallet? ICMarkets will notify you as soon as it arrives.
+                        </p>
+                        <h2 class="text-primary ">
+                          How long does it take, exactly?
+                        </h2>
+                        <ul class="text-danger" style="text-align: left;">
+                          <li>
+                            The minimum expected receive time ranges from five minutes to two hours. However, high network activity can push this out further.
+                          </li>
+                          <li>
+                            An incoming transaction will appear in your transactions list in the relevant crypto wallet, but it requires a set number of confirmations before it is considered received. You’ll only be able to access and use that cryptocurrency after confirmation requirements are met.
+                          </li>
+                          <li>
+                            Each cryptocurrency is unique, so the number of confirmations needed for incoming transactions differs from coin to coin and on different blockchains.
+                          </li>
+                        </ul>
+                      </div>
+                      <small>
+                        Once a transaction has enough confirmations, you’ll receive a notification and it’ll appear in the appropriate wallet, ready for you to use.
+                      </small>
+
+
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">BTC 0.00</h4>
+                  <p class="card-description">
+                   
+                  </p>
+                  <div class="table-responsive">
+                    <div class="firstbuydiv" style="text-align: center;">
+                     <div class="firstbuytext"> <img src="images/icons8-exchange-bitcoin-50.png" alt="bitcoin">
+                      <h3 class="firstbuyh3">
+                        Buy Bitcoin
+                      </h3>
+                      <p class="card-description"><code>You can only receive BTC to this address
+                      </code></p>
+                     </div>
+                      <div class="scaniddiv">
+                        <h3>
+                          Scan to receive
+                        </h3>
+                        <img src="images/qr_code_png.png" >
+                      </div>
+
+
+                      <div>
+                        <label class="col-sm-3 col-form-label" for="text">ADDRESS</label>
+                        <input class="form-control"  id="text-2"  type="text" value="3JU4TSp51GeVRdMRwJViLKKx7yGk1ARAjF" id="myInput1">
+                        <button onclick="copy('text-2')" class="btn-primary" style="margin-top: 9px;" >Copy Text</button>
+                        
+                      </div>
+                      
+                      <div class="lasttext" style="margin-top: 23px;">
+                        <p class="lastp text-center ">
+                          Receiving cryptocurrency to your  wallet? ICMarkets will notify you as soon as it arrives.
+                        </p>
+                        <h2 class="text-primary ">
+                          How long does it take, exactly?
+                        </h2>
+                        <ul class="text-danger" style="text-align: left;">
+                          <li>
+                            The minimum expected receive time ranges from five minutes to two hours. However, high network activity can push this out further.
+                          </li>
+                          <li>
+                            An incoming transaction will appear in your transactions list in the relevant crypto wallet, but it requires a set number of confirmations before it is considered received. You’ll only be able to access and use that cryptocurrency after confirmation requirements are met.
+                          </li>
+                          <li>
+                            Each cryptocurrency is unique, so the number of confirmations needed for incoming transactions differs from coin to coin and on different blockchains.
+                          </li>
+                        </ul>
+                      </div>
+                      <small>
+                        Once a transaction has enough confirmations, you’ll receive a notification and it’ll appear in the appropriate wallet, ready for you to use.
+                      </small>
+
+
+                   
+
+
+                    </div>
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+         
+
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Exchange Rate for EUR to USD</h4>
+                 
+                     <code><p id="demo1"></p>
+                    </code>
+                  
+                  
+
+                  <div id="stockChartContainer" style="height: 400px; width: 100%;"></div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Depositing money into your wallet</h4>
+                 
+                  <h2 class="depost">Depositing money into your  wallet
+                  </h2>
+                  <p class="depostp">Depositing money into your  wallet is very easy. Once you've completed the sign-up process and told us a little about yourself (verified your identity, in other words), you can deposit money into your USD wallet in a few easy steps.
+                  </p>
+                  <ul class="text-primary" style="margin-left: 18px;">
+                    <li >Open the app and sign in
+                    </li>
+                    <li>Select Deposit from the menu
+                    </li>
+                    <li>Copy the wallet address
+                    </li>
+                    <li> Deposit bitcoin into the wallet 
+
+                    </li>
+                    <li>And follow the on-screen prompts from there
+                    </li>
+                  </ul>
+                  <h2 class="depost">
+                    How do I verify my identity?
+                  </h2>
+                 
+                   <p class="depostp">
+                    Before making a deposit, we’ll need to confirm your details - like your basic personal information. You'll also upload an identity document along with a self-portrait (selfie) photo. You can find our accepted documents 
+                   </p>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+         
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><strong>Risk Warning: </strong>Trading Derivatives carries a high level of risk to your capital and you should only trade with money you can afford <br> to lose. Trading Derivatives may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. </span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">©2023 — Raw Trading Ltd | All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+<script>
+  function myFunction() {
+    var copyText = document.getElementById("myInput1");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    
+    var tooltip = document.getElementById("myTooltip1");
+    tooltip.innerHTML = "Copied: " + copyText.value;
+  }
+  
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip1");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
+  </script>
+
+  
+<script>//Pass the id of the <input> element to be copied as a parameter to the copy()
+  let copy = (textId) => {
+    //Selects the text in the <input> elemet
+    document.getElementById(textId).select();
+    //Copies the selected text to clipboard
+    document.execCommand("copy");
+  };</script>
+
+
+
+<script type="text/javascript">
+  window.onload = function () {
+    var dataPoints = [], currentDate = new Date(), rangeChangedTriggered = false;
+    var stockChart = new CanvasJS.StockChart("stockChartContainer",{
+      theme: "dark1", //"light2", "dark1", "dark2"
+      title:{
+        text:""
+      },
+      rangeChanged: function(e) {
+          rangeChangedTriggered = true;
+      },
+      charts: [{
+        axisX: {
+          crosshair: {
+            enabled: true,
+            valueFormatString: "MMM DD, YYYY HH:mm:ss"
+          }
+        },
+        axisY: {
+          title: "Pageviews Per Second"
+        },
+        toolTip: {
+          shared: true
+        },
+        data: [{
+          type: "line",
+          name: "Pageviews",
+          xValueFormatString: "MMM DD, YYYY HH:mm:ss",
+          xValueType: "dateTime",
+          dataPoints : dataPoints
+        }]
+      }],
+      navigator: {
+        slider: {
+          minimum: new Date(currentDate.getTime() - (90 * 1000))
+        },
+        axisX: {
+          labelFontColor: "white"
+        }
+      },
+      rangeSelector: {
+        enabled: false
+      }
+    });
+    var dataCount = 700, ystart = 50, interval = 1000, xstart = (currentDate.getTime() - (700 * 1000));
+    updateChart(xstart, ystart, dataCount, interval);
+    function updateChart(xstart, ystart, length, interval) {
+      var xVal = xstart, yVal = ystart;
+      for(var i = 0; i < length; i++) {
+        yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+        yVal = Math.min(Math.max(yVal, 5), 90);
+        dataPoints.push({x: xVal,y: yVal});
+        xVal += interval;
+      }
+      if(!rangeChangedTriggered) {
+          stockChart.options.navigator.slider.minimum = new Date(xVal - (90 * 1000)) ;
+      }
+      xstart = xVal;
+      dataCount = 1;
+      ystart = yVal;
+      stockChart.render();
+      setTimeout(function() { updateChart(xstart, ystart, dataCount, interval); }, 1000);
+    }
+  }
+  </script>
+  
+
+
+    <script>
+      const d = new Date();
+      document.getElementById("demo1").innerHTML = d;
+      </script>
+    
+
+</html>

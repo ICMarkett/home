@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Accounts | Secure Client Area </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+
+
+  
+<style>
+
+  /* Remove margins and padding from the list */
+  .myul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  .myul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  .myul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  .myul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  .myul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  .myul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close1:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  .input1 {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-scroller"> 
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="page.html">
+            <img src="images/ICM-logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="page.html">
+            <img src="images/logofirst.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome to <span class="text-black fw-bold"><span style="color: #12e612; margin: 0px;">IC</span>Markets</span></h1>
+            <h3 class="welcome-sub-text">Start exploring investment opertunities by copying people and investing in markets or CopyPortfolios </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Popular Investors </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Popular Investors</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">News Feed </p>
+                  <p class="fw-light small-text mb-0">Those who will start purchasing more <br> shares for a long-term investment.
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Pubic English Feed</p>
+                  <p class="fw-light small-text mb-0">Now only down 3.5% since I <br> started investing last March!</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Saved posts</p>
+                  <p class="fw-light small-text mb-0">Your saved posts feed is empty</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Popular Investors</p>
+                  <p class="fw-light small-text mb-0">Bitcoin finally walking up!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Verify your account</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success">$Soybeans </strong> Future rise over 2.1% <br> trading at 1,524.70</h6>
+                  <p class="fw-light small-text mb-0">about 3 hours ago </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success"> $VIX</strong> Future reaches another low, <br> trading at 2016</h6>
+                  <p class="fw-light small-text mb-0"> about 5 hours ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 3 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Luca Meier </p>
+                  <p class="fw-light small-text mb-0"> I invest mostly in companies that pay dividends</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Wesly Willie Roy Koenders </p>
+                  <p class="fw-light small-text mb-0"> My passive income investment strategy focuses <br> on dividend income</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">borisaka </p>
+                  <p class="fw-light small-text mb-0"> Perché sono passato ad avere un portafoglio di <br> sole azioni ad alto dividendo?
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li id="firstdown" class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle"   src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"  style="width: 30%;"  src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a href="mdi.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a href="#" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a href="#transtion" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a href="faq.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a href="try.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel" style="display: none;">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating </p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call </p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">
+              <i class="mdi mdi-grid-large menu-icon" class="menu-icon mdi mdi-floor-plan" style="
+              -webkit-tap-highlight-color: transparent;
+              font-family: 'Roboto',sans-serif;
+              list-style: none;
+              box-sizing: border-box;
+              color: #34e834;"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <link rel="stylesheet" href="https://icons8.com/icon/6476/candlestick-chart">
+
+          <li class="nav-item nav-category">Trades</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+             <img   style="width: 20%; margin-right: 6px;" src="images/icons8-candlestick-chart-50.png"></i>
+              
+              
+              <span class="menu-title">Trades</span>
+              <i class="menu-arrow"></i> 
+            </a>
+
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buttons.html">CryptoPortfolio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="dropdowns.html">CryptoEqual 
+                  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="typography.html">RenewableEnergy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Trading tools
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <img style="width: 20%; margin-right: 6px;" src="images/icons8-hand-shake-64.png" >
+              <span class="menu-title">Partners</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="basic_elements.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-withdrawal-30.png" >
+              <span class="menu-title">Withdrawal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="bank.html">Bitcoin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chartjs.html">Bank Transfer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-deposit-30.png" >
+              <span class="menu-title">Deposit</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Bitcoin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-settings-50.png" >
+              <span class="menu-title">Settings
+              </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="mdi.html">Account</a></li>
+                <li class="nav-item"> <a class="nav-link" href="help.html">Help</a></li>
+                <li class="nav-item"> <a class="nav-link" href="invite-friend.html">Invite Friends</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Help</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <img  style="width: 16%; margin-right: 6px;"  src="images/icons8-contacts-50.png" >
+              <span class="menu-title">Contact</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="contactus.html"> Contact us </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+           
+            <a class="nav-link" href="try.html">
+              <img style="width: 16%; margin-right: 6px;" src="images/icons8-logout-50.png" >
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="faq.html">
+            <img style="width: 16%; margin-right: 6px;" src="images/icons8-help-50.png" >
+            <span class="menu-title">FAQ</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+      
+      
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Temporaray Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="more-tab" data-bs-toggle="tab" href="#firstdown" role="tab" aria-selected="false">Demo Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#transtion" role="tab" aria-selected="false">Transaction History</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="#more" role="tab" aria-selected="false">More</a>
+                    </li>
+                  </ul>
+                  <div>
+                    <div class="btn-wrapper">
+                      <a href="#" class="btn btn-otline-dark align-items-center">
+                        <img style="width: 23%;margin-right: 6px;" src="images/icons8-currency-exchange-50.png" >
+                         USD</a>
+                      <a href="#" class="btn btn-otline-dark" >
+                        <img style="width: 23%;margin-right: 6px;" src="images/icons8-bitcoin-wallet-64.png" >
+                        BTC</a>
+                      <a href="#" style="background-color: #0e5f0e;" class="btn btn-primary text-white me-0" ><i class="icon-download"></i> Export</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content tab-content-basic">
+                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="statistics-details d-flex align-items-center justify-content-between">
+                          <div>
+                            <p class="statistics-title" style="color: #19da19;">Cash Available</p>
+                            <h3 class="rate-percentage"><img style="width: 17%;" src="images/icons8-wallet-50.png" alt="wallet">  $10.00</h3>
+                            <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>-0.5%</span></p>
+                          </div>
+                          <div>
+                            <p class="statistics-title" style="color: #19da19;">Total Invested</p>
+                            <h3 class="rate-percentage">$0.00</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
+                          </div>
+                          <div>
+                            <p class="statistics-title" style="color: #19da19;">Profit/Loss</p>
+                            <h3 class="rate-percentage">$0.00</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                          </div>
+                          <div class="d-none d-md-block">
+                            <p class="statistics-title" style="color: #19da19;">Portfolio Value</p>
+                            <h3 class="rate-percentage">$0.00</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                          </div>
+                          <div class="d-none d-md-block">
+                            <p class="statistics-title" style="color: #19da19;">Litecoin</p>
+                            <h3 class="rate-percentage">$0</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                          </div>
+                          <div class="d-none d-md-block">
+                            <p class="statistics-title" style="color: #19da19;">BTC</p>
+                            <h3 class="rate-percentage">$10</h3>
+                            <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-lg-8 d-flex flex-column">
+
+                        <div class="row flex-grow">
+
+                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+
+                              <div class="card-body">
+
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                   <h4 class="card-title card-title-dash"><img style="width: 10%; margin-right: 0px;" src="images/icons8-currency-exchange-50.png" alt="icon"> EUR/USD</h4>
+                                   <h5 class="card-subtitle text-success card-subtitle-dash">Exchange Rate for EUR to USD</h5>
+                                  </div>
+
+                                  
+
+                                </div>
+
+                                <div class="mt-5" id="stockChartContainer" style="height: 400px; width: 100%;">
+                                  
+
+                                </div>
+
+                              
+                              </div>
+                            </div>
+                          
+
+                          </div>
+
+                         
+
+                        </div>
+
+
+
+
+
+
+                        <div id="transtion" >
+                          <div class="col-lg-9 d-flex flex-column" style="width: 900px;">
+<div class="row flex-grow " style="background-color: white; border-radius: 10px; margin-bottom: 23px;">
+<div class="white_card_header ">
+<div class="box_header m-0">
+<div class="main-title" style="padding: 20px;">
+<h3 class="m-0">Earning</h3>
+</div>
+
+</div>
+</div>
+<div class="white_card_body pt-0" style="padding: 30px; ">
+<div class="QA_section">
+<div class="QA_table mb-0 transaction-table">
+
+<div class="table-responsive" >
+<table class="table  ">
+<tbody>
+<tr>
+<td scope="row">
+<span class="sold-thumb"><i class="ti-arrow-up"></i></span>
+</td>
+<td>
+<span class="badge bg-danger">Sold</span>
+</td>
+<td> <img class="small_img" src="images/1.svg" alt=""> Bitcoin </td>
+<td>Using - Bank......4585 </td>
+<td>-0.000053 BTC</td>
+<td>-0.10 USD</td>
+</tr>
+<tr>
+<td scope="row">
+<span class="buy-thumb"><i class="ti-arrow-down"></i></span>
+</td>
+<td>
+<span class="badge bg-success">Buy</span>
+</td>
+<td> <img class="small_img" src="images/2.svg" alt=""> Bitcoin </td>
+<td>Using - Bank......4585 </td>
+<td>0.000053 BTC</td>
+<td>0.10 USD</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                   </div>
+
+
+
+
+
+                      </div>
+
+                      <div class="col-lg-4 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+                            
+                              <div class="card-body pb-0" >
+                             
+               
+                                <div class="row" >
+                                  <div class="col-sm-4" >
+                                 
+                                  </div>
+                      
+
+
+
+
+
+<div >
+   <div class="card overflow-hidden "> 
+    <div class="card-header pb-0"> 
+      <div class="d-flex justify-content-between">
+         <h4 class="card-title mg-b-10">Market Info</h4> 
+        </div> <p class="tx-12 text-muted mb-2"
+        >The total crypto market volume over the last 24 hours is $68.03B
+          <a href="faq.html">Learn more</a></p></div>
+           <div class="card-body p-0"> <div class=""> 
+            <div class="list d-flex align-items-center 
+            border-bottom p-2 px-3 mt-0"> 
+            <img class="w-6 h-6" style="width: 10%;"
+            src="images/Bitcoin.svg" alt="image"> <div class="w-100 ms-3"> <div class="d-flex justify-content-between align-items-center"> <p class="mt-1 mb-0 font-weight-semibold">BTC/USD</p><span class="ms-auto fs-15 mb-0 font-weight-semibold">$10,245.00</span> </div> <div class="d-flex justify-content-between align-items-center"> <span class="text-success tx-13"><i class="fa fa-caret-up me-1"></i>2.04%</span> <small class="text-muted ms-auto">340.5 USD</small> </div> </div> </div> <div class="list d-flex align-items-center border-bottom p-2 px-3"> <img class="w-6 h-6" style="width: 10%;" src="images/Ethereum.svg" alt="image"> <div class="w-100 ms-3"> <div class="d-flex justify-content-between align-items-center"> <p class="mt-1 mb-0 font-weight-semibold">ETH/USD</p><span class="ms-auto fs-15 mb-0 font-weight-semibold">$15,183.00</span> </div> <div class="d-flex justify-content-between align-items-center"> <span class="text-danger tx-13"><i class="fa fa-caret-down me-1"></i>1.25%</span> <small class="text-muted ms-auto">283.5 USD</small> </div> </div> </div> <div class="list d-flex align-items-center border-bottom p-2 px-3"> <img class="w-6 h-6" style="width: 10%;" src="images/Litecoin.svg" alt="image"> <div class="w-100 ms-3"> <div class="d-flex justify-content-between align-items-center"> <p class="mt-1 mb-0 font-weight-semibold">LTC/USD</p><span class="ms-auto fs-15 mb-0 font-weight-semibold">$14,348.00</span> </div> <div class="d-flex justify-content-between align-items-center"> <span class="text-danger tx-13"><i class="fa fa-caret-down me-1"></i>1.04%</span> <small class="text-muted ms-auto">368.2 USD</small> </div> </div> </div> <div class="list d-flex align-items-center border-bottom p-2 px-3"> <img class="w-6 h-6" src="images/Dash.svg" style="width: 10%;" alt="image"> <div class="w-100 ms-3"> <div class="d-flex justify-content-between align-items-center"> <p class="mt-1 mb-0 font-weight-semibold">Dash/USD</p><span class="ms-auto fs-15 mb-0 font-weight-semibold">$12,157.00</span> </div> <div class="d-flex justify-content-between align-items-center"> <span class="text-success tx-13"><i class="fa fa-caret-up me-1"></i>2.04%</span> <small class="text-muted ms-auto">127.3 USD</small> </div> </div> </div> <div class="list d-flex align-items-center p-2 px-3 mb-0"> <img class="w-6 h-6" style="width: 10%;" src="images/NEM.svg" alt="image"> <div class=" w-100 ms-3"> <div class="d-flex justify-content-between align-items-center"> <p class="mt-1 mb-0 font-weight-semibold">BTC/USD</p><span class="ms-auto fs-15 mb-0 font-weight-semibold">$11,183.00</span> </div> <div class="d-flex justify-content-between align-items-center"> <span class="text-success tx-13"><i class="fa fa-caret-up me-1"></i>1.04%</span> <small class="text-muted ms-auto ">165.8 USD</small> </div> </div> </div> </div> </div> </div> </div>
+
+
+
+
+
+
+
+                                
+                               
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-6 col-lg-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div class="d-flex justify-content-between align-items-center mb-2 mb-sm-0">
+                                      <div class="circle-progress-width">
+
+
+                                        <div >
+
+                                          <div class="loader">  </div>
+                                        </div>
+
+
+
+                                      </div>
+                                    
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                    
+                                      <div>
+                                        <p class="text-small mb-2">Visits per day</p>
+
+                                        
+                                        <h4 class="mb-0 fw-bold" id="demo1"></h4>
+                                        
+                                        <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>0.5234546%</span></p>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                                
+                               
+                                <div >
+                                  <div style="display: inline-block; border-right: 2px solid black;width: 27%; margin: 3px;"> <a style="text-decoration: none;" href="#transtion"><img style="width: 20%;" src="images/icons8-combo-chart-50.png" > Stats</a>  </div>
+                                  <div style="display: inline-block; border-right: 2px solid black;width: 27%;margin: 3px; "><a  style="text-decoration: none;" href="#transtion"><img style="width: 20%;" src="images/icons8-candlestick-chart-50.png"> Chart</a>  </div>
+                                  <div style="display: inline-block; width: 27%; margin: 3px;"><a  style="text-decoration: none;" href="basic_elements.html"><img style="width: 20%;" src="images/icons8-news-50.png"> News </a>  </div>
+                                </div>
+                                
+                                <div  style="display: inline-block; margin-top: 17px;">
+                                  <img src="images/bc3.png" >
+                                </div> 
+                                <div style="display: inline-block;">
+                                  <p class="text-dark" id="demo4"></p>
+
+                                </div>
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                    <h4 class="card-title card-title-dash">Market Cap
+
+                                    </h4>
+                                   <p class="card-subtitle card-subtitle-dash">Low spreads. No commission. 47 trading assets to choose from. <br> +50% bonus to any deposit.</p>
+                                  </div>
+                                  <div>
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> This month </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <h6 class="dropdown-header">Settings</h6>
+                                        <a class="dropdown-item" >This Month</a>
+                                        <a class="dropdown-item" >Last Month</a>
+                                      
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="faq.html">Crypto Information</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="d-sm-flex align-items-center mt-1 justify-content-between">
+                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold" style="color:#19da19;">$10.80</h2><h4 class="me-2">USD</h4><h4 class="text-success">(+1.37%)</h4></div>
+                                  <div class="me-3"><div id="marketing-overview-legend"></div></div>
+                                </div>
+                                <div class="chartjs-bar-wrapper mt-3">
+                                  <canvas id="marketingOverview"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded table-darkBGImg">
+                              <div class="card-body">
+                                <div class="col-sm-8" >
+                                  <h3 class="text-white upgrade-info mb-0">
+                                    Investment packages
+                                  </h3>
+                                  <a href="investplan.html" class="btn btn-info upgrade-btn">Start Investing Now!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                    <h4 class="card-title card-title-dash"><img style="width: 18%; margin-right: 9px;" src="images/icons8-calendar-plus-50.png" >Daily Movers</h4>
+                                   <p class="card-subtitle card-subtitle-dash">Today's biggest gainers and losers</p>
+                                  </div>
+                                  <div>
+                                    <a href="basic_elements.html" class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Add new member</a>
+                                  </div>
+                                </div>
+                                <div class="table-responsive  mt-1">
+                                  <table class="table select-table">
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </th>
+                                        <th>Names</th>
+                                        <th>Company</th>
+                                        <th>Progress</th>
+                                        <th>Status</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex ">
+                                            <img src="images/2.jpg" >
+                                            <div>
+                                              <h6>Melvyn Moncuit</h6>
+                                              <p>@10xCycleTrader</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <h6>HTGM</h6>
+                                          <p>HTG Molecular Diagnostic Inc</p>
+                                        </td>
+                                        <td>
+                                          <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                              <p class="text-success">4.76%</p>
+                                              <p>1.92[32.98%]</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex">
+                                            <img src="images/1.jpg" alt="">
+                                            <div>
+                                              <h6>Romanina  </h6>
+                                              <p>@iliabvf</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <h6>MARA </h6>
+                                          <p>Marathon Digital Holdings Inc</p>
+                                        </td>
+                                        <td>
+                                          <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                              <p class="text-success">7.05%</p>
+                                              <p>1.98[30.91%]</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex">
+                                            <img src="images/ava.png" alt="">
+                                            <div>
+                                              <h6>Wayne Murphy</h6>
+                                              <p>Head admin</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <h6>AVYA</h6>
+                                          <p>Avaya Holdings Corp</p>
+                                        </td>
+                                        <td>
+                                          <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                              <p style="color: red;" class="text-success">-0.05%</p>
+                                              <p style="color: red;">-0.089[-90.35%]</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                              <div class="progress-bar bg-warning" role="progressbar" style="width: 38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex">
+                                            <img src="images/faces/face4.jpg" alt="">
+                                            <div>
+                                              <h6>Matthew Bailey</h6>
+                                              <p>ASCL</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <h6>ASCL</h6>
+                                          <p> ASOC PLC</p>
+                                        </td>
+                                        <td>
+                                          <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                              <p class="text-success">9.65%</p>
+                                              <p>744[89]</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                              <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td><div class="badge badge-opacity-danger">Pending</div></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex">
+                                            <img src="images/150x150.webp" alt="">
+                                            <div>
+                                              <h6>Katherine Butler</h6>
+                                              <p>HFD.L</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <h6>HFD.L</h6>
+                                          <p>Halford Group PLC</p>
+                                        </td>
+                                        <td>
+                                          <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                              <p class="text-success">465%</p>
+                                              <p>86.8[9]</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td><div class="badge badge-opacity-success">Completed</div></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="row flex-grow">
+                          <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body card-rounded">
+                                <div style="text-align: center;">
+                                  <img style="width: 30%;" src="images/Bitcoin.svg.png" 
+                             >                                <h4 style="color: #19da19;" class="card-title  card-title-dash">Current Bitcoin Price</h4>
+                             <span style="font-size: 30px; " class="mb-0 text-small text-muted" id="forspan" ></span>
+
+                             <p  style="margin: 0px
+                             ;">
+                              <small class="fs-14 text-danger " >
+                                <img style="width: 5%;" src="images/icons8-sort-down-50.png" >
+                                
+                                1.25% </small> This Week</p>
+
+                                </div>
+                                <div class="list align-items-center border-bottom py-2">
+                                  <div class="wrapper w-100">
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div  class="d-flex align-items-center">
+                                      
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list align-items-center border-bottom py-2">
+                                  <div class="wrapper w-100">
+                                    
+                                    <p class="mb-2 font-weight-medium"><i class="mdi mdi-calendar text-muted me-1"></i>Last updated on: 
+                                      <span  style="color: #ffaa5a;font-weight: bolder;" id="updTime"></span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="d-flex align-items-center">
+                                        
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="list align-items-center border-bottom py-2">
+                                  <div style="text-align: center;" class="wrapper w-100">
+          
+                                    <button style="background-color: #f37b0a; color: white; 
+                                    border: none; padding: 9px;" class="forbutton" id="forbutton">Get Latest Price</button>
+                                    <div style="margin-top: 7px;">
+                                      <select class="seletion" name="currency" id="currency">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="GBP">POUND</option>
+                                      </select>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="d-flex align-items-center">
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                
+                                <div class="list align-items-center pt-3" >
+                                  <div class="wrapper w-100" style="text-align: center;">
+                                    <p class="mb-0">
+                                      <a href="basic-table.html" class="btn btn-info upgrade-btn">Buy BTC <i class="mdi mdi-arrow-right ms-2"></i></a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body card-rounded">
+                                <div style="text-align: center;">
+                                     
+
+                                  
+
+
+
+
+
+
+
+
+                                  <div id="myDIV" class="header">
+                                    <h2 style="margin:5px">My To Do List</h2>
+                                    <input class="input1" type="text" id="myInput" placeholder="Title...">
+                                    <span onclick="newElement()" class="addBtn">Add</span>
+                                  </div>
+                                  
+                                  <ul id="myUL" class="myul">
+                                    <li id="LI">Learn how to invest today</li>
+                                    <li id="LI"class="checked">become an investor</li>
+                                    
+                                  </ul>
+                                  
+
+
+                                </div>                         
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+                      </div>
+                      <div class="col-lg-4 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <h4 class="card-title card-title-dash"><img style="width: 20%; margin-right: 9px;" src="images/icons8-average-price-50.png" >Mining Cost
+                                      </h4>
+                                      <div class="add-items d-flex mb-0">
+                                        <!-- <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?"> -->
+                                        <a href="investplan.html" class="add btn btn-icons btn-rounded btn-primary todo-list-add-btn text-white me-0 pl-12p"><i class="mdi mdi-plus"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="list-wrapper">
+                                      <ul class="todo-list todo-list-rounded">
+                                        <li class="d-block">
+                                          <div class="form-check w-100">
+                                            <label class="form-check-label">
+                                              <input class="checkbox" type="checkbox"> Total Miners Revenue (USD)	 <i class="input-helper rounded"></i>
+                                            </label>
+                                            <div class="d-flex mt-2">
+                                              <div class="ps-4 text-small me-3">$16,727,645.97	</div>
+                                              <div class="badge badge-opacity-warning me-3">	View Chart</div>
+                                              <i class="mdi mdi-flag ms-2 flag-color"></i>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="d-block">
+                                          <div class="form-check w-100">
+                                            <label class="form-check-label">
+                                              <input class="checkbox" type="checkbox"> 0% Earned from transaction fees <i class="input-helper rounded"></i>
+                                            </label>
+                                            <div class="d-flex mt-2">
+                                              <div class="ps-4 text-small me-3">$9,331.37		</div>
+                                              <div class="badge badge-opacity-success me-3">	View Chart</div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="form-check w-100">
+                                            <label class="form-check-label">
+                                              <input class="checkbox" type="checkbox"> 0% Of transaction volume<i class="input-helper rounded"></i>
+                                            </label>
+                                            <div class="d-flex mt-2">
+                                              <div class="ps-4 text-small me-3">$16,729.97		</div>
+                                              <div class="badge badge-opacity-success me-3">	View Chart</div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="border-bottom-0">
+                                          <div class="form-check w-100">
+                                            <label class="form-check-label">
+                                              <input class="checkbox" type="checkbox"> Cost per Transaction (USD) <i class="input-helper rounded"></i>
+                                            </label>
+                                            <div class="d-flex mt-2">
+                                              <div class="ps-4 text-small me-3">	185.24635681 BTC	</div>
+                                              <div class="badge badge-opacity-danger me-3">	View Chart</div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                      <h4 class="card-title card-title-dash"><img style="width: 20%; margin-right: 9px;" src="images/icons8-time-machine-50.png" >History</h4>
+                                      <p>Recent Activity
+                                      </p>
+                                    </div>
+                                    <canvas class="my-auto" id="doughnutChart" height="200"></canvas>
+                                    <div id="doughnut-chart-legend" class="mt-5 text-center"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                      <div>
+                                        
+                                        <h4 class="card-title card-title-dash"><img style="margin-right: 8px; " src="images/icons8-bitcoin-16.png" >BTC/USD
+                                        </h4>
+                                      </div>
+                                      <div>
+                                        <div class="dropdown">
+                                          <button class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img style="width: 15%; margin-right: 9px;" src="images/icons8-calendar-plus-50.png" > Month  </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                            <h6 class="dropdown-header">Week </h6>
+                                            <a class="dropdown-item" href="#leaveReport">Year </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="mt-3">
+                                      <canvas id="leaveReport"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                      <div>
+                                        <h4 class="card-title card-title-dash"><img style="width: 30px; margin-right: 9px;" src="images/icons8-combo-chart-50.png" > My Watchlist</h4>
+                                      </div>
+                                    </div>
+                                    <div class="mt-3">
+                                      <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                        <div class="d-flex">
+                                          <img class="img-sm rounded-10" src="images/amazon.svg" alt="profile">
+                                          <div class="wrapper ms-3">
+                                            <p class="ms-1 mb-1 fw-bold"><img src="images/btcalal.png" ></p>
+                                            <small class="text-muted mb-0">162543</small>
+                                          </div>
+                                        </div>
+                                        <div class="text-muted text-small">
+                                          1h ago
+                                        </div>
+                                      </div>
+                                      <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                        <div class="d-flex">
+                                          <img class="img-sm rounded-10" src="images/Apple-Logo.png" alt="profile">
+                                          <div class="wrapper ms-3">
+                                            <p class="ms-1 mb-1 fw-bold"><img src="images/btcl.png" ></p>
+                                            <small class="text-muted mb-0">162543</small>
+                                          </div>
+                                        </div>
+                                        <div class="text-muted text-small">
+                                          1h ago
+                                        </div>
+                                      </div>
+                                      <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                        <div class="d-flex">
+                                          <img class="img-sm rounded-10" src="images/unity.jpg" alt="profile">
+                                          <div class="wrapper ms-3">
+                                            <p class="ms-1 mb-1 fw-bold"><img src="images/bc5.png" ></p>
+                                            <small class="text-muted mb-0">162543</small>
+                                          </div>
+                                        </div>
+                                        <div class="text-muted text-small">
+                                          5h ago
+                                        </div>
+                                      </div>
+                                      <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
+                                        <div class="d-flex">
+                                          <img class="img-sm rounded-10" src="images/f-eur116.jpg" alt="profile">
+                                          <div class="wrapper ms-3">
+                                            <p class="ms-1 mb-1 fw-bold"><img src="images/btc4.png" ></p>
+                                            <small class="text-muted mb-0">162543</small>
+                                          </div>
+                                        </div>
+                                        <div class="text-muted text-small">
+                                          about 18 <br> hours ago
+                                        </div>
+                                      </div>
+                                      <div class="wrapper d-flex align-items-center justify-content-between pt-2">
+                                        <div class="d-flex">
+                                          <img class="img-sm rounded-10" src="images/faces/face5.jpg" alt="profile">
+                                          <div class="wrapper ms-3">
+                                            <p class="ms-1 mb-1 fw-bold"><img src="images/bc5.png" ></p>
+                                            <small class="text-muted mb-0">Alaska, USA</small>
+                                          </div>
+                                        </div>
+                                        <div class="text-muted text-small">
+                                          2 days ago
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row flex-grow ">
+
+                    <div style="background-color: white;padding: 20px; border-radius: 14px;" >
+                    
+                      <div class="quick-actions-section">
+                        <h3 class="my-20 fw-500" >Quick Actions</h3>
+                        <div class="row">
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="bank.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag1.png">
+                                </p>
+                                <p class="text-dark">Receive</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="basic-table.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag2.png">
+                                </p>
+                                <p class="text-dark">Top Up</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="basic-table.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag3.png">
+                                </p>
+                                <p class="text-dark">Find ATM</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="chartjs.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag4.png">
+                                </p>
+                                <p class="text-dark">Bank AC</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="dropdowns.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag5.png">
+                                </p>
+                                <p class="text-dark">Stats</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="chartjs.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag6.png">
+                                </p>
+                                <p class="text-dark">Transfer</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="chartjs.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag7.png">
+                                </p>
+                                <p class="text-dark">Cards</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="basic-table.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag8.png">
+                                </p>
+                                <p class="text-dark">Pay Bill</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="bank.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag9.png">
+                                </p>
+                                <p class="text-dark">Payment</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="#transtion">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag10.png">
+                                </p>
+                                <p class="text-dark action-box">Transactions</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="bank.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag11.png">
+                                </p>
+                                <p class="text-dark">Withdraw</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <a class="box box-link-shadow text-center border pull-up" href="invite-friend.html">
+                              <div class="box-body p-10">
+                                <p class="mt-5">
+                                  <img src="images/lag12.png">
+                                </p>
+                                <p class="text-dark">Voucher</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><strong>Risk Warning: </strong>Trading Derivatives carries a high level of risk to your capital and you should only trade with money you can afford <br> to lose. Trading Derivatives may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. </span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">©2023 — Raw Trading Ltd | All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+</body>
+
+</html>
+
+<script>var btn = document.querySelector("#forbutton");
+  var price = document.querySelector("#forspan");
+  var updTime = document.querySelector("#updTime");
+  var disclaimer = document.querySelector("#disclaimer");
+  var currency = document.querySelector("#currency");
+  var symbol = currency.value;
+  var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+  
+  function getPrice (){
+    var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+    var currency = document.querySelector("#currency");
+    var symbol = currency.value;
+    fetch(url)
+      .then(function(response){
+      return response.json();
+    })
+      .then(function(data){
+      price.innerHTML = data.bpi[symbol].symbol + data.bpi[symbol].rate;
+      updTime.innerHTML = new Date().toLocaleString();
+      disclaimer.innerText = data.disclaimer;
+    });
+  }
+  
+  getPrice();
+  
+  btn.addEventListener("click", function(){
+    getPrice()
+  });</script>
+
+<script type="text/javascript">
+  window.onload = function () {
+    var dataPoints = [];
+    var stockChart = new CanvasJS.StockChart("stockChartContainer",{
+      title:{
+        text:""
+      },
+      charts: [{
+        data: [{
+          type: "splineArea",
+          color: "#3698C5",
+          yValueFormatString: "€1 = $#,###.##",
+          dataPoints : dataPoints
+        }]
+      }],
+      navigator: {
+        slider: {
+          minimum: new Date(2015, 00, 01),
+          maximum: new Date(2016, 00, 01)
+        }
+      }
+    });
+    $.getJSON("https://canvasjs.com/data/gallery/stock-chart/usdeur.json", function(data) {
+      for(var i = 0; i < data.length; i++){
+        dataPoints.push({x: new Date(data[i].date), y: Number(data[i].price)});
+      }
+      stockChart.render();
+    });
+  }
+  </script>
+
+<script>
+  setInterval(myFunction, 1000);
+  
+  function myFunction() {
+    let d = new Date();
+    document.getElementById("demo1").innerHTML=
+    d.getHours() + ":" +
+    d.getMinutes() + ":" +
+    d.getSeconds();
+  }
+  </script>
+
+  
+
+
+<script>
+  const d = new Date();
+  document.getElementById("demo4").innerHTML = d;
+  </script>
+
+
+
+
+
+<script>
+
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('myUL');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("lI");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close1";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+  </script>
+  
+
+
