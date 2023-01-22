@@ -1,0 +1,108 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.page-cryptocurrency .page-header {
+    background: url(images/btc-banner.png) no-repeat center right; }
+  
+  .single-page.page-cryptocurrency .page-first-text::before {
+    background: url(images/icon-crypto.svg) center center no-repeat transparent; }
+  
+  .single-page.page-cryptocurrency .risk-image {
+    background: url(images/cryptoImg.png) center center no-repeat transparent;
+    background-size: contain; }
+  
+  .single-page.page-cryptocurrency .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.page-cryptocurrency .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.page-cryptocurrency .crypto-items-container {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .single-page.page-cryptocurrency .crypto-items-container .crypto-item {
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 60px;
+      padding-right: 40px; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item .crypto-image {
+        width: 120px;
+        height: 120px;
+        background: red;
+        flex: 120px 0;
+        margin-right: 30px;
+        background-size: cover !important; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item .crypto-content {
+        flex: 1; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-bitcoin .crypto-image {
+        background:url(images/btc-color.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-ethereum .crypto-image {
+        background: url(images/ethereum-color.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-dash .crypto-image {
+        background: url(images/dash-color.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-litecoin .crypto-image {
+        background: url(images/lite-color.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-bitcoin-cash .crypto-image {
+        background: url(images/btc-cash-color.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-ripple .crypto-image {
+        background: url(images/rippleIcon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-eos .crypto-image {
+        background: url(images/eos-icon.jpg) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-emc .crypto-image {
+        background: url(images/emc-icon.jpg) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-nmc .crypto-image {
+        background: url(images/nmc-icon.jpg) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-ppc .crypto-image {
+        background: url(images/ppc-icon.jpg) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-dot .crypto-image {
+        background: url(images/dot-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-lnk .crypto-image {
+        background: url(images/xlm-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-xlm .crypto-image {
+        background: url(images/lnk-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-dgc .crypto-image {
+        background: url(images/dgc-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-tzs .crypto-image {
+        background: url(images/tzs-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-usp .crypto-image {
+        background: url(images/usp-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-cdo .crypto-image {
+        background: url(images/cdo-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-bnc .crypto-image {
+        background: url(images/bnc-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-avalanche .crypto-image {
+        background: url(images/avalanche-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-luna .crypto-image {
+        background: url(images/luna-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-polygon-matic .crypto-image {
+        background: url(images/polygon-matic-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-moonbeam .crypto-image {
+        background: url(images/moonbeam-icon.png) center center no-repeat transparent; }
+      .single-page.page-cryptocurrency .crypto-items-container .crypto-item.c-kusama .crypto-image {
+        background: url(images/kusama-icon.png) center center no-repeat transparent; }
+  
+  @media screen and (max-width: 900px) {
+    .single-page.page-cryptocurrency .crypto-items-container {
+      grid-template-columns: 100%; } }
+  
+  @media screen and (max-width: 640px) {
+    .single-page.page-cryptocurrency .single-design-table .table-row {
+      height: 150px !important; } }
+  
+  @media screen and (max-width: 480px) {
+    .single-page.page-cryptocurrency .crypto-items-container .crypto-item {
+      display: block; } }
+  
+  /*# sourceMappingURL=cryptocurrency.css.map */

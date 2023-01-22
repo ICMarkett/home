@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ICMarkets | CryptoEqual </title>
+  <!-- plugins:css -->
+  <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller"> 
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="page.html">
+            <img src="images/ICM-logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="page.html">
+            <img src="images/logofirst.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome to <span class="text-black fw-bold"><span style="color: #12e612; margin: 0px;">IC</span>Markets</span></h1>
+            <h3 class="welcome-sub-text">Start exploring investment opertunities by copying people and investing in markets or CopyPortfolios </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Popular Investors </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Popular Investors</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">News Feed </p>
+                  <p class="fw-light small-text mb-0">Those who will start purchasing more <br> shares for a long-term investment.
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Pubic English Feed</p>
+                  <p class="fw-light small-text mb-0">Now only down 3.5% since I <br> started investing last March!</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Saved posts</p>
+                  <p class="fw-light small-text mb-0">Your saved posts feed is empty</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Popular Investors</p>
+                  <p class="fw-light small-text mb-0">Bitcoin finally walking up!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Verify your account</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success">$Soybeans </strong> Future rise over 2.1% <br> trading at 1,524.70</h6>
+                  <p class="fw-light small-text mb-0">about 3 hours ago </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success"> $VIX</strong> Future reaches another low, <br> trading at 2016</h6>
+                  <p class="fw-light small-text mb-0"> about 5 hours ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 3 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Luca Meier </p>
+                  <p class="fw-light small-text mb-0"> I invest mostly in companies that pay dividends</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Wesly Willie Roy Koenders </p>
+                  <p class="fw-light small-text mb-0"> My passive income investment strategy focuses <br> on dividend income</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">borisaka </p>
+                  <p class="fw-light small-text mb-0"> Perché sono passato ad avere un portafoglio di <br> sole azioni ad alto dividendo?
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li id="firstdown" class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle"   src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"  style="width: 30%;"  src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a href="mdi.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a href="#" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a href="page.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a href="faq.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a href="try.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel" style="display: none;">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating </p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call </p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">
+              <i class="mdi mdi-grid-large menu-icon" class="menu-icon mdi mdi-floor-plan" style="
+              -webkit-tap-highlight-color: transparent;
+              font-family: 'Roboto',sans-serif;
+              list-style: none;
+              box-sizing: border-box;
+              color: #34e834;"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <link rel="stylesheet" href="https://icons8.com/icon/6476/candlestick-chart">
+
+          <li class="nav-item nav-category">Trades</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+             <img   style="width: 20%; margin-right: 6px;" src="images/icons8-candlestick-chart-50.png"></i>
+              
+              
+              <span class="menu-title">Trades</span>
+              <i class="menu-arrow"></i> 
+            </a>
+
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buttons.html">CryptoPortfolio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="dropdowns.html">CryptoEqual 
+                  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="typography.html">RenewableEnergy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Trading tools
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <img style="width: 20%; margin-right: 6px;" src="images/icons8-hand-shake-64.png" >
+              <span class="menu-title">Partners</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="basic_elements.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-withdrawal-30.png" >
+              <span class="menu-title">Withdrawal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="bank.html">Bitcoin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chartjs.html">Bank Transfer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-deposit-30.png" >
+              <span class="menu-title">Deposit</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Bitcoin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-settings-50.png" >
+              <span class="menu-title">Settings
+              </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="mdi.html">Account</a></li>
+                <li class="nav-item"> <a class="nav-link" href="help.html">Help</a></li>
+                <li class="nav-item"> <a class="nav-link" href="invite-friend.html">Invite Friends</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Help</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <img  style="width: 16%; margin-right: 6px;"  src="images/icons8-contacts-50.png" >
+              <span class="menu-title">Contact</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="contactus.html"> Contact us </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+           
+            <a class="nav-link" href="try.html">
+              <img style="width: 16%; margin-right: 6px;" src="images/icons8-logout-50.png" >
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="faq.html">
+            <img style="width: 16%; margin-right: 6px;" src="images/icons8-help-50.png" >
+            <span class="menu-title">FAQ</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Stock Target
+                   </h4>
+                   <p class="text-success"><strong>LIT/ETH/BTC</strong> </p>
+                  <div id="liteCoinChart"></div>
+
+                  <div id="etherChart"></div>
+
+                  <div id="bitcoinChart"></div>
+                  <div class="row">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Explore Stocks</h4>
+                
+                  <div class="template-demo">
+                    
+                      
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+<button class="btn btn-danger btn-sm "  onclick="myFunction()">LEARN MORE </button>
+
+<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuSizeButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Stocks
+</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3">
+    <h6 class="dropdown-header">Crypto</h6>
+    <a class="dropdown-item" href="faq.html">EFTs</a>
+    <a class="dropdown-item" href="faq.html">Commodities</a>
+    <a class="dropdown-item" href="faq.html">Indice</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="faq.html">Currencies</a>
+    
+  </div>
+ 
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">NEGG</h4>
+                  <p class="card-description text-success">
+                   <code>Trading NEGG is not available in your account</code> 
+                  </p>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="template-demo d-flex justify-content-between flex-wrap">
+                        <div class="dropdown">
+
+                          <div id="myChart1" style="width:100%; max-width:700px; "></div>
+
+
+
+                        </div>
+
+                        <button class="btn btn-danger btn-sm "  onclick="myFunction()">LEARN MORE </button>
+
+                          <button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuSizeButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Stocks
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3">
+                            <h6 class="dropdown-header">Crypto</h6>
+                            <a class="dropdown-item" href="faq.html">EFTs</a>
+                            <a class="dropdown-item" href="faq.html">Commodities</a>
+                            <a class="dropdown-item" href="faq.html">Indice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="faq.html">Currencies</a>
+
+                          
+                        </div>
+                      </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"> A New Source of Insight</h4>
+                  <p class="card-description">
+                    <code>Latest News </code>
+                  </p>
+                  
+            
+
+
+                    <div >
+                       <div class="card"> 
+                        <img class="card-img-top w-100 br-bl-0 br-br-0" 
+                        src="images/5.jpg" alt=""> 
+                        <div class="card-body"> <h4 class="card-title mb-3">
+                          OUTLOOK: </h4> <p class="card-text">
+                          Earnings forecasts near always fall during the year. The only question is how much. Consensus is for 5% S&P 500 growth in 2023 even with recessionary clouds on the horizon. But investors seem braced for much lower. We are more positive. Estimates have already been cut a lot. For example, Q4 EPS growth by 16pp in the past year. The Q4 GDP NOWCast is a strong 4.1%. Falling inflation will support the consumer. A weaker dollar is now less a headwind for the 1/3 of overseas sales. And the Fed supply chain disruption index is down 77% from its peak <p>
+                             <a class="btn btn-primary" href="faq.html">
+                              Read More</a> </div> </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">  Upcoming Earnings</h4>
+                  <p class="card-description">
+                    <code>Latest News</code> 
+                  </p>
+                  
+                    
+                  <div >
+                    <div class="card"> 
+                     <img class="card-img-top w-100 br-bl-0 br-br-0" 
+                     src="images/13.jpg" alt=""> 
+                     <div class="card-body"> <h4 class="card-title mb-3">
+                      EARNINGS:</h4> <p class="card-text">
+                        Fed interest rate hikes will start catching up with both the economy and company earnings in 2023. This will flip the script on last year’s resilient earnings and plunging valuations. Q4 earnings season, which starts Friday, is a prelude to this and may see the first US fall since Q3 2020. But we are less negative and see another ‘less-bad’ season. With lower but resilient profits and margins giving relief to worried investors. Consensus is for S&P 500 earnings to fall -2% (see chart) whilst Europe’ Stoxx 600 rise 14%. Management 2023 guidance will be a focus</p>
+                          <a class="btn btn-primary" href="faq.html">
+                           Read More</a> </div> </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><strong>Risk Warning: </strong>Trading Derivatives carries a high level of risk to your capital and you should only trade with money you can afford <br> to lose. Trading Derivatives may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. </span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">©2023 — Raw Trading Ltd | All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.18.0.min.js"></script>
+  <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+  <!-- endinject -->
+</body>
+
+
+ <script>
+
+        var pubnub = new PubNub({
+            publishKey:   'demo', // replace with your own pub-key
+            subscribeKey: 'demo' // replace with your own sub-key
+        });
+        var xhr = new XMLHttpRequest();
+        
+        var pointLimit = 100;
+        var useLabels = false;
+
+        function processRequest(e) {
+             if (xhr.readyState == 4 && xhr.status == 200) {
+                var response = JSON.parse(xhr.responseText);
+                console.log(response);
+
+                pubnub.publish({
+                    channel: 'bitcoin-eon',
+                    message: {
+                      eon: {
+                        'BitCoin': response.BTC.USD.toFixed(2)
+                      }
+                    }
+                  });
+
+                pubnub.publish({
+                    channel: 'ether-eon',
+                    message: {
+                      eon: {
+                        'Ether': response.ETH.USD.toFixed(2)
+                      }
+                    }
+                  });
+
+                pubnub.publish({
+                    channel: 'litecoin-eon',
+                    message: {
+                      eon: {
+                        'LiteCoin': response.LTC.USD.toFixed(2)
+                      }
+                    }
+                  });
+
+
+                 //var notification = new Notification("Hi there!");
+            }
+        }
+
+        eon.chart({
+          channels: ['bitcoin-eon'],
+          history: true,
+          flow: true,
+          limit: pointLimit,
+          pubnub: pubnub,
+          generate: {
+            bindto: '#bitcoinChart',
+            data: {
+              labels: useLabels,
+              type: 'spline'
+            },
+            axis: {
+                y: {
+                    padding: {top:200, bottom:100}
+                }
+            }
+          }
+        });
+
+        eon.chart({
+          channels: ['ether-eon'],
+          history: true,
+          flow: true,
+          limit: pointLimit,
+          pubnub: pubnub,
+          generate: {
+            bindto: '#etherChart',
+            data: {
+              labels: useLabels,
+              type: 'spline'
+            },
+            axis: {
+                y: {
+                    padding: {top:200, bottom:100}
+                }
+            }
+          }
+        });
+
+        eon.chart({
+          channels: ['litecoin-eon'],
+          history: true,
+          flow: true,
+          limit: pointLimit,
+          pubnub: pubnub,
+          generate: {
+            bindto: '#liteCoinChart',
+            data: {
+              labels: useLabels,
+              type: 'spline'
+            },
+            axis: {
+                y: {
+                    padding: {top:200, bottom:100}
+                }
+            }
+          }
+        });
+
+        function mainApp() {
+            if (Notification.permission !== "denied") {
+                Notification.requestPermission(function (permission) {});
+              }
+
+            setInterval(function(){
+                
+                xhr.open('GET', 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD', true)
+                xhr.send();
+                xhr.onreadystatechange = processRequest;
+            }, 5000)
+        };
+        mainApp();
+
+    </script>
+
+<script>
+  var xValues = ["Italy", " USA", "Spain", "France", "Argentina"];
+  var yValues = [55, 49, 44, 24, 15];
+  var barColors = ["green", "red","orange","orange","brown"];
+  
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "World Wide Traders "
+      }
+    }
+  });
+  </script>
+
+<script>
+  google.charts.load('current',{packages:['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+  // Set Data
+  var data = google.visualization.arrayToDataTable([
+    ['Price', 'Size'],
+    [50,7],[60,8],[70,8],[80,9],[90,9],
+    [100,9],[110,10],[120,11],
+    [130,14],[140,14],[150,15]
+  ]);
+  // Set Options
+  var options = {
+    title: 'Trading NEGG is not available in your account',
+    hAxis: {title: 'Overview'},
+    vAxis: {title: 'Chart times in UTC'},
+    legend: 'none'
+  };
+  // Draw
+  var chart = new google.visualization.LineChart(document.getElementById('myChart1'));
+  chart.draw(data, options);
+  }
+  </script>
+
+<script>
+  function myFunction() {
+    alert("Trading NEGG is not available in your account");
+  }
+  </script>
+
+</html>

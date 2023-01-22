@@ -1,0 +1,644 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.page-regulation .page-header .page-header__heading--style {
+    font-size: 34px !important; }
+  
+  .single-page.page-regulation .page-header .page-header__description {
+    font-size: 16px !important; }
+  
+  .single-page.page-regulation .page-header__menu-container {
+    padding: 15px 0 !important; }
+  
+  .single-page.page-regulation .page-content-container a:not(.icm-btn) {
+    cursor: pointer; }
+  
+  .single-page.page-regulation #redesign-scb {
+    background-color: #fff !important; }
+  
+  .single-page.page-regulation .double-sidebar-block {
+    position: relative;
+    z-index: 1;
+    width: 308px;
+    margin: 0 auto;
+    border-radius: 0;
+    float: right;
+    margin: 0px 40px 80px 80px; }
+    .single-page.page-regulation .double-sidebar-block .contact-block {
+      position: relative;
+      padding: 0;
+      background: #e9e9e9;
+      margin: 50px auto;
+      border-radius: 0;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+      z-index: 2; }
+      .single-page.page-regulation .double-sidebar-block .contact-block .contact-header {
+        padding: 42px 33px 38px 33px; }
+        .single-page.page-regulation .double-sidebar-block .contact-block .contact-header .header-label {
+          font-size: 28px;
+          line-height: 1;
+          letter-spacing: -0.6px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+        .single-page.page-regulation .double-sidebar-block .contact-block .contact-header .header-title {
+          margin-top: 22px;
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: -0.3px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+      .single-page.page-regulation .double-sidebar-block .contact-block .contact-pre-imaged {
+        position: relative;
+        padding: 28px 33px 23px 100px;
+        background: #f2f2f2;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8); }
+        .single-page.page-regulation .double-sidebar-block .contact-block .contact-pre-imaged a {
+          color: rgba(0, 0, 0, 0.8) !important; }
+        .single-page.page-regulation .double-sidebar-block .contact-block .contact-pre-imaged.chat-img::before {
+          content: "";
+          position: absolute;
+          left: 33px;
+          top: 15px;
+          width: 40px;
+          height: 40px;
+          background: transparent no-repeat center center;
+          background-size: contain;
+          background-image: url(images/refer-a-friend-live-chat.png); }
+        .single-page.page-regulation .double-sidebar-block .contact-block .contact-pre-imaged.email-img {
+          background: #e9e9e9; }
+          .single-page.page-regulation .double-sidebar-block .contact-block .contact-pre-imaged.email-img::before {
+            content: "";
+            position: absolute;
+            left: 33px;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            background: transparent no-repeat center center;
+            background-size: contain;
+            background-image: url(images/refer-a-friend-email-support.png); }
+      .single-page.page-regulation .double-sidebar-block .contact-block .contact-phone {
+        background: #353535;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2.18;
+        letter-spacing: -1.7px;
+        text-align: center;
+        color: #34E834;
+        padding-right: 10%; }
+    .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding-top: 214px;
+      padding-bottom: 64px;
+      border-radius: 0;
+      background-image: url(images/regulation-facts-bg.png) !important;
+      box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.14); }
+      .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background::before {
+        content: "";
+        position: absolute;
+        left: 52px;
+        top: 87px;
+        width: 204px;
+        height: 52px;
+        background: transparent no-repeat center center;
+        background-size: contain;
+        background-image: url(images/ICM-logo-transparentBG.svg); }
+      .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background.sidebar-trueecn::before {
+        background-image: url(images/true-logo.png); }
+      .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block__message {
+        font-size: 28px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 40px;
+        margin-bottom: 40px; }
+      .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block {
+        text-align: center; }
+        .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block .icm-btn.icm-btn-primary {
+          background: #34E834 !important;
+          color: rgba(31, 29, 49, 0.8) !important;
+          line-height: 1 !important;
+          padding: 14px 25px !important;
+          border-radius: 30px;
+          border: none !important;
+          width: max-content;
+          font-size: 12px !important;
+          font-weight: 900 !important;
+          text-transform: uppercase; }
+        .single-page.page-regulation .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block b {
+          font-weight: 900; }
+  
+  .single-page.page-regulation .pre-image-item {
+    padding-left: 33px;
+    position: relative; }
+    .single-page.page-regulation .pre-image-item::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 10px;
+      width: 14px;
+      height: 14px;
+      transform: rotate(45deg);
+      border: 1px solid #b5b5b5;
+      background: #34e834;
+      box-shadow: 0 0 2px 2px #fff inset; }
+  
+  .single-page.page-regulation .note {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.6); }
+    .single-page.page-regulation .note::before {
+      content: "* "; }
+  
+  .single-page.page-regulation .page-header {
+    background: url(images/regulation-banner.png) no-repeat center right; }
+    .single-page.page-regulation .page-header .icm-button-wrapper.page-header__primary-button
+  a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  .single-page.page-regulation .page-content-container {
+    background: #fff !important; }
+  
+  /* .single-page.page-regulation .page-content.global-markets-today {
+    background-image: url(/assets/img/single_market_page/regulation-btm-bg.png); } */
+  
+  .single-page.page-regulation .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-regulation .page-section .first-section {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important; }
+  
+  .single-page.page-regulation .page-first-text {
+    margin-bottom: 47px;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.8); }
+  
+  .single-page.page-regulation .page-first-text::before {
+    display: none; }
+  
+  .single-page.page-regulation .page-content.global-markets-today .icm-button-wrapper a.live {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-regulation .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  @media screen and (max-width: 1040px) {
+    .single-page.page-regulation .page-section .first-section .page-first-image {
+      min-height: 300px; } }
+  
+  @media screen and (max-width: 960px) {
+    .single-page.page-regulation .page-section .first-section {
+      padding-top: 80px !important; }
+    .single-page.page-regulation .double-sidebar-block {
+      margin: 80px 40px 80px 80px !important; } }
+  
+  @media screen and (max-width: 870px) {
+    .single-page.page-regulation .page-section .first-section {
+      padding-top: 80px !important; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.page-regulation .double-sidebar-block {
+      float: initial !important;
+      margin: -100px auto 100px !important; } }
+  
+  /* Start - Regulation Page Redesign */
+  @keyframes slideOpen {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  
+  .single-page.page-regulation .page-content.redesign {
+    min-height: unset !important;
+    padding: 60px 0 0 !important; }
+    .single-page.page-regulation .page-content.redesign .double-sidebar-block {
+      width: 275px;
+      margin: 0px; }
+      .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block {
+        background: transparent;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 10px #f3f3f3;
+        margin: auto; }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-header {
+          background: #f3f3f3;
+          padding: 20px; }
+          .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-header .header-label {
+            font-size: 24px;
+            font-weight: 600; }
+          .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-header .header-title {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 10px; }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .separator {
+          border-top: 1px solid #f3f3f3; }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-pre-imaged {
+          background: transparent;
+          padding: 20px 60px;
+          font-size: 13px;
+          font-weight: 600; }
+          .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-pre-imaged::before {
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+            top: 15px;
+            left: 20px; }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-pre-imaged.chat-img::before {
+          background-image: url(images/regulation-chat-img.png); }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-pre-imaged.email-img::before {
+          background-image: url(images/regulation-email-img.png); }
+        .single-page.page-regulation .page-content.redesign .double-sidebar-block .contact-block .contact-footer {
+          position: relative;
+          background-image: url(images/regulation-footer-img.png);
+          background-repeat: no-repeat;
+          background-position: right;
+          width: 100%;
+          height: 100px;
+          right: 10px;
+          bottom: 10px; }
+    .single-page.page-regulation .page-content.redesign .p-left {
+      padding-left: 90px; }
+    .single-page.page-regulation .page-content.redesign .p-right {
+      padding-right: 90px; }
+    .single-page.page-regulation .page-content.redesign .first-section {
+      width: 50%; }
+      .single-page.page-regulation .page-content.redesign .first-section .page-first-text {
+        font-size: 44px;
+        line-height: 50px;
+        margin-top: 30px; }
+        .single-page.page-regulation .page-content.redesign .first-section .page-first-text span {
+          color: #34e834; }
+      .single-page.page-regulation .page-content.redesign .first-section p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px; }
+    .single-page.page-regulation .page-content.redesign .card {
+      background-color: #fff;
+      box-shadow: #9b9696 0px 0px 32px 4px;
+      border-radius: 10px;
+      margin-bottom: 50px;
+      min-height: 420px; }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 5px 5px 0px 0px; }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-img.asic {
+        background-image: url(images/regulation-flag-au.png); }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-img.eu {
+        background-image: url(images/regulation-flag-eu.png); }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-img.global {
+        background-image: url(images/regulation-flag-global.png); }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-img.scb {
+        background-image: url(images/regulation-flag-scb.png); }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-wave {
+        background-image: url(images/regulation-card-wave.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 175px;
+        margin-top: -168px; }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-caption {
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #34e834, #d3d3d3, #d3d3d3, #d3d3d3);
+        border-image-slice: 1;
+        color: rgba(11, 10, 20, 0.8);
+        width: 100%;
+        height: 112px;
+        padding: 20px 30px;
+        margin-top: -118px; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption span {
+          font-size: 20px;
+          line-height: 30px; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          padding-top: 13px;
+          width: 50%; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info::before {
+          position: absolute;
+          font-family: 'Glyphicons Halflings';
+          padding-left: 5px;
+          content: "\E086";
+          font-size: 12px;
+          color: #34E834; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info:hover {
+          position: relative;
+          cursor: help; }
+          .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info:hover span {
+            display: block;
+            position: absolute;
+            width: 450px;
+            padding: 10px;
+            background-color: #fefefe;
+            border: 1px dotted #d3d3d3;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(11, 10, 20, 0.8);
+            z-index: 1;
+            animation-name: slideOpen;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info span {
+          display: none; }
+      .single-page.page-regulation .page-content.redesign .card .card-body {
+        width: 100%;
+        color: rgba(11, 10, 20, 0.8);
+        font-size: 15px;
+        line-height: 20px;
+        padding: 30px; }
+        .single-page.page-regulation .page-content.redesign .card .card-body a {
+          display: block;
+          font-size: 12px;
+          color: #009600;
+          text-align: right;
+          text-decoration: underline;
+          padding-right: 15px; }
+          .single-page.page-regulation .page-content.redesign .card .card-body a::after {
+            position: absolute;
+            font-family: 'Glyphicons Halflings';
+            padding-left: 5px;
+            content: "\E258";
+            font-size: 10px;
+            color: #009600; }
+    .single-page.page-regulation .page-content.redesign .nav-tabs {
+      text-align: center; }
+      .single-page.page-regulation .page-content.redesign .nav-tabs > li {
+        display: inline-block;
+        float: none; }
+      .single-page.page-regulation .page-content.redesign .nav-tabs a {
+        background-color: transparent;
+        color: #d3d3d3;
+        font-size: 16px;
+        border: none; }
+      .single-page.page-regulation .page-content.redesign .nav-tabs .active a {
+        color: rgba(11, 10, 20, 0.8);
+        border-bottom: 5px solid #34e834;
+        font-weight: 600; }
+    .single-page.page-regulation .page-content.redesign .tabs-section {
+      padding-bottom: 60px; }
+    .single-page.page-regulation .page-content.redesign .tab-content {
+      font-size: 16px;
+      line-height: 22px; }
+      .single-page.page-regulation .page-content.redesign .tab-content .tab-pane {
+        animation-name: slideOpen;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in; }
+        .single-page.page-regulation .page-content.redesign .tab-content .tab-pane .tab-pane-item {
+          display: flex;
+          align-items: center;
+          padding: 20px 0px;
+          border-bottom: 1px solid #d3d3d3; }
+          .single-page.page-regulation .page-content.redesign .tab-content .tab-pane .tab-pane-item a {
+            color: #009600; }
+          .single-page.page-regulation .page-content.redesign .tab-content .tab-pane .tab-pane-item .tab-pane-item-title {
+            width: 30%;
+            font-weight: 500; }
+          .single-page.page-regulation .page-content.redesign .tab-content .tab-pane .tab-pane-item .tab-pane-item-desc {
+            width: 70%; }
+    .single-page.page-regulation .page-content.redesign .center-align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 500px;
+      background-color: #fff; }
+    .single-page.page-regulation .page-content.redesign .financial-section {
+      background-color: #f4f6f4;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      align-items: center; }
+      .single-page.page-regulation .page-content.redesign .financial-section p {
+        font-size: 16px; }
+    .single-page.page-regulation .page-content.redesign .cysec-highlight-text {
+      display: block;
+      color: #34e834;
+      width: 115%; }
+    .single-page.page-regulation .page-content.redesign .page-section {
+      min-height: 340px; }
+    .single-page.page-regulation .page-content.redesign .contact-block {
+      box-shadow: 0 0 10px 10px #ede7e7 !important; }
+    .single-page.page-regulation .page-content.redesign .h-54 {
+      height: 54px; }
+  
+  .single-page.page-regulation .page-content.redesign.asic {
+    background-color: #f5f5f5 !important; }
+    .single-page.page-regulation .page-content.redesign.asic .financial-section {
+      grid-template-columns: 50% 50%;
+      min-height: 300px;
+      padding: 0; }
+      .single-page.page-regulation .page-content.redesign.asic .financial-section p {
+        font-size: 16px;
+        width: 560px; }
+      .single-page.page-regulation .page-content.redesign.asic .financial-section a {
+        color: #34E834; }
+    .single-page.page-regulation .page-content.redesign.asic .d-grid {
+      min-height: 340px;
+      background-color: #fff;
+      display: grid;
+      grid-template-columns: 30% 33% 30%;
+      grid-column-gap: 45px; }
+      .single-page.page-regulation .page-content.redesign.asic .d-grid p {
+        font-size: 16px; }
+    .single-page.page-regulation .page-content.redesign.asic .p-35 {
+      padding: 35px; }
+    .single-page.page-regulation .page-content.redesign.asic .funds-section {
+      display: grid;
+      grid-template-columns: 50% 81%; }
+    .single-page.page-regulation .page-content.redesign.asic .funds-segregation {
+      padding: 20px 0; }
+    .single-page.page-regulation .page-content.redesign.asic .money-laundering {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 60%;
+      padding-left: 45px; }
+    .single-page.page-regulation .page-content.redesign.asic .financial-text {
+      font-size: 16px; }
+  
+  .single-page.page-regulation .license-section {
+    background-color: #424242;
+    color: #fff;
+    height: 125px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .single-page.page-regulation .license-section a {
+      color: #34E834; }
+  
+  .single-page.page-regulation .licence-text {
+    font-size: 16px;
+    width: 98%;
+    text-align: center; }
+  
+  .locale-ar .single-page.page-regulation .page-section .first-section {
+    float: left; }
+  
+  .locale-ar .single-page.page-regulation .page-content.redesign .card .card-header .card-caption p {
+    width: auto; }
+  
+  .locale-ar .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info::before {
+    position: relative; }
+  
+  .locale-ar .single-page.page-regulation .page-content.redesign .card .card-body {
+    text-align: right; }
+    .locale-ar .single-page.page-regulation .page-content.redesign .card .card-body a {
+      padding-right: 0px; }
+    .locale-ar .single-page.page-regulation .page-content.redesign .card .card-body a::after {
+      content: "\E257"; }
+  
+  .locale-ar .single-page.page-regulation .page-content.redesign .tab-content .tab-pane .tab-pane-item .tab-pane-item-title {
+    text-align: right; }
+  
+  @media screen and (max-width: 767px) {
+    .single-page.page-regulation .page-content.redesign .double-sidebar-block {
+      width: 100%;
+      margin: auto !important; }
+    .single-page.page-regulation .page-content.redesign .first-section {
+      width: 100%;
+      margin-top: 0px !important; }
+      .single-page.page-regulation .page-content.redesign .first-section .page-first-text {
+        margin-top: 0px !important; }
+    .single-page.page-regulation .page-content.redesign .card {
+      margin-bottom: 50px; }
+      .single-page.page-regulation .page-content.redesign .card .card-header .card-caption {
+        min-height: 75px; }
+        .single-page.page-regulation .page-content.redesign .card .card-header .card-caption .info:hover span {
+          width: 300px; }
+    .single-page.page-regulation .page-content.redesign .p-left {
+      padding-left: 15px; }
+    .single-page.page-regulation .page-content.redesign .p-right {
+      padding-right: 15px; } }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .single-page.page-regulation .page-content.redesign .double-sidebar-block {
+      float: right !important;
+      margin: 0px !important; }
+    .single-page.page-regulation .page-content.redesign .p-left {
+      padding-left: 15px; }
+    .single-page.page-regulation .page-content.redesign .p-right {
+      padding-right: 15px; }
+    .single-page.page-regulation .page-content.redesign .first-section {
+      margin-top: 0px !important;
+      padding-top: 0px !important; }
+      .single-page.page-regulation .page-content.redesign .first-section .page-first-text {
+        margin-top: 0px !important; } }
+  
+  @media screen and (max-width: 1286px) {
+    .single-page.page-regulation .page-content.redesign .card {
+      min-height: 440px; }
+    .single-page.page-regulation .page-content.redesign.asic .funds-section {
+      grid-template-columns: 50% 53%; }
+    .single-page.page-regulation .page-content.redesign.asic .money-laundering {
+      grid-template-columns: 90%; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.page-regulation .page-content.redesign .page-first-text {
+      font-size: 30px !important; }
+    .single-page.page-regulation .page-content.redesign .financial-section {
+      font-size: 16px; }
+    .single-page.page-regulation .page-content.redesign .card {
+      min-height: 500px; }
+    .single-page.page-regulation .page-content.redesign .card-caption p {
+      width: 80% !important; }
+    .single-page.page-regulation .page-content.redesign.asic .card-caption p {
+      width: 80% !important; }
+    .single-page.page-regulation .page-content.redesign.asic .page-section {
+      padding-left: 40px !important;
+      padding-right: 40px !important; }
+    .single-page.page-regulation .page-content.redesign.asic .d-grid {
+      grid-template-columns: 100%;
+      padding-bottom: 34px;
+      grid-row-gap: 20px; }
+    .single-page.page-regulation .page-content.redesign.asic .p-35 {
+      padding: 25px; }
+    .single-page.page-regulation .page-content.redesign.asic .financial-section p {
+      width: 250px; }
+    .single-page.page-regulation .page-content.redesign.asic .funds-section {
+      grid-template-columns: 106%; }
+    .single-page.page-regulation .page-content.redesign.asic .money-laundering {
+      grid-template-columns: 90%;
+      margin-left: -39px;
+      padding: 24px 41px; } }
+  
+  @media screen and (max-width: 560px) {
+    .single-page.page-regulation .page-content.redesign .financial-section .h-54 {
+      height: 75px; }
+    .single-page.page-regulation .license-section {
+      height: 160px; } }
+  
+  @media screen and (max-width: 436px) {
+    .single-page.page-regulation .page-content.redesign .card {
+      margin-top: 50px;
+      margin-bottom: 70px; }
+    .single-page.page-regulation .page-content.redesign .financial-section {
+      grid-template-columns: 100%;
+      align-content: center; }
+    .single-page.page-regulation .page-content.redesign .first-section {
+      padding: 35px 0 !important; }
+    .single-page.page-regulation .page-content.redesign.asic .funds-section {
+      grid-template-columns: 114%; }
+    .single-page.page-regulation .licence-text {
+      font-size: 14px; } }
+  
+  @media screen and (min-width: 1024px) {
+    .locale-ar .financial-text {
+      padding-right: 60px;
+      padding-left: 60px; } }
+  
+  /* End - Regulation Page Redesign */
+  
+  /*# sourceMappingURL=regulation.css.map */

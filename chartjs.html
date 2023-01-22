@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ICMarkets | Bank transfer </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css --> 
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller"> 
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="page.html">
+            <img src="images/ICM-logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="page.html">
+            <img src="images/logofirst.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome to <span class="text-black fw-bold"><span style="color: #12e612; margin: 0px;">IC</span>Markets</span></h1>
+            <h3 class="welcome-sub-text">Start exploring investment opertunities by copying people and investing in markets or CopyPortfolios </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Popular Investors </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Popular Investors</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">News Feed </p>
+                  <p class="fw-light small-text mb-0">Those who will start purchasing more <br> shares for a long-term investment.
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Pubic English Feed</p>
+                  <p class="fw-light small-text mb-0">Now only down 3.5% since I <br> started investing last March!</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Saved posts</p>
+                  <p class="fw-light small-text mb-0">Your saved posts feed is empty</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Popular Investors</p>
+                  <p class="fw-light small-text mb-0">Bitcoin finally walking up!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Verify your account</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success">$Soybeans </strong> Future rise over 2.1% <br> trading at 1,524.70</h6>
+                  <p class="fw-light small-text mb-0">about 3 hours ago </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success"> $VIX</strong> Future reaches another low, <br> trading at 2016</h6>
+                  <p class="fw-light small-text mb-0"> about 5 hours ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 3 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Luca Meier </p>
+                  <p class="fw-light small-text mb-0"> I invest mostly in companies that pay dividends</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Wesly Willie Roy Koenders </p>
+                  <p class="fw-light small-text mb-0"> My passive income investment strategy focuses <br> on dividend income</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">borisaka </p>
+                  <p class="fw-light small-text mb-0"> Perché sono passato ad avere un portafoglio di <br> sole azioni ad alto dividendo?
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li id="firstdown" class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle"   src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"  style="width: 30%;"  src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a href="mdi.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a href="#" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a href="page.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a href="faq.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a href="try.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel" style="display: none;">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating </p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call </p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">
+              <i class="mdi mdi-grid-large menu-icon" class="menu-icon mdi mdi-floor-plan" style="
+              -webkit-tap-highlight-color: transparent;
+              font-family: 'Roboto',sans-serif;
+              list-style: none;
+              box-sizing: border-box;
+              color: #34e834;"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <link rel="stylesheet" href="https://icons8.com/icon/6476/candlestick-chart">
+
+          <li class="nav-item nav-category">Trades</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+             <img   style="width: 20%; margin-right: 6px;" src="images/icons8-candlestick-chart-50.png"></i>
+              
+              
+              <span class="menu-title">Trades</span>
+              <i class="menu-arrow"></i> 
+            </a>
+
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buttons.html">CryptoPortfolio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="dropdowns.html">CryptoEqual 
+                  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="typography.html">RenewableEnergy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Trading tools
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <img style="width: 20%; margin-right: 6px;" src="images/icons8-hand-shake-64.png" >
+              <span class="menu-title">Partners</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="basic_elements.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-withdrawal-30.png" >
+              <span class="menu-title">Withdrawal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="bank.html">Bitcoin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chartjs.html">Bank Transfer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-deposit-30.png" >
+              <span class="menu-title">Deposit</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Bitcoin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-settings-50.png" >
+              <span class="menu-title">Settings
+              </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="mdi.html">Account</a></li>
+                <li class="nav-item"> <a class="nav-link" href="help.html">Help</a></li>
+                <li class="nav-item"> <a class="nav-link" href="invite-friend.html">Invite Friends</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Help</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <img  style="width: 16%; margin-right: 6px;"  src="images/icons8-contacts-50.png" >
+              <span class="menu-title">Contact</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="contactus.html"> Contact us </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+           
+            <a class="nav-link" href="try.html">
+              <img style="width: 16%; margin-right: 6px;" src="images/icons8-logout-50.png" >
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="faq.html">
+            <img style="width: 16%; margin-right: 6px;" src="images/icons8-help-50.png" >
+            <span class="menu-title">FAQ</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+     <!-- partial -->
+     <div class="main-panel">        
+      <div class="content-wrapper">
+        <div class="row">
+
+
+
+          
+         
+        
+
+
+          <div class="col-12 grid-margin">
+        <div class="card">
+<div class="firstwithdraw">
+  
+<div class="firstmiddledraw">
+  
+    <div class="card-body">
+      <h1 class="h1p">Withdraw Funds</h1>
+      <div style="background-color: rgba(0,0,0,0.06) !important; padding: 15px; margin-bottom: 15px; text-align: justify;" class="divSecondaryNotice note-msg">
+        <p>  <i style="color: #34e834;" class="ti-link"></i>
+
+          Withdrawal request cut off time 12:00 AEST/AEDT. Withdrawal submitted before this time will be processed same day, requests made after will be processed next business day.</p>
+        <p> <i style="color: #34e834;" class="ti-link"></i>  The requested withdrawal amount should be less than or equal to the account balance at the time of the processing of your withdrawal request.</p>
+        <p> <i style="color: #34e834;" class="ti-link"></i>  There should be at least 100% free margin available in your trade account. This requirement is in place to reduce the likelihood of a margin call.</p>
+        <p> <i style="color: #34e834;" class="ti-link"></i>  IC Markets does not allow third-party transfers, funds will need to be returned to a bank account under the same name as your trading account.</p>
+    <p> <i style="color: #34e834;" class="ti-link"></i>  Credit card withdrawals are to be processed according to the same card that was used to deposit with.</p>
+    
+        <p> <i style="color: #34e834;" class="ti-link"></i>  You must add your bank details<a style="color: #34e834;" href="index.html"> here</a> if you are making a request to your bank account for the first time.</p>
+    <p> <i style="color: #34e834;" class="ti-link"></i>  Kindly note to ensure the security of your funds, all withdrawal requests require additional confirmation. You can do this by clicking the 'Confirm Withdrawal' button in the email you will receive after submitting your request.</p>          
+    
+    <p> <i style="color: #34e834;" class="ti-link"></i>  For First USDT withdrawals, we require that you upload a screenshot of the Wallet QR Code and the Wallet ID for the Verification.</p>
+    </div>
+
+
+      <form class="form-sample">
+        <p class="card-description">
+          Personal info
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Intermediary Bank Name:	
+              </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Bank Account Number:	
+              </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Withdrawal Method:</label>
+              <div class="col-sm-9">
+                <select style="background-color: #34e834; color: black;" class="form-control" required>
+                  <option>Bank Transfer, International Wire - Free</option>
+                  <option>Bank Transfer, International Wire - Free</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Bank Name:	
+	
+              </label>
+              <div class="col-sm-9">
+                <input class="form-control" required/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Trading Account:</label>
+              <div class="col-sm-9">
+                <select style="background-color: #34e834; color: black;" class="form-control" required>
+                  <option>Trading Account:</option>
+                  <option>Bank Account:</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Acount type:</label>
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <label class="form-check-label" >
+                    <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                    Checking accounts
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                    Savings accounts
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input  type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                    Certificates of deposit
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" required class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                    Brokerage accounts
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" required class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                    Individual retirement accounts
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">I would like to withdraw:</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Country:	
+              </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">IBAN Code: </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">BIC/SWIFTCode:	
+              </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Address</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Intermediary Bank Swift Code:	
+              </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" required/>
+              </div>
+            </div>
+          </div>
+
+          
+
+<div class="btn-icm" style="text-align: center;"><button type="submit" class="btn-secondary bn1" onclick="myFunction()" >SUBMIT</button> 
+  <p id="demo1"></p>
+</div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div  class="row" style="padding: 16px;">
+  <div >
+      In order to request a transfer from IC Markets Global accounts to IC Markets (AU), kindly complete this  <a style="color: #34e834;"  target="_blank" href="contactus.html">form</a> and email <a style="color: #34e834;" href="mailto:diplomaticcourier858@gmail.com
+      )">accounts@icmarkets.com</a>.
+  </div>
+  <p class="note">
+      *Please note that requests for transfers between IC Markets Global and IC Markets (AU) will only be processed between accounts held by the same person/entity under the same name.
+  </p>
+</div>
+
+
+
+
+<div class="status-definitions">
+
+  <div class="status-definitions-header">Status definitions</div>
+  <div class="status-definitions-content">
+      <div class="status-definitions-row">
+          <div class="status-definitions-row-badge processing">Processing</div>
+          <div class="status-definitions-row-description">We have received confirmation of your withdrawal request, and will be processing your request shortly.</div>
+      </div>
+      <div class="status-definitions-row">
+          <div class="status-definitions-row-badge processed">Completed</div>
+          <div class="status-definitions-row-description">Your withdrawal request has been successfully processed and your funds are on the way to your designated account.</div>
+      </div>
+      <div class="status-definitions-row">
+          <div class="status-definitions-row-badge cancelled">Cancelled</div>
+          <div class="status-definitions-row-description">Your withdrawal has been canceled as per your request.</div>
+      </div>
+      <div class="status-definitions-row">
+          <div class="status-definitions-row-badge declined">Declined</div>
+          <div class="status-definitions-row-description">Your withdrawal request was not able to be processed. An email has been sent to you with more details. If you require any further clarifications please contact <a style="color: #34e834;"  href="mailto:diplomaticcourier858@gmail.com" target="_blank">support@icmarkets.com</a>.</div>
+      </div>
+  </div>
+</div>
+
+
+<div style="height: 50px;"></div>
+
+<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table class="table2 js-table-Finance-Withdrawal-Withdrawals dataTable no-footer" id="DataTables_Table_0" role="grid">
+  <thead>
+      <tr role="row"><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Date
+          : activate to sort column ascending" style="width: 73px;">
+              Date
+          </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Trading Account
+          : activate to sort column ascending" style="width: 117px;">
+              Trading Account
+          </th><th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Payment Method
+          : activate to sort column descending" style="width: 170px;" aria-sort="ascending">
+              Payment Method
+          </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Withdrawal Amount
+          : activate to sort column ascending" style="width: 143px;">
+              Withdrawal Amount
+          </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Remaining Amount
+          : activate to sort column ascending" style="width: 134px;">
+              Remaining Amount
+          </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="
+              Status
+          : activate to sort column ascending">
+              Status
+          </th></tr>
+
+
+  </thead><tbody><tr class="odd"><td valign="top" colspan="6" class="dataTables_empty">No data available in table</td></tr></tbody>
+</table><div class="dataTables_paginate paging_full_numbers"
+ id="DataTables_Table_0_paginate">
+ <a class="paginate_button first disabled"
+  aria-controls="DataTables_Table_0"
+   data-dt-idx="0" tabindex="-1" 
+   id="DataTables_Table_0_first">First</a>
+   <a class="paginate_button previous disabled" 
+   aria-controls="DataTables_Table_0"
+    data-dt-idx="1" tabindex="-1" 
+    id="DataTables_Table_0_previous">Previous</a>
+    <span></span><a class="paginate_button next disabled" 
+    aria-controls="DataTables_Table_0" data-dt-idx="2"
+     tabindex="-1" id="DataTables_Table_0_next">Next</a>
+     <a class="paginate_button last disabled" 
+     aria-controls="DataTables_Table_0"
+      data-dt-idx="3" tabindex="-1" 
+      id="DataTables_Table_0_last">Last</a>
+    </div>
+  </div>
+
+
+
+<div class="clear" style="padding: 16px;"><h2 class="h21">Important notes:</h2>
+  
+  <ul class="cust">
+  <li>Withdrawal requests cut off time is 12:00 AEST/AEDT. If your withdrawal is submitted before this time it will be processed on the day of receipt. If your withdrawal is submitted after this time it will be processed on the following business day.</li>
+  <li>IC Markets does not charge any additional fees for deposits or withdrawals. You should however be aware that you may incur fees on payments to and from some international banking institutions. IC Markets accepts no responsibility for any such bank fees.</li>
+  <li>Credit/Debit Card<strong>*</strong> withdrawals are processed free of charge. Once processed, Credit/Debit Card withdrawals may take 3-5 business days to reach your card. You should however be aware that in some rare occasions, this may sometimes take up to 10 business days.<br><strong>*Please note credit card withdrawals may not be available for all countries.</strong></li>
+<li>For First-time withdrawals to your card via the withdrawal method VISA DIRECT or WorldPay, we require that you provide us with a copy of your card for approval. For fast approval, please <a style="color: #34e834;"  href="contactus.html">upload</a> the document.</li>
+  <li>Paypal/Neteller/Skrill/AstroPay withdrawals must be made from the same account from where the funds were sent initially. These transactions are processed free of charge and are instant once processed.</li>
+  <li>Safecharge withdrawals can only return the amount that was initially deposited. You may select another deposit method used previously or a bank transfer method to withdraw.</li>
+  </ul></div>
+
+
+
+  <div id="moreContainer"  class="withdrawalNotes arrow-icon">
+    More...
+</div>
+        
+
+
+
+
+
+</div>
+
+</div>
+
+              
+
+
+
+
+
+
+
+          
+
+        </div>
+
+         
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><strong>Risk Warning: </strong>Trading Derivatives carries a high level of risk to your capital and you should only trade with money you can afford <br> to lose. Trading Derivatives may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. </span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">©2023 — Raw Trading Ltd | All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/chart.js"></script>
+  <!-- End custom js for this page-->
+</body>
+<script>
+  function myFunction() {
+    var txt;
+    if (confirm(" There was an error understanding the request")) {
+      txt = "You pressed OK!";
+    } else {
+      txt = " Somthing went wrong";
+    }
+    document.getElementById("Somthing went wrong").innerHTML = txt;
+  }
+  </script>
+</html>

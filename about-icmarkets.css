@@ -1,0 +1,2109 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+i[x] {
+    display: none !important; }
+  
+  .pt-20 {
+    padding-top: 20px !important; }
+  
+  .single-page.page-live .landing-page.register-content-wrapper h1.header-title {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    border-left: 5px solid #34e834;
+    padding-left: 15px;
+    margin-bottom: 20px; }
+  
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap {
+    box-shadow: 0px 0px 16px 0px #e3e3e3; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .next_btn button.btn.step-back {
+      margin-right: 6px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line {
+      flex: 0 0 80px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .process_line_text {
+      color: #000000; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.current .process_line_text {
+      color: #000000;
+      font-weight: bold;
+      text-align: left;
+      margin-right: -30px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field-label {
+      position: unset;
+      display: block;
+      color: #000000;
+      line-height: 16px;
+      margin-top: 3px;
+      text-transform: unset;
+      font-size: 14px;
+      font-weight: 500;
+      transform: unset;
+      transition: unset;
+      transform-origin: unset; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field-input {
+      height: 37px !important;
+      font-size: 14px;
+      border-radius: 4px;
+      font-weight: 400;
+      padding: 0 0 0 10px;
+      color: #000;
+      background: #f9f9f9;
+      border: 1px solid #e5e5e5; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.input .searchDropdown {
+      margin-bottom: 20px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .wp-icm-open-account input:-webkit-autofill {
+      box-shadow: 0 0 0 1000px #f9f9f9 inset; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field::before {
+      content: unset; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown input, .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown.notSearched input {
+      top: 0 !important;
+      background: #fcfcfc url(../icons/svg/Dropdown.png) no-repeat 98% !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.current .step_line .step_icon {
+      border: 1px solid #34e834;
+      color: #000000;
+      background: #34e834; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line .step_line .step_icon {
+      background: white;
+      width: 44px;
+      height: 44px;
+      border: 1px solid #cccccc; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line:nth-last-child(2) .step_line .step_icon {
+      background: white url(../icm-open-account/icons/Fund_your_account.svg) no-repeat 50% 50%;
+      color: transparent !important;
+      background-size: 100%; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country {
+      position: relative;
+      z-index: 2; }
+      .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country span.select-icon {
+        position: absolute;
+        right: 7px;
+        top: 8px;
+        z-index: 100; }
+      .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country svg.h-6.w-6 {
+        height: 20px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap h1.reg_title {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 20px !important;
+      margin-top: 10px;
+      text-align: left;
+      color: #000000;
+      padding-bottom: 10px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form.register_wrapper_step1.active_step {
+      max-width: 550px;
+      margin: 0 auto; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.input {
+      margin-bottom: 8px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .reg_process {
+      padding-top: 20px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.info-wrap.footer-info p {
+      font-size: 12px;
+      line-height: 20px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .next_btn button:hover {
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15); }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line_text {
+      width: 55%;
+      margin-left: 36%;
+      margin-top: 5%; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .step_line {
+      border-right: 3px solid #34e834; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .step_line {
+      width: 25%; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .signup-buttons-header {
+      text-align: center;
+      font-size: 16px;
+      color: #000000;
+      font-weight: 500; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form_wrap {
+      margin-top: 30px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .rounded_el {
+      font-size: 14px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btn {
+      height: 40px;
+      line-height: 37px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btns_group .selected {
+      background: #00c800;
+      color: black; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group_title {
+      color: #000000;
+      text-transform: unset;
+      font-weight: 500;
+      width: auto;
+      font-size: 14px;
+      margin-bottom: 10px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .input_group,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .input_group .field,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .input_group,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .input_group .field,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .searchDropdown.searched {
+      width: unset !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown.el_wrap.notSearched.choose-month {
+      position: relative;
+      top: -9px;
+      left: 4px; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .active_step {
+      max-width: 550px;
+      margin: 0 auto; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group {
+      margin-bottom: 8px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.home-page .single-page .page-section h1,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.single-market-page .single-page .page-section h1,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.common-page .single-page .page-section h1 {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #000000; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap ::placeholder {
+      text-align: left !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .trade-platform-button.select_btn {
+      max-width: 300px !important;
+      background: transparent no-repeat center center;
+      background-size: contain; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btn.trade-platform-button.mt5 {
+      background-image: url(../images/platform-mt5.png) !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .account-type-button.select_btn {
+      max-width: 300px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field::after {
+      content: none; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .has-label .field-input {
+      top: 0px;
+      /* padding: 0; */ }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group_title h1 {
+      font-size: 16px !important;
+      margin-bottom: 0px !important;
+      font-weight: 600 !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.account-based-currency-group {
+      width: 300px !important;
+      margin-left: 0; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .step_icon {
+      background: #34e834 !important;
+      border-color: #34e834 !important;
+      color: #000000 !important;
+      font-weight: bold; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group {
+      padding: 0;
+      margin: 0;
+      width: 550px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group.security_q_wrap {
+      padding-top: 10px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .field {
+      width: 550px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group_title {
+      width: 550px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .declaration_wrap {
+      margin-top: 0px !important; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group.checkbox_wrap.i_agree_wrap {
+      padding: 20px 0 0px 0 !important;
+      margin-bottom: 10px !important;
+      display: block !important;
+      height: auto;
+      overflow: hidden; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .searchDropdown.searched,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group_title,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .searchDropdown,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .searchDropdown input,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .field,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .input_group_title,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .searchDropdown,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .field,
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .input_group {
+      width: 550px !important; }
+  
+  .single-page.page-live .wp-icm-open-account #step_2 .input_group_title,
+  .single-page.page-live .wp-icm-open-account .options_list,
+  .single-page.page-live .wp-icm-open-account .select_btns_group.sel2item,
+  .single-page.page-live .wp-icm-open-account .input_group,
+  .single-page.page-live .wp-icm-open-account .input_group .field,
+  .single-page.page-live .wp-icm-open-account .el_wrap {
+    max-width: unset !important; }
+  
+  html.home-page .single-page,
+  html.single-market-page .single-page {
+    padding-top: 0px !important; }
+  
+  html.home-page .single-page .page-header .page-header__description,
+  html.single-market-page .single-page .page-header .page-header__description {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: 0 0 10px #000;
+    opacity: 0.8; }
+  
+  article.page-header {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important; }
+  
+  html.home-page .single-page .page-header .page-header__heading--style,
+  html.single-market-page .single-page .page-header .page-header__heading--style,
+  html.common-page .single-page .page-header .page-header__heading--style {
+    font-size: 34px !important;
+    font-weight: 500;
+    text-shadow: 0 0 10px #000; }
+  
+  html.home-page .single-page .page-header .page-header__description,
+  html.single-market-page .single-page .page-header .page-header__description,
+  html.common-page .single-page .page-header .page-header__description {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 30px !important;
+    font-size: 16px !important;
+    font-weight: 300;
+    text-shadow: 0 0 10px #000;
+    opacity: 0.8; }
+  
+  html.home-page .single-page .page-header__menu-container,
+  html.single-market-page .single-page .page-header__menu-container,
+  html.common-page .single-page .page-header__menu-container {
+    padding: 15px 0 !important; }
+  
+  .wp-icm-open-account #step_2 .searchDropdown.searched,
+  .wp-icm-open-account #step_4 .input_group_title,
+  .wp-icm-open-account #step_4 .searchDropdown,
+  .wp-icm-open-account #step_4 .searchDropdown input,
+  .wp-icm-open-account #step_4 .field,
+  .wp-icm-open-account #step_4 .input_group,
+  .wp-icm-open-account #step_7 .input_group_title,
+  .wp-icm-open-account #step_7 .searchDropdown,
+  .wp-icm-open-account #step_7 .searchDropdown input,
+  .wp-icm-open-account #step_7 .field,
+  .wp-icm-open-account #step_7 .input_group {
+    width: 550px !important; }
+  
+  @media (max-width: 991px) {
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_2
+  .searchDropdown.searched,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .input_group_title,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .searchDropdown,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .searchDropdown
+  input,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .field,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .input_group,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .input_group_title,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .searchDropdown,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .field,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .input_group {
+      width: 100% !important; } }
+  
+  @media (max-width: 760px) {
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  h1.header-title {
+      margin-top: 10px; }
+    .wp-icm-open-account .process_line .step_line .step_icon {
+      width: 35px;
+      height: 35px;
+      line-height: 36px; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form_wrap {
+      margin-top: 0px; }
+    .single-page.page-live h1.reg_title,
+    .single-page.page-live .input_group_title h1 {
+      font-size: 16px !important;
+      margin-bottom: 31px !important;
+      padding-bottom: 20px; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_2
+  .searchDropdown.searched,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .input_group_title,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .searchDropdown,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .searchDropdown
+  input,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .field,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_4
+  .input_group,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .input_group_title,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .searchDropdown,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .field,
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_7
+  .input_group {
+      width: 100% !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .input_group.account-based-currency-group {
+      width: 100% !important;
+      margin-left: 0; }
+    .single-page.page-live .wp-icm-open-account .register_form_wrap form {
+      padding: 0 0px !important;
+      width: 100%; }
+    .single-page.page-live .wp-icm-open-account .register_wrap h1.reg_title,
+    .single-page.page-live
+  .wp-icm-open-account
+  .register_wrap
+  .input_group_title
+  h1 {
+      font-size: 16px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      line-height: initial !important; } }
+  
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper {
+    padding: 0; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title {
+      font-size: 20px;
+      font-weight: 500;
+      border-left: 5px solid #34e834;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title {
+      max-width: 550px;
+      font-size: 20px !important;
+      text-align: left !important;
+      margin: 0 auto;
+      margin-bottom: 10px !important;
+      font-weight: 500 !important;
+      padding-bottom: 20px;
+      margin-top: 0 !important; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap {
+      max-width: 1184px;
+      box-shadow: 0px 0px 16px 0px #e3e3e3; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group {
+      max-width: 550px; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input {
+        margin-bottom: 10px !important; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country {
+        position: relative;
+        z-index: 1 !important; }
+        html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon,
+        html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon,
+        html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon {
+          position: absolute;
+          z-index: 10;
+          right: 10px;
+          top: 30px; }
+          html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6,
+          html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6,
+          html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6 {
+            height: 20px; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries {
+        height: 40px !important; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap {
+        max-width: 550px; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label {
+        position: unset;
+        color: #666666;
+        line-height: 16px;
+        margin-top: 3px;
+        font-size: 14px;
+        font-weight: 500;
+        transform: unset;
+        transition: unset;
+        transform-origin: unset; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before {
+        content: none; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input {
+        position: unset;
+        border-radius: 3px;
+        height: 40px;
+        border: 1px solid #afafaf !important;
+        padding: 0 0 0 10px;
+        line-height: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        background: transparent;
+        border: none;
+        -webkit-appearance: none;
+        outline: none; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap {
+      width: 100%;
+      max-width: 550px;
+      text-align: left; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap div#step_4 {
+    max-width: 700px; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap div#step_4 .input_group {
+      width: 100% !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap div#step_4 .select_btns_group {
+      width: 100% !important;
+      flex-flow: wrap; }
+      .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap div#step_4 .select_btns_group .select_btn {
+        max-width: 200px;
+        margin-bottom: 10px;
+        height: unset;
+        line-height: 20px;
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .options_list
+  li {
+    border-top: 1px solid #fbfbfb;
+    min-height: 30px;
+    line-height: 30px;
+    margin-left: 0px;
+    padding: 0px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .options_list
+  li.selected :hover {
+      background-color: #00c800;
+      color: #000000; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .options_list
+  li:hover {
+      background-color: #00c800;
+      color: #000000; }
+  
+  .wp-icm-open-account .process_line:first-child {
+    display: none; }
+  
+  .wp-icm-open-account .process_line:last-child {
+    display: none; }
+  
+  .wp-icm-open-account .select_btn img {
+    top: -1px !important;
+    right: 2px;
+    position: relative; }
+  
+  .wp-icm-open-account
+  div#step_2
+  .input_group.item3
+  .searchDropdown
+  .options_list {
+    top: 38px;
+    z-index: 1000 !important; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .input_group {
+    width: 100% !important;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px !important;
+    margin-bottom: 15px !important; }
+  
+  div#step_4 .select_btn.select_btn_large.rounded_el {
+    border-radius: 50px !important; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .process_line.complete
+  .process_line_text {
+    color: #000000;
+    font-weight: bold; }
+  
+  .input_group.item3.birthdate {
+    padding-top: 10px; }
+  
+  .wp-icm-open-account input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #f9f9f9 inset !important; }
+  
+  .single-page.page-live .wp-icm-open-account button.step-back {
+    background-color: #333333 !important;
+    color: #ffffff !important; }
+  
+  html.home-page
+  .single-page
+  .page-content-container
+  .page-content.demo-register-content-wrapper
+  .wp-icm-open-account
+  .input_group
+  .field-input,
+  html.single-market-page
+  .single-page
+  .page-content-container
+  .page-content.demo-register-content-wrapper
+  .wp-icm-open-account
+  .input_group
+  .field-input,
+  html.common-page
+  .single-page
+  .page-content-container
+  .page-content.demo-register-content-wrapper
+  .wp-icm-open-account
+  .input_group
+  .field-input {
+    border-radius: 4px;
+    border: 1px solid #d7d7d7 !important;
+    color: #000;
+    background: #f9f9f9; }
+  
+  .wp-icm-open-account.demo .reg_logo {
+    text-align: center;
+    flex: 0 0 80px;
+    border-bottom: 1px solid #f2f2f2; }
+  
+  .wp-icm-open-account.demo .reg_process {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; }
+  
+  html.home-page
+  .single-page
+  .page-content-container
+  .page-content.demo-register-content-wrapper
+  h1.reg_title.step-title,
+  html.single-market-page
+  .single-page
+  .page-content-container
+  .page-content.demo-register-content-wrapper
+  h1.reg_title.step-title {
+    font-size: 16px !important;
+    color: #000000;
+    margin-top: 0 !important; }
+  
+  .page-content.demo-register-content-wrapper
+  .input_group.input.input-select-country {
+    padding-bottom: 10px; }
+  
+  @media (max-width: 760px) {
+    .wp-icm-open-account .register_wrap h1.reg_title {
+      line-height: normal;
+      margin: 0px !important; }
+    .wrapper-md {
+      display: flex;
+      flex-direction: column; }
+    .input_group.item3.birthdate .input_group_items .field.el_wrap {
+      margin: 0 !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .searchDropdown.el_wrap.notSearched.choose-month {
+      position: relative;
+      top: -9px;
+      left: 0px;
+      margin: 0; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .select_btns_group
+  .select_btn {
+      max-width: 100% !important; } }
+  
+  .register_form .input_group.help_wrap {
+    padding-top: 10px !important; }
+  
+  div#step_4 .input_group_items.select_btns_group.single_select.additional_qt {
+    position: relative; }
+    div#step_4 .input_group_items.select_btns_group.single_select.additional_qt .parsley-errors-list {
+      position: absolute;
+      bottom: -16px !important; }
+  
+  .account-type-button.select_btn.rounded_el.acctype_standard_account.selected {
+    margin-bottom: 8px; }
+  
+  .register_form.question-ans .field.el_wrap {
+    margin: 0 !important; }
+  
+  .wp-icm-open-account .question-ans .field {
+    height: 40px !important; }
+  
+  .wp-icm-open-account .main_register_wrap {
+    color: #000000; }
+  
+  .wp-icm-open-account a {
+    text-decoration: underline !important; }
+  
+  .parsley-addtional-question a {
+    color: #d32121 !important; }
+  
+  .declaration-scrolling-container {
+    max-height: 380px;
+    overflow-y: scroll; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.declaration {
+    max-width: 700px !important;
+    margin: 0 auto; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .input_group.knockoutError {
+    padding-bottom: 50px !important; }
+  
+  div#step_4
+  .input_group.knockoutError
+  .input_group_items.select_btns_group.single_select.additional_qt
+  .parsley-errors-list {
+    bottom: -51px !important; }
+  
+  .input_group.security_q_wrap {
+    margin-bottom: 128px !important;
+    min-height: 110px; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .select_btns_group
+  .select_btn.select_btn_large.rounded_el.long-answer {
+    max-width: 100% !important; }
+  
+  .wp-icm-open-account .declaration p {
+    line-height: 22px !important; }
+  
+  .wp-icm-open-account .checkbox:not(checked) + label {
+    padding: 3px 0 0 40px !important; }
+  
+  @media (max-width: 760px) {
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .select_btns_group
+  .select_btn.select_btn_large.rounded_el.long-answer {
+      max-width: 100% !important;
+      height: unset;
+      padding: 5px 10px 5px 10px;
+      line-height: 18px;
+      font-size: 12px; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  #step_5
+  .input_group.help_wrap {
+      margin-top: 30px; } }
+  
+  .wp-icm-open-account .section_title {
+    width: 100% !important; }
+    .wp-icm-open-account .section_title h3 {
+      margin-bottom: 10px !important;
+      color: #000000 !important;
+      font-size: 16px !important;
+      margin-top: 14px !important;
+      padding-bottom: 2px;
+      display: inline-block;
+      border-bottom: none !important;
+      font-weight: 500 !important; }
+  
+  .wp-icm-open-account
+  .field.el_wrap.birth_year-wrap.has-label.error
+  .parsley-errors-list {
+    width: 360px !important;
+    bottom: -30px !important; }
+  
+  .input_group.account-based-currency-group.disallow-to-change
+  .input-select-country {
+    max-width: 454px; }
+  
+  .input_group.account-based-currency-group.disallow-to-change
+  .input-select-country {
+    max-width: 454px !important; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.account-based-currency-group.disallow-to-change
+  .input-select-country {
+    max-width: 454px !important; }
+  
+  .register_form.question-ans.joint_steps_form.active_step
+  .select_btn.select_btn_large.rounded_el {
+    max-width: 200px;
+    border-radius: 50px; }
+  
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group_items.select_btns_group.single_select.additional_qt {
+    flex-wrap: wrap;
+    position: relative; }
+    .register_form.question-ans.joint_steps_form.active_step
+  .input_group_items.select_btns_group.single_select.additional_qt .parsley-errors-list {
+      margin-top: 2px;
+      bottom: -6px; }
+  
+  .register_form.question-ans.joint_steps_form.active_step
+  .select_btn.select_btn_large.rounded_el {
+    max-width: 200px;
+    border-radius: 50px; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group {
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #dddddd; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step,
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step {
+    max-width: 700px !important;
+    margin: 0 auto; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .select_btn {
+    min-height: 40px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: auto !important;
+    padding-top: 9px; }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group {
+    margin-bottom: 20px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd; }
+  
+  .register_form.question-ans.joint_steps_form.active_step
+  .select_btn.select_btn_large.rounded_el.long-answer {
+    max-width: 100%;
+    height: unset; }
+  
+  .single-page.page-demo .wp-icm-open-account .options_list {
+    max-width: 100% !important; }
+  
+  @media (max-width: 760px) {
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .input_group.knockoutError {
+      padding-bottom: 100px !important; }
+      .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  div#step_4
+  .input_group.knockoutError .parsley-errors-list {
+        bottom: -77px !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .select_btn.select_btn_large.rounded_el.long-answer {
+      height: unset !important;
+      line-height: 22px !important;
+      padding: 5px 0 5px 0;
+      font-size: 12px !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.knockoutError {
+      padding-bottom: 66px !important; } }
+  
+  .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.knockoutError {
+    padding-bottom: 50px !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.knockoutError .parsley-errors-list {
+      margin-top: 2px;
+      bottom: -39px !important; }
+  
+  @media (max-width: 760px) {
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.knockoutError
+  .parsley-errors-list {
+      margin-top: 2px;
+      bottom: -79px !important; }
+    .single-page.page-live
+  .landing-page.register-content-wrapper
+  .wp-icm-open-account
+  .register_wrap
+  .register_form.question-ans.joint_steps_form.active_step
+  .input_group.knockoutError {
+      padding-bottom: 100px !important; } }
+  
+  html.home-page .no-uppercase,
+  html.single-market-page .no-uppercase,
+  html.common-page .no-uppercase {
+    text-transform: initial !important; }
+  
+  html.home-page .column-header .column-name:nth-child(2),
+  html.single-market-page .column-header .column-name:nth-child(2),
+  html.common-page .column-header .column-name:nth-child(2) {
+    font-weight: bold !important; }
+  
+  html.home-page .dots-after > a.hidden-md.hidden-lg.xxx::before,
+  html.single-market-page .dots-after > a.hidden-md.hidden-lg.xxx::before,
+  html.common-page .dots-after > a.hidden-md.hidden-lg.xxx::before {
+    content: '...';
+    position: absolute;
+    opacity: 0.6;
+    left: 130px;
+    top: 3px;
+    font-size: 30px; }
+  
+  html.home-page .dots-after > a.hidden-xs.hidden-sm.xxx::before,
+  html.single-market-page .dots-after > a.hidden-xs.hidden-sm.xxx::before,
+  html.common-page .dots-after > a.hidden-xs.hidden-sm.xxx::before {
+    content: '...';
+    position: absolute;
+    opacity: 0.6;
+    left: 130px;
+    top: 11px;
+    font-size: 30px; }
+  
+  html.home-page .header-container.subnav-mobile,
+  html.single-market-page .header-container.subnav-mobile,
+  html.common-page .header-container.subnav-mobile {
+    display: none; }
+  
+  html.home-page .icm-navbar .icm-navbar__top,
+  html.single-market-page .icm-navbar .icm-navbar__top,
+  html.common-page .icm-navbar .icm-navbar__top {
+    background: #0f0f14; }
+    html.home-page .icm-navbar .icm-navbar__top .top-navbar__option--style,
+    html.home-page .icm-navbar .icm-navbar__top .top-navbar__option--style a,
+    html.single-market-page .icm-navbar .icm-navbar__top .top-navbar__option--style,
+    html.single-market-page .icm-navbar .icm-navbar__top .top-navbar__option--style a,
+    html.common-page .icm-navbar .icm-navbar__top .top-navbar__option--style,
+    html.common-page .icm-navbar .icm-navbar__top .top-navbar__option--style a {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 12px;
+      font-weight: 500; }
+  
+  html.home-page .navbar.navbar-default,
+  html.single-market-page .navbar.navbar-default,
+  html.common-page .navbar.navbar-default {
+    border: none;
+    background: #040404; }
+    html.home-page .navbar.navbar-default.icm-component-container,
+    html.single-market-page .navbar.navbar-default.icm-component-container,
+    html.common-page .navbar.navbar-default.icm-component-container {
+      background: #0f0f14; }
+  
+  html.home-page .touch-device .navbar.navbar-default,
+  html.single-market-page .touch-device .navbar.navbar-default,
+  html.common-page .touch-device .navbar.navbar-default {
+    background: #191919; }
+  
+  html.home-page .icm-navbar .navbar-default .navbar-nav > li > a,
+  html.single-market-page .icm-navbar .navbar-default .navbar-nav > li > a,
+  html.common-page .icm-navbar .navbar-default .navbar-nav > li > a {
+    opacity: 0.6; }
+    html.home-page .icm-navbar .navbar-default .navbar-nav > li > a:hover,
+    html.single-market-page .icm-navbar .navbar-default .navbar-nav > li > a:hover,
+    html.common-page .icm-navbar .navbar-default .navbar-nav > li > a:hover {
+      opacity: 1; }
+  
+  html.home-page .client-login-block .client-login-button, html.home-page .client-login-block .start-trading-button,
+  html.single-market-page .client-login-block .client-login-button,
+  html.single-market-page .client-login-block .start-trading-button,
+  html.common-page .client-login-block .client-login-button,
+  html.common-page .client-login-block .start-trading-button {
+    width: auto;
+    color: rgba(31, 29, 49, 0.8);
+    border-radius: 30px;
+    background: #34E834;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 12px 18px; }
+  
+  html.home-page .locale-it .client-login-block .start-trading-button,
+  html.single-market-page .locale-it .client-login-block .start-trading-button,
+  html.common-page .locale-it .client-login-block .start-trading-button {
+    font-size: 10px !important; }
+  
+  html.home-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):hover,
+  html.home-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):active,
+  html.single-market-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):hover,
+  html.single-market-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):active,
+  html.common-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):hover,
+  html.common-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):active {
+    color: #000 !important; }
+  
+  html.home-page .btn,
+  html.home-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):not(.professional),
+  html.single-market-page .btn,
+  html.single-market-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):not(.professional),
+  html.common-page .btn,
+  html.common-page .icm-btn:not(.page-header__primary-button):not(.page-header__secondary-button):not(.professional) {
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: 900;
+    padding: 12px 18px;
+    width: auto; }
+  
+  html.home-page .btn.icm-btn-primary.client-login-button,
+  html.single-market-page .btn.icm-btn-primary.client-login-button,
+  html.common-page .btn.icm-btn-primary.client-login-button {
+    width: auto;
+    color: rgba(31, 29, 49, 0.8);
+    border-radius: 30px;
+    background: #34E834;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 12px 18px; }
+  
+  html.home-page .footer-faq-desktop,
+  html.home-page .footer__disclaimer,
+  html.home-page .footer__copyright,
+  html.single-market-page .footer-faq-desktop,
+  html.single-market-page .footer__disclaimer,
+  html.single-market-page .footer__copyright,
+  html.common-page .footer-faq-desktop,
+  html.common-page .footer__disclaimer,
+  html.common-page .footer__copyright {
+    max-width: 1184px; }
+  
+  html.home-page .dropdown-list-container__list-item,
+  html.single-market-page .dropdown-list-container__list-item,
+  html.common-page .dropdown-list-container__list-item {
+    border-bottom: none !important;
+    line-height: initial !important;
+    padding: 0 !important; }
+    html.home-page .dropdown-list-container__list-item a,
+    html.single-market-page .dropdown-list-container__list-item a,
+    html.common-page .dropdown-list-container__list-item a {
+      color: #bbb !important;
+      line-height: 2.31 !important; }
+      html.home-page .dropdown-list-container__list-item a:hover,
+      html.single-market-page .dropdown-list-container__list-item a:hover,
+      html.common-page .dropdown-list-container__list-item a:hover {
+        color: #34E834 !important;
+        text-decoration: underline; }
+  
+  html.home-page .faq-list__item--style,
+  html.single-market-page .faq-list__item--style,
+  html.common-page .faq-list__item--style {
+    border: none !important; }
+    html.home-page .faq-list__item--style a,
+    html.single-market-page .faq-list__item--style a,
+    html.common-page .faq-list__item--style a {
+      color: #777 !important;
+      line-height: 2 !important; }
+      html.home-page .faq-list__item--style a:hover,
+      html.single-market-page .faq-list__item--style a:hover,
+      html.common-page .faq-list__item--style a:hover {
+        color: #34E834 !important; }
+  
+  html.home-page .common-footer .footer-faq__heading,
+  html.single-market-page .common-footer .footer-faq__heading,
+  html.common-page .common-footer .footer-faq__heading {
+    color: #fff !important;
+    margin-bottom: 20px; }
+  
+  html.home-page .footer__disclaimer,
+  html.single-market-page .footer__disclaimer,
+  html.common-page .footer__disclaimer {
+    padding: 50px 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important; }
+  
+  html.home-page .single-page,
+  html.single-market-page .single-page,
+  html.common-page .single-page {
+    background: #0b0a14;
+    color: #fff;
+    text-align: center; }
+    html.home-page .single-page .single-design-search,
+    html.single-market-page .single-page .single-design-search,
+    html.common-page .single-page .single-design-search {
+      margin-top: 30px !important; }
+    html.home-page .single-page .page-content-container,
+    html.single-market-page .single-page .page-content-container,
+    html.common-page .single-page .page-content-container {
+      text-align: left;
+      min-height: 300px;
+      color: #0b0a14;
+      background: #fff; }
+      html.home-page .single-page .page-content-container:first-child,
+      html.single-market-page .single-page .page-content-container:first-child,
+      html.common-page .single-page .page-content-container:first-child {
+        background: red; }
+        html.home-page .single-page .page-content-container:first-child .page-content,
+        html.single-market-page .single-page .page-content-container:first-child .page-content,
+        html.common-page .single-page .page-content-container:first-child .page-content {
+          padding-top: 0 !important; }
+      html.home-page .single-page .page-content-container .page-content,
+      html.single-market-page .single-page .page-content-container .page-content,
+      html.common-page .single-page .page-content-container .page-content {
+        padding: 80px 0; }
+        html.home-page .single-page .page-content-container .page-content.highlighted-content,
+        html.single-market-page .single-page .page-content-container .page-content.highlighted-content,
+        html.common-page .single-page .page-content-container .page-content.highlighted-content {
+          background: #f4f6f4; }
+      html.home-page .single-page .page-content-container .page-content:not(:first-child),
+      html.single-market-page .single-page .page-content-container .page-content:not(:first-child),
+      html.common-page .single-page .page-content-container .page-content:not(:first-child) {
+        color: #0b0a14;
+        min-height: 300px; }
+    html.home-page .single-page .market-facts-card,
+    html.single-market-page .single-page .market-facts-card,
+    html.common-page .single-page .market-facts-card {
+      float: right;
+      position: relative;
+      z-index: 1;
+      width: 300px;
+      min-width: 300px;
+      min-height: 400px;
+      background: #fff;
+      margin: 80px 40px 80px 80px;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.2); }
+      html.home-page .single-page .market-facts-card .facts-header,
+      html.single-market-page .single-page .market-facts-card .facts-header,
+      html.common-page .single-page .market-facts-card .facts-header {
+        text-align: center;
+        line-height: 35px; }
+        html.home-page .single-page .market-facts-card .facts-header .header-label,
+        html.single-market-page .single-page .market-facts-card .facts-header .header-label,
+        html.common-page .single-page .market-facts-card .facts-header .header-label {
+          font-size: 20px;
+          color: rgba(11, 10, 20, 0.6); }
+        html.home-page .single-page .market-facts-card .facts-header .header-title,
+        html.single-market-page .single-page .market-facts-card .facts-header .header-title,
+        html.common-page .single-page .market-facts-card .facts-header .header-title {
+          font-size: 38px;
+          color: #0b0a14;
+          font-weight: 500; }
+      html.home-page .single-page .market-facts-card .facts-items,
+      html.single-market-page .single-page .market-facts-card .facts-items,
+      html.common-page .single-page .market-facts-card .facts-items {
+        margin: 32px 0; }
+      html.home-page .single-page .market-facts-card .facts-item,
+      html.single-market-page .single-page .market-facts-card .facts-item,
+      html.common-page .single-page .market-facts-card .facts-item {
+        display: flex;
+        padding: 15px 0 15px 40px;
+        font-size: 14px;
+        font-weight: 900;
+        position: relative;
+        line-height: 26px;
+        border-bottom: 0.5px solid #d4d2d2;
+        color: rgba(11, 10, 20, 0.6); }
+      html.home-page .single-page .market-facts-card .facts-item:last-child,
+      html.single-market-page .single-page .market-facts-card .facts-item:last-child,
+      html.common-page .single-page .market-facts-card .facts-item:last-child {
+        border-bottom: none; }
+      html.home-page .single-page .market-facts-card .facts-item::before,
+      html.single-market-page .single-page .market-facts-card .facts-item::before,
+      html.common-page .single-page .market-facts-card .facts-item::before {
+        position: absolute;
+        font-family: 'Glyphicons Halflings';
+        top: 12px;
+        left: 0;
+        content: "\E013";
+        font-size: 17px; }
+      html.home-page .single-page .market-facts-card .action-buttons-container,
+      html.single-market-page .single-page .market-facts-card .action-buttons-container,
+      html.common-page .single-page .market-facts-card .action-buttons-container {
+        width: 100%;
+        position: relative;
+        text-align: center; }
+      html.home-page .single-page .market-facts-card .action-button,
+      html.single-market-page .single-page .market-facts-card .action-button,
+      html.common-page .single-page .market-facts-card .action-button {
+        width: auto;
+        margin: 0 auto;
+        color: rgba(31, 29, 49, 0.8);
+        border-radius: 30px;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 12px 18px;
+        display: inline-block;
+        cursor: pointer; }
+    html.home-page .single-page .risk-image,
+    html.single-market-page .single-page .risk-image,
+    html.common-page .single-page .risk-image {
+      width: 100% !important;
+      min-width: 400px;
+      height: 338px;
+      margin-right: 70px; }
+    html.home-page .single-page .stck-image,
+    html.single-market-page .single-page .stck-image,
+    html.common-page .single-page .stck-image {
+      width: 100% !important;
+      min-width: 488px;
+      height: 424px;
+      margin-right: 70px; }
+    html.home-page .single-page .comm-image,
+    html.single-market-page .single-page .comm-image,
+    html.common-page .single-page .comm-image {
+      width: 100% !important;
+      min-width: 488px;
+      height: 424px;
+      margin-right: 70px; }
+    html.home-page .single-page .bonds-image,
+    html.single-market-page .single-page .bonds-image,
+    html.common-page .single-page .bonds-image {
+      width: 100% !important;
+      min-width: 488px;
+      height: 424px;
+      margin-right: 70px; }
+    html.home-page .single-page .page-section,
+    html.single-market-page .single-page .page-section,
+    html.common-page .single-page .page-section {
+      width: 100%;
+      color: rgba(11, 10, 20, 0.8);
+      max-width: 1184px;
+      font-size: 18px;
+      line-height: 35px;
+      margin: 0 auto; }
+      html.home-page .single-page .page-section.split-2,
+      html.single-market-page .single-page .page-section.split-2,
+      html.common-page .single-page .page-section.split-2 {
+        display: flex;
+        margin-top: 30px; }
+        html.home-page .single-page .page-section.split-2 > div,
+        html.single-market-page .single-page .page-section.split-2 > div,
+        html.common-page .single-page .page-section.split-2 > div {
+          max-width: 50%; }
+        html.home-page .single-page .page-section.split-2 > div:first-child,
+        html.single-market-page .single-page .page-section.split-2 > div:first-child,
+        html.common-page .single-page .page-section.split-2 > div:first-child {
+          margin-right: 30px; }
+      html.home-page .single-page .page-section .first-section,
+      html.single-market-page .single-page .page-section .first-section,
+      html.common-page .single-page .page-section .first-section {
+        position: relative;
+        margin-left: 200px;
+        padding-top: 80px; }
+      html.home-page .single-page .page-section h1,
+      html.single-market-page .single-page .page-section h1,
+      html.common-page .single-page .page-section h1 {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 200;
+        margin-bottom: 30px; }
+      html.home-page .single-page .page-section p,
+      html.single-market-page .single-page .page-section p,
+      html.common-page .single-page .page-section p {
+        margin-bottom: 30px; }
+        html.home-page .single-page .page-section p:last-child,
+        html.single-market-page .single-page .page-section p:last-child,
+        html.common-page .single-page .page-section p:last-child {
+          margin-bottom: 0; }
+    html.home-page .single-page .page-first-text p:first-child,
+    html.single-market-page .single-page .page-first-text p:first-child,
+    html.common-page .single-page .page-first-text p:first-child {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 37px; }
+    html.home-page .single-page .page-first-text::before,
+    html.single-market-page .single-page .page-first-text::before,
+    html.common-page .single-page .page-first-text::before {
+      content: '';
+      position: absolute;
+      top: 80px;
+      left: -200px;
+      width: 150px;
+      height: 150px;
+      background-size: contain !important; }
+    html.home-page .single-page .page-header__menu-container,
+    html.single-market-page .single-page .page-header__menu-container,
+    html.common-page .single-page .page-header__menu-container {
+      width: 100%;
+      background: #0b0a14;
+      max-width: 1184px;
+      margin: 0 auto;
+      padding: 30px 0; }
+      html.home-page .single-page .page-header__menu-container .page-header__menu,
+      html.single-market-page .single-page .page-header__menu-container .page-header__menu,
+      html.common-page .single-page .page-header__menu-container .page-header__menu {
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3); }
+        html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item,
+        html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item,
+        html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item {
+          display: table;
+          cursor: pointer;
+          font-weight: 700; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item > a,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item > a,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item > a {
+            display: table-cell;
+            vertical-align: middle; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item.current-page,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item.current-page,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item.current-page {
+            color: #34E834;
+            font-weight: 900;
+            opacity: 1;
+            cursor: default; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item:not(.current-page):hover,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item:not(.current-page):hover,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item:not(.current-page):hover {
+            color: #fff; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item.menu-switch,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item.menu-switch,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item.menu-switch {
+            display: none; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon {
+            width: 25px;
+            height: 25px; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-range,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-range,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-range {
+              background: url(~/images/icon-market.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-forex,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-forex,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-forex {
+              background: url(~/images/forex-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-commodities,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-commodities,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-commodities {
+              background: url(~/images/comodity-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-indices,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-indices,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-indices {
+              background: url(~/images/indice-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-bonds,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-bonds,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-bonds {
+              background: url(~/images/bond-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-cruptocurrency,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-cruptocurrency,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-cruptocurrency {
+              background: url(~/images/btc-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-stocks,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-stocks,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-stocks {
+              background: url(~/images/stock-small.png) no-repeat center center; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch {
+              position: relative;
+              display: none; }
+              html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch::after,
+              html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch::after,
+              html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch::after {
+                position: absolute;
+                font-family: 'Glyphicons Halflings';
+                top: 0;
+                right: 0;
+                line-height: 24px;
+                content: "\E259";
+                color: #7e7e7e;
+                font-size: 23px;
+                cursor: pointer; }
+            html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch:hover::after,
+            html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch:hover::after,
+            html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-icon.icon-switch:hover::after {
+              color: #fff; }
+          html.home-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-title,
+          html.single-market-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-title,
+          html.common-page .single-page .page-header__menu-container .page-header__menu .menu-item .menu-title {
+            padding-left: 8px;
+            color: inherit;
+            text-decoration: none; }
+      html.home-page .single-page .page-header__menu-container.expanded .page-header__menu,
+      html.single-market-page .single-page .page-header__menu-container.expanded .page-header__menu,
+      html.common-page .single-page .page-header__menu-container.expanded .page-header__menu {
+        justify-content: space-around;
+        flex-direction: column; }
+        html.home-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-item,
+        html.single-market-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-item,
+        html.common-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-item {
+          padding: 16px 0; }
+        html.home-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-icon.icon-switch::after,
+        html.single-market-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-icon.icon-switch::after,
+        html.common-page .single-page .page-header__menu-container.expanded .page-header__menu .menu-icon.icon-switch::after {
+          content: "\E260"; }
+    html.home-page .single-page .page-header,
+    html.single-market-page .single-page .page-header,
+    html.common-page .single-page .page-header {
+      padding-top: 60px;
+      background-size: cover; }
+      html.home-page .single-page .page-header .page-header__container,
+      html.single-market-page .single-page .page-header .page-header__container,
+      html.common-page .single-page .page-header .page-header__container {
+        max-width: 1184px;
+        margin: 0 auto;
+        padding-bottom: 1px; }
+      html.home-page .single-page .page-header .page-header__heading--style,
+      html.single-market-page .single-page .page-header .page-header__heading--style,
+      html.common-page .single-page .page-header .page-header__heading--style {
+        font-size: 56px;
+        font-weight: 500;
+        text-shadow: 0 0 10px #000; }
+      html.home-page .single-page .page-header .page-header__description,
+      html.single-market-page .single-page .page-header .page-header__description,
+      html.common-page .single-page .page-header .page-header__description {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 42px;
+        font-size: 24px;
+        font-weight: 300;
+        text-shadow: 0 0 10px #000;
+        opacity: 0.8; }
+      html.home-page .single-page .page-header .icm-button-wrapper.page-header__primary-button,
+      html.single-market-page .single-page .page-header .icm-button-wrapper.page-header__primary-button,
+      html.common-page .single-page .page-header .icm-button-wrapper.page-header__primary-button {
+        margin: 64px 0; }
+        html.home-page .single-page .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary,
+        html.single-market-page .single-page .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary,
+        html.common-page .single-page .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary {
+          text-decoration: none;
+          width: auto;
+          color: rgba(31, 29, 49, 0.8);
+          border-radius: 30px;
+          background: #34E834;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 900;
+          padding: 12px 18px; }
+    html.home-page .single-page .flex-section,
+    html.single-market-page .single-page .flex-section,
+    html.common-page .single-page .flex-section {
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: -0.4px; }
+      html.home-page .single-page .flex-section .flex-content,
+      html.single-market-page .single-page .flex-section .flex-content,
+      html.common-page .single-page .flex-section .flex-content {
+        flex: 1;
+        margin: 0 40px; }
+        html.home-page .single-page .flex-section .flex-content:first-child,
+        html.single-market-page .single-page .flex-section .flex-content:first-child,
+        html.common-page .single-page .flex-section .flex-content:first-child {
+          margin-left: 0; }
+        html.home-page .single-page .flex-section .flex-content:last-child,
+        html.single-market-page .single-page .flex-section .flex-content:last-child,
+        html.common-page .single-page .flex-section .flex-content:last-child {
+          margin-right: 0; }
+    html.home-page .single-page .accent-block,
+    html.single-market-page .single-page .accent-block,
+    html.common-page .single-page .accent-block {
+      background: #34E834;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      padding: 12px 20px;
+      line-height: initial;
+      display: inline-block;
+      cursor: default;
+      margin-bottom: 30px; }
+    html.home-page .single-page .content-head,
+    html.single-market-page .single-page .content-head,
+    html.common-page .single-page .content-head {
+      color: rgba(11, 10, 20, 0.8);
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 900;
+      margin-bottom: 50px; }
+    html.home-page .single-page .content-inside.label,
+    html.single-market-page .single-page .content-inside.label,
+    html.common-page .single-page .content-inside.label {
+      color: #0b0a14;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+      margin-top: 20px; }
+    html.home-page .single-page .content-inside.value,
+    html.single-market-page .single-page .content-inside.value,
+    html.common-page .single-page .content-inside.value {
+      color: rgba(11, 10, 20, 0.5);
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    html.home-page .single-page .content-inside.description,
+    html.single-market-page .single-page .content-inside.description,
+    html.common-page .single-page .content-inside.description {
+      color: rgba(11, 10, 20, 0.6);
+      font-size: 14px;
+      line-height: 23px;
+      margin-top: 30px;
+      letter-spacing: -0.3px; }
+  
+  html.home-page .spreads-block,
+  html.single-market-page .spreads-block,
+  html.common-page .spreads-block {
+    margin-top: 0px; }
+    html.home-page .spreads-block__header,
+    html.single-market-page .spreads-block__header,
+    html.common-page .spreads-block__header {
+      font-weight: 300; }
+    html.home-page .spreads-block__label,
+    html.single-market-page .spreads-block__label,
+    html.common-page .spreads-block__label {
+      font-size: 16px;
+      color: #999999;
+      margin-top: 16px;
+      margin-bottom: 24px; }
+      html.home-page .spreads-block__label .bold,
+      html.single-market-page .spreads-block__label .bold,
+      html.common-page .spreads-block__label .bold {
+        font-weight: bold; }
+    html.home-page .spreads-block__spread-item:not(:last-child),
+    html.single-market-page .spreads-block__spread-item:not(:last-child),
+    html.common-page .spreads-block__spread-item:not(:last-child) {
+      margin-bottom: 1px; }
+    html.home-page .spreads-block__expand-button,
+    html.single-market-page .spreads-block__expand-button,
+    html.common-page .spreads-block__expand-button {
+      background-color: #f4f4f4;
+      font-size: 28px;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: -0.6px;
+      text-align: left;
+      color: rgba(11, 10, 20, 0.6);
+      padding: 23px 21px;
+      position: relative; }
+    html.home-page .spreads-block__expand-button[data-toggle="collapse"]:after,
+    html.single-market-page .spreads-block__expand-button[data-toggle="collapse"]:after,
+    html.common-page .spreads-block__expand-button[data-toggle="collapse"]:after {
+      font-family: "Glyphicons Halflings";
+      content: "\E072";
+      position: absolute;
+      color: #000000;
+      font-size: 12px;
+      line-height: 22px;
+      right: 0;
+      top: 0;
+      transform: rotate(-90deg);
+      right: 20px;
+      top: calc(50% - 12px); }
+    html.home-page .spreads-block__expand-button[data-toggle="collapse"].collapsed:after,
+    html.single-market-page .spreads-block__expand-button[data-toggle="collapse"].collapsed:after,
+    html.common-page .spreads-block__expand-button[data-toggle="collapse"].collapsed:after {
+      transform: rotate(90deg); }
+    html.home-page .spreads-block .markets-spread-table .header-bar,
+    html.single-market-page .spreads-block .markets-spread-table .header-bar,
+    html.common-page .spreads-block .markets-spread-table .header-bar {
+      justify-content: space-between; }
+    html.home-page .spreads-block .markets-spread-table .header-bar-desktop div:first-child,
+    html.single-market-page .spreads-block .markets-spread-table .header-bar-desktop div:first-child,
+    html.common-page .spreads-block .markets-spread-table .header-bar-desktop div:first-child {
+      width: 35%; }
+    html.home-page .spreads-block.icm-page-subsection-content,
+    html.single-market-page .spreads-block.icm-page-subsection-content,
+    html.common-page .spreads-block.icm-page-subsection-content {
+      max-width: initial;
+      padding: 0; }
+    html.home-page .spreads-block .spreads-block__header,
+    html.home-page .spreads-block .spreads-block__expand-button,
+    html.single-market-page .spreads-block .spreads-block__header,
+    html.single-market-page .spreads-block .spreads-block__expand-button,
+    html.common-page .spreads-block .spreads-block__header,
+    html.common-page .spreads-block .spreads-block__expand-button {
+      display: none; }
+  
+  html.home-page .profile-buttons,
+  html.single-market-page .profile-buttons,
+  html.common-page .profile-buttons {
+    justify-content: center; }
+    html.home-page .profile-buttons .profile-button,
+    html.single-market-page .profile-buttons .profile-button,
+    html.common-page .profile-buttons .profile-button {
+      border-radius: 4px;
+      margin: -60px 5px 0 5px;
+      text-align: center;
+      line-height: initial;
+      padding: 22px;
+      background: #f5f5f5;
+      color: #767678; }
+      html.home-page .profile-buttons .profile-button .profile-button-label,
+      html.single-market-page .profile-buttons .profile-button .profile-button-label,
+      html.common-page .profile-buttons .profile-button .profile-button-label {
+        font-size: 14px;
+        font-weight: 300;
+        color: #a4a4a5; }
+      html.home-page .profile-buttons .profile-button .profile-button-value,
+      html.single-market-page .profile-buttons .profile-button .profile-button-value,
+      html.common-page .profile-buttons .profile-button .profile-button-value {
+        font-size: 18px;
+        font-weight: 900;
+        color: #6f6f72; }
+      html.home-page .profile-buttons .profile-button:hover,
+      html.single-market-page .profile-buttons .profile-button:hover,
+      html.common-page .profile-buttons .profile-button:hover {
+        background: #646369 !important; }
+        html.home-page .profile-buttons .profile-button:hover .profile-button-label,
+        html.single-market-page .profile-buttons .profile-button:hover .profile-button-label,
+        html.common-page .profile-buttons .profile-button:hover .profile-button-label {
+          color: #b4b4b6 !important; }
+        html.home-page .profile-buttons .profile-button:hover .profile-button-value,
+        html.single-market-page .profile-buttons .profile-button:hover .profile-button-value,
+        html.common-page .profile-buttons .profile-button:hover .profile-button-value {
+          color: #e5e5e5 !important; }
+  
+  html.home-page .page-content.global-markets-today,
+  html.single-market-page .page-content.global-markets-today,
+  html.common-page .page-content.global-markets-today {
+    height: auto;
+    min-height: 455px;
+    background: url(/images/footBanner.png) no-repeat center center;
+    background-size: cover !important;
+    text-align: center; }
+    html.home-page .page-content.global-markets-today.not-scrolled,
+    html.single-market-page .page-content.global-markets-today.not-scrolled,
+    html.common-page .page-content.global-markets-today.not-scrolled {
+      background: none; }
+    html.home-page .page-content.global-markets-today .page-section,
+    html.single-market-page .page-content.global-markets-today .page-section,
+    html.common-page .page-content.global-markets-today .page-section {
+      flex-direction: column; }
+    html.home-page .page-content.global-markets-today .start-trading,
+    html.single-market-page .page-content.global-markets-today .start-trading,
+    html.common-page .page-content.global-markets-today .start-trading {
+      margin-top: 50px;
+      color: #fff !important;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 2.14;
+      letter-spacing: 6.7px; }
+    html.home-page .page-content.global-markets-today .global-today,
+    html.single-market-page .page-content.global-markets-today .global-today,
+    html.common-page .page-content.global-markets-today .global-today {
+      color: #fff !important;
+      font-size: 52px;
+      font-weight: 100;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      text-align: center; }
+    html.home-page .page-content.global-markets-today .icm-button-wrapper,
+    html.single-market-page .page-content.global-markets-today .icm-button-wrapper,
+    html.common-page .page-content.global-markets-today .icm-button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px; }
+      html.home-page .page-content.global-markets-today .icm-button-wrapper a,
+      html.single-market-page .page-content.global-markets-today .icm-button-wrapper a,
+      html.common-page .page-content.global-markets-today .icm-button-wrapper a {
+        width: auto;
+        height: max-content;
+        outline: none; }
+        html.home-page .page-content.global-markets-today .icm-button-wrapper a.live,
+        html.single-market-page .page-content.global-markets-today .icm-button-wrapper a.live,
+        html.common-page .page-content.global-markets-today .icm-button-wrapper a.live {
+          color: rgba(31, 29, 49, 0.8);
+          border-radius: 30px;
+          background: #34E834;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 900;
+          padding: 12px 18px; }
+        html.home-page .page-content.global-markets-today .icm-button-wrapper a.demo,
+        html.single-market-page .page-content.global-markets-today .icm-button-wrapper a.demo,
+        html.common-page .page-content.global-markets-today .icm-button-wrapper a.demo {
+          margin-left: 40px;
+          opacity: 1;
+          font-size: 12px;
+          font-weight: 900;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: -0.2px;
+          text-align: left;
+          color: rgba(255, 255, 255, 1); }
+          html.home-page .page-content.global-markets-today .icm-button-wrapper a.demo:hover,
+          html.single-market-page .page-content.global-markets-today .icm-button-wrapper a.demo:hover,
+          html.common-page .page-content.global-markets-today .icm-button-wrapper a.demo:hover {
+            color: #fff !important;
+            opacity: 1 !important; }
+        html.home-page .page-content.global-markets-today .icm-button-wrapper a a,
+        html.single-market-page .page-content.global-markets-today .icm-button-wrapper a a,
+        html.common-page .page-content.global-markets-today .icm-button-wrapper a a {
+          color: inherit !important;
+          text-decoration: none !important; }
+          html.home-page .page-content.global-markets-today .icm-button-wrapper a a:hover,
+          html.single-market-page .page-content.global-markets-today .icm-button-wrapper a a:hover,
+          html.common-page .page-content.global-markets-today .icm-button-wrapper a a:hover {
+            color: inherit !important;
+            text-decoration: none !important; }
+  
+  .single-page.page-about-us .double-sidebar-block {
+    position: relative;
+    z-index: 1;
+    width: 308px;
+    margin: 0 auto;
+    border-radius: 0;
+    float: right;
+    margin: 0px 40px 80px 80px; }
+    .single-page.page-about-us .double-sidebar-block .contact-block {
+      position: relative;
+      padding: 0;
+      background: #e9e9e9;
+      margin: 50px auto;
+      border-radius: 0;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+      z-index: 2; }
+      .single-page.page-about-us .double-sidebar-block .contact-block .contact-header {
+        padding: 42px 33px 38px 33px; }
+        .single-page.page-about-us .double-sidebar-block .contact-block .contact-header .header-label {
+          font-size: 28px;
+          line-height: 1;
+          letter-spacing: -0.6px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+        .single-page.page-about-us .double-sidebar-block .contact-block .contact-header .header-title {
+          margin-top: 22px;
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: -0.3px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+      .single-page.page-about-us .double-sidebar-block .contact-block .contact-pre-imaged {
+        position: relative;
+        padding: 28px 33px 23px 100px;
+        background: #f2f2f2;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8); }
+        .single-page.page-about-us .double-sidebar-block .contact-block .contact-pre-imaged a {
+          color: rgba(0, 0, 0, 0.8) !important; }
+        .single-page.page-about-us .double-sidebar-block .contact-block .contact-pre-imaged.chat-img::before {
+          content: "";
+          position: absolute;
+          left: 33px;
+          top: 15px;
+          width: 40px;
+          height: 40px;
+          background: transparent no-repeat center center;
+          background-size: contain;
+          background-image: url("images/refer-a-friend-live-chat.png"); }
+        .single-page.page-about-us .double-sidebar-block .contact-block .contact-pre-imaged.email-img {
+          background: #e9e9e9; }
+          .single-page.page-about-us .double-sidebar-block .contact-block .contact-pre-imaged.email-img::before {
+            content: "";
+            position: absolute;
+            left: 33px;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            background: transparent no-repeat center center;
+            background-size: contain;
+            background-image: url("images/refer-a-friend-email-support.png"); }
+      .single-page.page-about-us .double-sidebar-block .contact-block .contact-phone {
+        background: #353535;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 2.18;
+        letter-spacing: -1.7px;
+        text-align: center;
+        color: #34e834; }
+    .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding-top: 214px;
+      padding-bottom: 64px;
+      border-radius: 0;
+      background-image: url(../images/about-us-facts-bg.png) !important;
+      box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.14); }
+      .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background::before {
+        content: "";
+        position: absolute;
+        left: 52px;
+        top: 87px;
+        width: 204px;
+        height: 52px;
+        background: transparent no-repeat center center;
+        background-size: contain;
+        background-image: url(images/logo.svg); }
+      .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background.sidebar-trueecn::before {
+        background-image: url(/images/true-logo.png); }
+      
+      .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block__message {
+        font-size: 28px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 40px;
+        margin-bottom: 40px; }
+      .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block {
+        text-align: center; }
+        .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block .icm-btn.icm-btn-primary {
+          background: #34e834 !important;
+          color: rgba(31, 29, 49, 0.8) !important;
+          line-height: 1 !important;
+          padding: 14px 25px !important;
+          border-radius: 30px;
+          border: none !important;
+          width: max-content;
+          font-size: 12px !important;
+          font-weight: 900 !important;
+          text-transform: uppercase; }
+        .single-page.page-about-us .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block b {
+          font-weight: 900; }
+  
+  .single-page.page-about-us .pre-image-item {
+    padding-left: 33px;
+    position: relative; }
+    .single-page.page-about-us .pre-image-item::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 10px;
+      width: 14px;
+      height: 14px;
+      transform: rotate(45deg);
+      border: 1px solid #b5b5b5;
+      background: #34e834;
+      box-shadow: 0 0 2px 2px #fff inset; }
+  
+  .single-page.page-about-us .note {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.6); }
+    .single-page.page-about-us .note::before {
+      content: "* "; }
+  
+  .single-page.page-about-us .page-header {
+    background: url(images/about-us-banner.png) no-repeat center right; }
+    .single-page.page-about-us .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  .single-page.page-about-us .page-content-container {
+    background: #fff !important; }
+  
+  /* .single-page.page-about-us .page-content.global-markets-today {
+    background-image: url(/assets/img/single_market_page/about-us-btm-bg.png); } */
+  
+  .single-page.page-about-us .page-content.cysec h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100; }
+  
+  .single-page.page-about-us .page-content.cysec h4 {
+    text-align: center;
+    margin-bottom: 8px; }
+  
+  .single-page.page-about-us .page-content.cysec .page-section {
+    margin: 60px auto; }
+    .single-page.page-about-us .page-content.cysec .page-section .two-ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%; }
+    .single-page.page-about-us .page-content.cysec .page-section a {
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+      width: max-content;
+      cursor: pointer;
+      display: block;
+      background: #999;
+      padding: 15px 25px;
+      color: #000;
+      opacity: 0.5;
+      border-radius: 10px;
+      text-transform: uppercase;
+      transition: ease-in-out 0.3s; }
+      .single-page.page-about-us .page-content.cysec .page-section a:hover {
+        background: #34e834;
+        text-decoration: none !important;
+        opacity: 1;
+        color: #fff; }
+  
+  .single-page.page-about-us .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-about-us .page-section .first-section {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important; }
+  
+  .single-page.page-about-us .page-first-text {
+    margin-bottom: 47px;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.8); }
+  
+  .single-page.page-about-us .page-first-text::before {
+    display: none; }
+  
+  .single-page.page-about-us .page-content.global-markets-today .icm-button-wrapper a.live {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-about-us .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  .single-page.page-about-us .grid-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+    .single-page.page-about-us .grid-section .content-head {
+      margin-bottom: 0 !important; }
+    .single-page.page-about-us .grid-section .grid-content {
+      padding: 20px; }
+    .single-page.page-about-us .grid-section .content-inside {
+      font-size: 16px;
+      line-height: 1.56; }
+  
+  @media screen and (max-width: 1040px) {
+    .single-page.page-about-us .page-section .first-section .page-first-image {
+      min-height: 300px; } }
+  
+  @media screen and (max-width: 960px) {
+    .single-page.page-about-us .page-section .first-section {
+      padding-top: 80px !important; }
+    .single-page.page-about-us .double-sidebar-block {
+      margin: 80px 40px 80px 80px !important; } }
+  
+  @media screen and (max-width: 940px) {
+    .single-page.page-about-us .grid-section {
+      grid-template-columns: 100%; }
+      .single-page.page-about-us .grid-section .gc-1 {
+        grid-row: 1; }
+      .single-page.page-about-us .grid-section .gc-4 {
+        grid-row: 2; }
+      .single-page.page-about-us .grid-section .gc-2 {
+        grid-row: 3;
+        margin-top: 40px; }
+      .single-page.page-about-us .grid-section .gc-5 {
+        grid-row: 4; }
+      .single-page.page-about-us .grid-section .gc-3 {
+        grid-row: 5;
+        margin-top: 40px; }
+      .single-page.page-about-us .grid-section .gc-6 {
+        grid-row: 6; } }
+  
+  @media screen and (max-width: 870px) {
+    .single-page.page-about-us .page-section .first-section {
+      padding-top: 80px !important; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.page-about-us .double-sidebar-block {
+      float: initial !important;
+      margin: -100px auto 100px !important; } }
+  
+  /*# sourceMappingURL=about-icmarkets.css.map */

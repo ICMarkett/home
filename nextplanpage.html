@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ICMarkets | Payment </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  
+<style>
+    .alert {
+  padding:8px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px ;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+    /*the container must be positioned relative:*/
+    .custom-select {
+      position: relative;
+      font-family: Arial;
+    }
+    
+    .custom-select select {
+      display: none; /*hide original SELECT element:*/
+    }
+    
+    .select-selected {
+      background-color: #34e834;
+    }
+    
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+    
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+    
+    /*style the items (options), including the selected item:*/
+    .select-items div,.select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    /*style items (options):*/
+    .select-items {
+      position: absolute;
+      background-color: DodgerBlue;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+    
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+    
+    .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+ 
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.title_page.small {
+    margin: 0 0 40px 0;
+    padding: 40px 32px 40px 32px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+@media (max-width:1400px) {
+    .title_page {
+        -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.title_page {
+    margin: 0 32px 120px 32px;
+    padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.title_page.small>div.content h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 48px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+.table-content {
+    margin: 0 32px 40px 32px;
+}
+.table-wrap {
+    max-width: calc(100vw - 64px);
+    position: relative;
+    z-index: 1;
+}
+.table-body.my-orders {
+    min-width: 910px;
+}
+.table-row.title {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(rgba(255,255,255,.05)));
+    background: linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(255,255,255,.05) 100%);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row.my-orders-title>div.table-td:nth-of-type(1) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+.table-row.title>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.table-row.my-orders-title>div.table-td {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+}
+.table-row.title>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.table-row.my-orders-title>div.table-td:last-of-type {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.table-row.my-orders-title>div.table-td {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+}
+.table-row.my-orders-content {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row.my-orders-content>div.table-td:nth-of-type(1) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.openDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 44px;
+    cursor: pointer;
+    position: relative;
+}
+.openDetails.icon-01:before {
+    background-image: url(../images/status_01.png);
+}
+.openDetails:before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 56px;
+    flex: 0 0 56px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    position: absolute;
+    top: -14px;
+    left: -14px;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.paid-status-01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 96px;
+    height: 32px;
+    padding: 6px 8px;
+    border-radius: 38px;
+    border: 1px solid #3249c4;
+    color: #3249c4;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.order-payInfo {
+    display: none;
+    background: rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 100%;
+    padding: 0 24px;
+}
+.order-payInfo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.order-payInfo-content>div.item:nth-of-type(1) {
+    padding-left: 44px;
+}
+.order-payInfo-content>div.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 64px;
+}
+.order-payInfo-content>div.item p.title {
+    color: #e66e28;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.order-payInfo-content>div.item:nth-of-type(2), .order-payInfo-content>div.item:nth-of-type(3) {
+    padding: 0 24px;
+}
+.order-payInfo-content>div.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 64px;
+}
+.order-payInfo-content>div.item span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.6);
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.order-payInfo-content>div.item a.wallet {
+    color: #fff;
+    font-size: 14px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visited:hover, li {
+    text-decoration: none;
+    outline: 0;
+}
+.order-payInfo-content>div.item p.price {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.order-payInfo-content>div.item a.view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 24px;
+    height: 48px;
+    background: linear-gradient(78.41deg,#de5325 0,#ec8532 100%);
+    -webkit-box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visited:hover, li {
+    text-decoration: none;
+    outline: 0;
+}
+.order-payInfo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.order-payInfo-content>div.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 64px;
+}
+.table-row.my-orders-content {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.table-row.my-orders-content>div.table-td:last-of-type {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.paid-status-01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 96px;
+    height: 32px;
+    padding: 6px 8px;
+    border-radius: 38px;
+    border: 1px solid #3249c4;
+    color: #3249c4;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.order-payInfo {
+    display: none;
+    background: rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 100%;
+    padding: 0 24px;
+}
+.order-payInfo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.order-payInfo-content>div.item:nth-of-type(1) {
+    padding-left: 44px;
+}
+.order-payInfo-content>div.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 64px;
+}
+.order-payInfo-content>div.item:nth-of-type(2), .order-payInfo-content>div.item:nth-of-type(3) {
+    padding: 0 24px;
+}
+.order-payInfo-content>div.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 64px;
+}
+.order-payInfo-content>div.item:nth-of-type(2), .order-payInfo-content>div.item:nth-of-type(3) {
+    padding: 0 24px;
+}
+.order-payInfo-content>div.item p.title {
+    color: #e66e28;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.order-payInfo-content>div.item span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.6);
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.order-payInfo-content>div.item a.wallet {
+    color: #fff;
+    font-size: 14px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.order-payInfo-content>div.item span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.6);
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.order-payInfo-content>div.item p.price {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.order-payInfo-content>div.item a.view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 24px;
+    height: 48px;
+    background: linear-gradient(78.41deg,#de5325 0,#ec8532 100%);
+    -webkit-box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.table-row.my-orders-content {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.table-row.my-orders-content>div.table-td:nth-of-type(1) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+.table-row.my-orders-content>div.table-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 0 24px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.openDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 44px;
+    cursor: pointer;
+    position: relative;
+}
+
+.order-payInfo {
+    display: none;
+    background: rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 100%;
+    padding: 0 24px;
+}
+
+.order-payInfo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+  <div class="container-scroller"> 
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="page.html">
+            <img src="images/ICM-logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="page.html">
+            <img src="images/logofirst.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Welcome to <span class="text-black fw-bold"><span style="color: #12e612; margin: 0px;">IC</span>Markets</span></h1>
+            <h3 class="welcome-sub-text">Start exploring investment opertunities by copying people and investing in markets or CopyPortfolios </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">Popular Investors </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Popular Investors</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">News Feed </p>
+                  <p class="fw-light small-text mb-0">Those who will start purchasing more <br> shares for a long-term investment.
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Pubic English Feed</p>
+                  <p class="fw-light small-text mb-0">Now only down 3.5% since I <br> started investing last March!</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Saved posts</p>
+                  <p class="fw-light small-text mb-0">Your saved posts feed is empty</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Popular Investors</p>
+                  <p class="fw-light small-text mb-0">Bitcoin finally walking up!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Verify your account</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success">$Soybeans </strong> Future rise over 2.1% <br> trading at 1,524.70</h6>
+                  <p class="fw-light small-text mb-0">about 3 hours ago </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1"><strong class="text-success"> $VIX</strong> Future reaches another low, <br> trading at 2016</h6>
+                  <p class="fw-light small-text mb-0"> about 5 hours ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 3 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Luca Meier </p>
+                  <p class="fw-light small-text mb-0"> I invest mostly in companies that pay dividends</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Wesly Willie Roy Koenders </p>
+                  <p class="fw-light small-text mb-0"> My passive income investment strategy focuses <br> on dividend income</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">borisaka </p>
+                  <p class="fw-light small-text mb-0"> Perché sono passato ad avere un portafoglio di <br> sole azioni ad alto dividendo?
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li id="firstdown" class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle"   src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"  style="width: 30%;"  src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a href="mdi.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a href="#" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a href="page.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a href="faq.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a href="try.html" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel" style="display: none;">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating </p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call </p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page.html">
+              <i class="mdi mdi-grid-large menu-icon" class="menu-icon mdi mdi-floor-plan" style="
+              -webkit-tap-highlight-color: transparent;
+              font-family: 'Roboto',sans-serif;
+              list-style: none;
+              box-sizing: border-box;
+              color: #34e834;"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <link rel="stylesheet" href="https://icons8.com/icon/6476/candlestick-chart">
+
+          <li class="nav-item nav-category">Trades</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+             <img   style="width: 20%; margin-right: 6px;" src="images/icons8-candlestick-chart-50.png"></i>
+              
+              
+              <span class="menu-title">Trades</span>
+              <i class="menu-arrow"></i> 
+            </a>
+
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buttons.html">CryptoPortfolio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="dropdowns.html">CryptoEqual 
+                  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="typography.html">RenewableEnergy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Trading tools
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <img style="width: 20%; margin-right: 6px;" src="images/icons8-hand-shake-64.png" >
+              <span class="menu-title">Partners</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="basic_elements.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-withdrawal-30.png" >
+              <span class="menu-title">Withdrawal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="bank.html">Bitcoin</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chartjs.html">Bank Transfer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-deposit-30.png" >
+              <span class="menu-title">Deposit</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Bitcoin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <img style="width: 14%; margin-right: 6px;" src="images/icons8-settings-50.png" >
+              <span class="menu-title">Settings
+              </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="mdi.html">Account</a></li>
+                <li class="nav-item"> <a class="nav-link" href="help.html">Help</a></li>
+                <li class="nav-item"> <a class="nav-link" href="invite-friend.html">Invite Friends</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Help</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <img  style="width: 16%; margin-right: 6px;"  src="images/icons8-contacts-50.png" >
+              <span class="menu-title">Contact</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="contactus.html"> Contact us </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Account</li>
+          <li class="nav-item">
+           
+            <a class="nav-link" href="try.html">
+              <img style="width: 16%; margin-right: 6px;" src="images/icons8-logout-50.png" >
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="faq.html">
+            <img style="width: 16%; margin-right: 6px;" src="images/icons8-help-50.png" >
+            <span class="menu-title">FAQ</span>
+          </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              <div class="card">
+                
+                <div class="card-body">
+                    <p class="text-success" id="demo0"></p>
+
+
+
+
+ 
+                    <div class="payment-user">
+                        <div class="order-info">
+                            <H2 style="text-align: center
+                            ;">ORDER PAYMENT
+                            </H2>
+                            <div class="title">
+                
+                                <h2>Info package</h2>
+                            </div>
+                            <div class="update-form" >
+                             
+                                    <input type="hidden" name="_token" value="AUtcaw7POzKHeQYO6x1iG5AseaRZcBFW7BE3QIEW">                    <input class="current_package" type="hidden" name="change_package" value="2">
+                                    <input type="hidden" name="code" value="2e00c6ab-2465-45ca-a1a79627">
+                                    <div class="" >
+                                        <div class="form-group row" > 
+                                            <label class="col-sm-3 col-form-label">Info package:	
+                                            </label>             
+                                            <div class="custom-select l" style="width:300px; padding-right: 10px;">
+                                                <select  class="form-control">
+                                                    <option data-icon="1" value="1">ICMarkets Silver 1</option>
+                                                    <option data-icon="1" value="2" >ICMarkets Silver 2</option>
+                                                    <option data-icon="1" value="3">ICMarkets Gold 1</option>
+                                                    <option data-icon="1" value="4">ICMarkets Gold 2</option>
+                                                    <option data-icon="2" value="5">ICMarkets Platinum 1</option>
+                                                    <option data-icon="2" value="6">ICMarkets Platinum 2</option>
+                                                    <option data-icon="3" value="7">ICMarkets Diamond 1</option>
+                                                    <option data-icon="3" value="8">ICMarkets Diamond 2</option>
+                                            </select>
+                                            </div>
+                                                                       
+                                                                            
+                                                    
+                                         <div class="item"  >
+                                           
+                                            <div class="form-group row">
+
+                                                <label class="col-sm-3 col-form-label">Amount:	
+                                                </label>
+
+                                                <div class="col-sm-9">
+                                                  <input type="text" class="form-control" placeholder="Amount" required value="$90"/>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="btn-icm" style="text-align: center;">
+                                                <button  class="btn-secondary bn1" onclick="myFunction()" type="submit" ><i  class="fa fa-spinner fa-spin"></i>  Buy Now!</button> 
+        
+                                              </div>
+                                          </div>
+                                        
+                                    </div>
+                              
+                            </div>
+                
+                            
+                           
+                        </div>
+                        <div class="payment-info" id="myDIV" style="display: none;">
+                            
+                            <div class="row1"  style="margin-top: 40px;">
+                                <div class="alert">
+                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                                  
+                                        <p>Use the address below or QR code to make payment via your crypto wallet. After network confirmations, your order will be automatically activated.</p>
+                
+                                    
+                                  </div>
+                                <div class="column" onclick="openTab('b1');" style="background:green;">
+                                    <img src="images/icons8-exchange-bitcoin-50.png" >
+                                  Pay via Bitcoin
+                                </div>
+                                <div class="column" onclick="openTab('b2');" style="background:rgb(18, 18, 138);">
+                                    <img src="images/icons8-ethereum-50.png" >
+                                    Pay via Ethereum
+                                </div>
+                               
+                              </div>
+                        </div>
+                
+                
+                
+                
+                
+                <!-- Full-width columns: (hidden by default) -->
+                <div id="b1" class="containerTab" style="display:none;background:rgb(42, 65, 7)">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <div>
+                      
+                      <div class="title">
+                          <h2>Pay for the package</h2>
+                      </div>
+                      <div class="price">
+                          <p>0.000BTC</p>
+                      </div>
+                      <div class="copy-address">
+                          <span class="col-sm-3 col-form-label">Payment BTC address:</span>
+                          <div class="field">
+                              <input class="form-control" type="text" id="myInput1" value="3JU4TSp51GeVRdMRwJViLKKx7yGk1ARAjF" readonly="">
+
+                          </div>
+                      </div>
+                      <div class="qr-code">
+                          <div class="qr" id="qr-code" style="margin: 10px;">
+                            <img  width="130" height="130" src="images/qr_code_png.png"  >
+                        </div>
+                          <span>Payment by QR code</span>
+                      </div>
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div id="b2" class="containerTab" style="display:none;background: rgb(12, 12, 51);;">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                   <div>
+                     
+                      <div class="title">
+                          <h2>Pay for the package</h2>
+                      </div>
+                      <div >
+                          <p>0.0000ETH</p>
+                      </div>
+                      <div class="copy-address">
+                          <span  class="col-sm-3 col-form-label">Payment ETH address:</span>
+                          <div class="field">
+                              <input class="form-control" id="myfirst" class="linkToCopy" type="text" value="0x7171ed53F25EeD7dacee780C4acAC100717081D4" readonly="">
+                             
+                          </div>
+                      </div>
+                      <div class="qr-code">
+                          <div class="qr" id="qr-code" style="margin: 10px;">
+                            <img  width="130" height="130" src="images/ethqrcode.png"  >
+                          </div>
+                          <span>Payment by QR code</span>
+                      </div>
+                     </div>
+                  </div>
+        
+                    </div>
+                
+  
+
+
+
+
+
+
+                   <div style="background-color: black; margin-top: 36px; border-radius: 12px;">
+
+                    <div class="title_page small">
+                        <div class="content">
+                            <h1>
+                                My orders
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-wrap">
+                            <div class="table-body my-orders">
+                                <div class="table-row title my-orders-title">
+                                    <div class="table-td">Payment Code</div>
+                                    <div class="table-td">Hashpower</div>
+                                    <div class="table-td">Date &amp; time</div>
+                                    <div class="table-td">Status</div>
+                                </div>
+                                                  
+
+
+                                                    <div class="table-row my-orders-content">
+                                        <div class="table-td">
+                                                                            <div class="openDetails icon-01">4b057d9b-2ea9-4d27-a7099588</div>
+                                                                    </div>
+                                        <div class="table-td">15 600 GH/s</div>
+                                        <div class="table-td">Jan 21,2023, 12:02 AM</div>
+                                        <div class="table-td">
+                                                                            <span class="paid-status-01">Pending</span>
+                                                                    </div>
+                                    </div>
+                                    <div class="order-payInfo">
+                                        <div class="order-payInfo-content">
+                                            <div class="item">
+                                                                                    <p class="title">Pay for the order</p>
+                                                                            </div>
+                                                                        <div class="item">
+                                                <span>Wallet</span>
+                                                <a class="wallet" href="https://www.blockchain.com/btc/address/1Kq6W3rQU8FAh23FLF8fikzV6VY6THUgQC" target="_blank">1Kq6W3rQU8FAh23FLF8fikzV6VY6THUgQC</a>
+                                            </div>
+                                            <div class="item">
+                                                <span>Price to pay</span>
+                                                <p class="price">0.00212900 BTC</p>
+                                            </div>
+                                                                        <div class="item">
+                                                                                    <a class="view" href="https://qubithashes.com/order-details/4b057d9b-2ea9-4d27-a7099588">View Order</a>
+                                                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><strong>Risk Warning: </strong>Trading Derivatives carries a high level of risk to your capital and you should only trade with money you can afford <br> to lose. Trading Derivatives may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. </span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">©2023 — Raw Trading Ltd | All rights reserved.</span>
+            </div>
+          </footer>
+        <!-- partial -->
+      </div>
+    </div>
+
+  </div>
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (window.getComputedStyle(x).display === "none") {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+<script>
+ function openTab(tabName) {
+  // Get the text field
+  var copyText = document.getElementById("myfirst");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+<script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+
+
+<script>
+    const d = new Date();
+    document.getElementById("demo0").innerHTML = d.toDateString();
+    </script>
+
+<script>//Pass the id of the <input> element to be copied as a parameter to the copy()
+    let copy = (textId) => {
+      //Selects the text in the <input> elemet
+      document.getElementById(textId).select();
+      //Copies the selected text to clipboard
+      document.execCommand("copy");
+    };</script>
+  
+</html>

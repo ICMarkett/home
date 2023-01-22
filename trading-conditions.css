@@ -1,0 +1,100 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+i[x] {
+    display: none !important; }
+  
+  .single-page.page-trading-conditions .page-header {
+    background: url(images/trading-conditions-banner.jpg) no-repeat center right; }
+    .single-page.page-trading-conditions .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  /* .single-page.page-trading-conditions .page-content.global-markets-today {
+    background-image: url(/assets/img/single_market_page/trading-conditions-btm-bg.png); } */
+  
+  .single-page.page-trading-conditions .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-trading-conditions .page-content.global-markets-today .icm-button-wrapper a.live {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-trading-conditions .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  .single-page.page-trading-conditions .page-section:first-child {
+    margin-top: -64px; }
+  
+  .single-page.page-trading-conditions .pre-imaged-section {
+    margin-top: 64px;
+    padding-left: 180px;
+    position: relative; }
+    .single-page.page-trading-conditions .pre-imaged-section::before {
+      position: absolute;
+      content: '';
+      width: 110px;
+      height: 110px;
+      left: 0;
+      top: 0;
+      background: transparent no-repeat center center;
+      background-size: contain; }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-1::before {
+      background-image: url(images/trading-conditions-spreads.png); }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-2::before {
+      background-image: url(images/trading-conditions-execution.png); }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-3::before {
+      background-image: url(images/trading-conditions-margin.png); }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-4::before {
+      background-image: url(images/trading-conditions-currency.png); }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-5::before {
+      background-image: url(images/trading-conditions-swaps.png); }
+    .single-page.page-trading-conditions .pre-imaged-section.pre-img-6::before {
+      background-image: url(images/trading-conditions-hours.png); }
+  
+  .single-page.page-trading-conditions .page-section h1 {
+    text-align: left; }
+  
+  @media screen and (max-width: 640px) {
+    .single-page.page-trading-conditions .pre-imaged-section {
+      margin-top: 180px;
+      padding-left: 0px;
+      position: relative; }
+      .single-page.page-trading-conditions .pre-imaged-section::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 110px;
+        left: 0;
+        top: -110px;
+        background: transparent no-repeat center center;
+        background-size: contain; }
+    .single-page.page-trading-conditions .page-section h1 {
+      text-align: center; } }
+  
+  /*# sourceMappingURL=trading-conditions.css.map */

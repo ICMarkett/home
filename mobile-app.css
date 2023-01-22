@@ -1,0 +1,287 @@
+.single-page.page-icmarkets-mobile-app {
+    background: #f3f3f3 !important;
+}
+.single-page.page-icmarkets-mobile-app .light-block {
+    background-color: #fff;
+    padding: 30px 0;
+}
+.single-page.page-icmarkets-mobile-app .gray-block {
+    background-color: #f3f3f3;
+    padding: 30px 0;
+}
+.single-page.page-icmarkets-mobile-app .dark-block {
+    padding: 40px 0;
+    background: #1c1a2b url(images/world-map.png) bottom no-repeat;
+}
+.single-page.page-icmarkets-mobile-app .grid2-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.single-page.page-icmarkets-mobile-app .grid3-3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.single-page.page-icmarkets-mobile-app .fs-20 {
+    font-size: 20px;
+}
+.single-page.page-icmarkets-mobile-app .fs-14 {
+    font-size: 14px;
+    line-height: 26px;
+}
+.single-page.page-icmarkets-mobile-app .fw-700 {
+    font-weight: 700;
+}
+.single-page.page-icmarkets-mobile-app .fw-500 {
+    font-weight: 500;
+}
+.single-page.page-icmarkets-mobile-app .right {
+    text-align: right;
+}
+.single-page.page-icmarkets-mobile-app .left {
+    text-align: left;
+}
+.single-page.page-icmarkets-mobile-app .h-150 {
+    min-height: 150px;
+}
+.single-page.page-icmarkets-mobile-app .traders-heading1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.single-page.page-icmarkets-mobile-app .traders-heading2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.single-page.page-icmarkets-mobile-app .trader-icon {
+    min-height: 80px;
+}
+.single-page.page-icmarkets-mobile-app .download-options {
+    display: flex;
+    justify-content: space-evenly;
+}
+.single-page.page-icmarkets-mobile-app .mobile-app-download {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.single-page.page-icmarkets-mobile-app .highlight-text {
+    color: #34e834;
+    white-space: nowrap;
+}
+.single-page.page-icmarkets-mobile-app .section-header {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.single-page.page-icmarkets-mobile-app .section-text {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.single-page.page-icmarkets-mobile-app .markets-heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    display: grid;
+    line-height: 1.2em;
+}
+.single-page.page-icmarkets-mobile-app .app-download-section{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.single-page.page-icmarkets-mobile-app .gray-block .features {
+    display: grid;
+    align-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    grid-row-gap: 30px
+}
+.single-page.page-icmarkets-mobile-app .light-block .currency-options {
+    display: flex;
+    flex-flow: row wrap;
+    height: 46px;
+    justify-content: space-between;
+    width: 340px;
+}
+.single-page.page-icmarkets-mobile-app .light-block .currency-name {
+    height: 30px;
+    width: 52px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #f3f3f3;
+    border-radius: 7%;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 1px 1px 0 3px #f3f3f3;
+}
+.single-page.page-icmarkets-mobile-app .text-section {
+    display: grid;
+    align-content: center;
+    grid-row-gap: 20px;
+    text-align: left;
+}
+.single-page.page-icmarkets-mobile-app .intro-section {
+    color: #fff;
+    text-align: left;
+    display: grid;
+    align-content: center;
+    grid-row-gap: 44px;
+}
+.single-page.page-icmarkets-mobile-app .intro-heading-1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.single-page.page-icmarkets-mobile-app .intro-heading-3 {
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 300;
+}
+.single-page.page-icmarkets-mobile-app .powered-by {
+    background: #ffffff;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.single-page.page-icmarkets-mobile-app .powered-icon-sm{
+    width: 30%;
+}
+
+.single-page.page-icmarkets-mobile-app .ml-1-sm{
+    margin-left: 15px;
+}
+
+.single-page.page-icmarkets-mobile-app .ml-2-sm{
+    margin-left: 25px;
+}
+
+.single-page.page-icmarkets-mobile-app .intro-heading-2 {
+    width: 80%;
+}
+.single-page.page-icmarkets-mobile-app .intro-block {
+    background: url(images/intro-background.png) bottom no-repeat;
+    height: 555px;
+    margin-bottom: 150px;
+    background-size: cover;
+}
+.single-page.page-icmarkets-mobile-app .app-login-image {
+    width: 100%;
+    position: relative;
+    top: 2%;
+    margin-left: 50px;
+}
+@media screen and (max-width: 1200px){
+    .single-page.page-icmarkets-mobile-app .img-section img {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1077px) {
+    .single-page.page-icmarkets-mobile-app .grid3-3 {
+        grid-template-columns: 35% 30% 35%;
+    }
+    .single-page.page-icmarkets-mobile-app .signin-img {
+        width: 80%;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-image {
+        width: 100%;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-image1 {
+        width: 90%;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-image2 {
+        width: 106%
+    }
+    .single-page.page-icmarkets-mobile-app .img-section img {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 587px) and (max-width: 787px) {
+    .single-page.page-icmarkets-mobile-app .intro-section {
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 787px) {
+    .single-page.page-icmarkets-mobile-app .intro-block {
+        background: url(images/intro-background.png) bottom no-repeat;
+        padding-top: 185px !important;
+        height: 642px;
+    }
+    .single-page.page-icmarkets-mobile-app .intro-section {
+        grid-row-gap: 22px;
+        text-align: center;
+    }
+    .single-page.page-icmarkets-mobile-app .intro-heading-1 {
+        font-size: 30px;
+    }
+    .single-page.page-icmarkets-mobile-app .intro-heading-2 {
+        width: 100%;
+    }
+    .single-page.page-icmarkets-mobile-app .app-login-image {
+        width: 70%;
+        top: 0%
+    }
+    .single-page.page-icmarkets-mobile-app .grid3-3 {
+        grid-template-columns: 100%;
+    }
+    .single-page.page-icmarkets-mobile-app .h-150 {
+        min-height: 80px;
+    }
+    .single-page.page-icmarkets-mobile-app .signin-img {
+        display: none;
+    }
+    .single-page.page-icmarkets-mobile-app .right {
+        text-align: left;
+    }
+    .single-page.page-icmarkets-mobile-app .grid2-2 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+    .single-page.page-icmarkets-mobile-app .traders-heading2 {
+        margin-bottom: 20px;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-image {
+        display: none;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-download {
+        grid-template-columns: 50% 50%;
+    }
+    .single-page.page-icmarkets-mobile-app .upload-block .text-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .single-page.page-icmarkets-mobile-app .upload-block .img-section {
+        text-align: center;
+    }
+    .single-page.page-icmarkets-mobile-app .img-section img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 610px) {
+    .single-page.page-icmarkets-mobile-app .img-section img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .single-page.page-icmarkets-mobile-app .download-options img {
+        width: 90%;
+    }
+    .single-page.page-icmarkets-mobile-app .mobile-app-download {
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+    .single-page.page-icmarkets-mobile-app .light-block .currency-options {
+        width: 280px;
+    }
+    .single-page.page-icmarkets-mobile-app .section-header {
+        font-size: 30px;
+    }
+    .single-page.page-icmarkets-mobile-app .section-text {
+        font-size: 17px;
+    }
+}

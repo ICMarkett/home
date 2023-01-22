@@ -1,0 +1,202 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.range-of-markets-page .page-content {
+    padding: 0 !important; }
+    .single-page.range-of-markets-page .page-content .profile-button {
+      background: #f5f5f5; }
+    .single-page.range-of-markets-page .page-content.c-accent-1 {
+      background: #f5f5f5; }
+      .single-page.range-of-markets-page .page-content.c-accent-1 .profile-button {
+        background: #ededed; }
+    .single-page.range-of-markets-page .page-content.c-accent-2 {
+      background: #fafafa; }
+      .single-page.range-of-markets-page .page-content.c-accent-2 .profile-button {
+        background: #f1f1f1; }
+  
+  .single-page.range-of-markets-page .page-section {
+    display: flex; }
+  
+  .single-page.range-of-markets-page .page-header {
+    background: url(images/banner1.png) no-repeat center right; }
+  
+  .single-page.range-of-markets-page .market-facts-card {
+    float: initial !important; }
+  
+  .single-page.range-of-markets-page .profile-buttons {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px; }
+    .single-page.range-of-markets-page .profile-buttons .profile-button {
+      margin: 0 0 24px 0 !important; }
+  
+  .single-page.range-of-markets-page .forex .page-first-text::before {
+    background: url(images/icon-forex.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .forex .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .forex .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .commodities .page-first-text::before {
+    background: url(images/icon-comodity.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .commodities .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .commodities .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .indices .page-first-text::before {
+    background: url(images/icon-indices.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .indices .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .indices .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .bonds .page-first-text::before {
+    background: url(images/icon-bond.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .bonds .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .bonds .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .cryptocurrency .page-first-text::before {
+    background: url(images/icon-crypto.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .cryptocurrency .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .cryptocurrency .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .stocks .page-first-text::before {
+    background: url(images/icon-stock.svg) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .stocks .market-facts-card .facts-item::before {
+    color: #34E834; }
+  
+  .single-page.range-of-markets-page .stocks .market-facts-card .action-button {
+    background: #34E834; }
+  
+  .single-page.range-of-markets-page .futures .page-first-text::before {
+    background: url(images/icon-futures.png) center center no-repeat transparent; }
+  
+  .single-page.range-of-markets-page .futures .market-facts-card .facts-item::before {
+    color: #34e834; }
+  
+  .single-page.range-of-markets-page .futures .market-facts-card .action-button {
+    background: #34e834; }
+  
+  @media screen and (max-width: 1200px) {
+    .single-page.range-of-markets-page .first-section {
+      position: relative;
+      padding-top: 280px !important;
+      margin-left: 0 !important;
+      display: block; }
+      .single-page.range-of-markets-page .first-section .page-first-text::before {
+        left: 0 !important; }
+    .single-page.range-of-markets-page .profile-buttons {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 40px; }
+      .single-page.range-of-markets-page .profile-buttons .profile-button {
+        margin: 0 0 24px 0 !important; } }
+  
+  @media screen and (max-width: 960px) {
+    .single-page.range-of-markets-page .page-content {
+      padding: 50px 0 !important; }
+    .single-page.range-of-markets-page .page-section {
+      display: block;
+      position: relative; }
+      .single-page.range-of-markets-page .page-section .first-section {
+        margin-top: 0 !important;
+        margin-right: 400px; }
+    .single-page.range-of-markets-page .profile-buttons {
+      justify-content: left;
+      display: flex;
+      flex-direction: row;
+      margin: 30px 400px 0 0; }
+      .single-page.range-of-markets-page .profile-buttons .profile-button {
+        margin-right: 13px !important;
+        width: 120px;
+        min-width: 120px;
+        padding: 16px 13px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-label {
+          font-size: 10px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-value {
+          font-size: 13px; }
+    .single-page.range-of-markets-page .market-facts-card {
+      position: absolute !important;
+      top: 0;
+      right: 0; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.range-of-markets-page .page-section .first-section {
+      margin: 0 !important;
+      padding-top: 0px !important; }
+      .single-page.range-of-markets-page .page-section .first-section .page-first-text::before {
+        top: 0;
+        width: 70px;
+        height: 70px; }
+      .single-page.range-of-markets-page .page-section .first-section h1 {
+        padding-left: 100px; }
+    .single-page.range-of-markets-page .profile-buttons {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      margin: 20px !important;
+      height: auto !important; }
+      .single-page.range-of-markets-page .profile-buttons .profile-button {
+        margin-right: 13px !important;
+        width: 120px;
+        min-width: 120px;
+        padding: 16px 13px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-label {
+          font-size: 10px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-value {
+          font-size: 13px; }
+    .single-page.range-of-markets-page .market-facts-card {
+      position: relative !important;
+      top: initial;
+      right: initial;
+      width: auto !important;
+      margin: 0 !important; } }
+  
+  @media screen and (max-width: 450px) {
+    .single-page.range-of-markets-page .profile-buttons {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 20px !important;
+      height: auto !important; }
+      .single-page.range-of-markets-page .profile-buttons .profile-button {
+        margin: 13px auto !important;
+        width: 170px;
+        min-width: 170px;
+        padding: 22px 18px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-label {
+          font-size: 14px; }
+        .single-page.range-of-markets-page .profile-buttons .profile-button .profile-button-value {
+          font-size: 18px; } }
+  
+  /*# sourceMappingURL=range-of-markets.css.map */

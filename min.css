@@ -1,0 +1,374 @@
+.tabs-bg {
+    background-image: url(img/tabs_bg.svg);
+    background-position: 50% -35px;
+    background-repeat: no-repeat;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer1, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.tabs-content {
+    margin: 0 32px 40px 32px;
+}
+.tabs-content ul.hashpower-duration {
+
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+ol, ul {
+    list-style: none;
+}
+.tabs-content ul.hashpower-duration li.current {
+    border: 1px solid #e66e28;
+}
+.tabs-content ul.hashpower-duration li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 48px;
+    margin: 0 5px 20px 5px;
+    padding: 5px 24px;
+    background: 0 0;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.5);
+    cursor: pointer;
+}
+a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visited:hover, li {
+    text-decoration: none;
+    outline: 0;
+}
+.current{
+    line-height: 1;
+    -webkit-box-direction: normal;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+    outline: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 48px;
+    margin: 0 5px 20px 5px;
+    padding: 5px 24px;
+    background: 0 0;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid #e66e28;
+}
+.tabs-content ul.hashpower-duration li.current a {
+    color: #e66e28;
+}
+.tabs-content ul.hashpower-duration li a {
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+}
+.tabs-content ul.hashpower-duration li.current a {
+    color: #e66e28;
+}
+.tabs-content ul.hashpower-duration li.current {
+    border: 1px solid #e66e28;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer1, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.tabs-content ul.hashpower-duration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.hashpower-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 32px 100px 32px;
+}
+.hashpower-tabs>div.item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc(25% - 8px);
+    flex: 0 1 calc(25% - 8px);
+    min-height: 397px;
+    margin-bottom: 16px;
+    padding: 40px 24px 0 24px;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(40,40,55,.2);
+}
+.hashpower-tabs>div.item>div.title {
+    min-height: 78px;
+    margin-bottom: 40px;
+    padding-right: 80px;
+    position: relative;
+}
+.hashpower-tabs>div.item>div.title:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hashpower-tabs>div.item>div.title.icon_01:before {
+    background-image: url(../images/lvl_01.png);
+    background-position: 10px -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hashpower-tabs>div.item>div.title.icon_02:before {
+    background-image: url(../images/lvl_01.png);
+    background-position: 10px -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hashpower-tabs>div.item>div.title.icon_03:before {
+    background-image: url(../images/lvl_01.png);
+    background-position: 10px -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hashpower-tabs>div.item>div.title h2 {
+    margin-bottom: 12px;
+    color: rgb(230, 110, 40);
+    font-size: 32px;
+    line-height: 40px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.hashpower-tabs>div.item>div.content {
+    margin-bottom: 28px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(26, 255, 18, 0.979);
+}
+table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.hashpower-tabs>div.item>div.content>div.field-data {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.field-data{
+    line-height: 1;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.hashpower-tabs>div.item>div.content>div.field-data p {
+    color: rgb(10, 136, 21);
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.hashpower-tabs>div.item>div.content>div.field-data span {
+    color: rgb(10, 136, 21);
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.hashpower-tabs>div.item>div.content>div.field-data {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #534942;
+}
+.hashpower-tabs>div.item>div.footer1>div.price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.hashpower-tabs>div.item>div.footer1>div.price p {
+    color: #e66e28;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.hashpower-tabs>div.item>div.footer1>div.buy-btn a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 5px 24px;
+    border-radius: 12px;
+    background: linear-gradient(78.41deg,#de5325 0,#ec8532 100%);
+    -webkit-box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    box-shadow: 0 12px 24px rgb(236 151 90 / 24%);
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visited:hover, li {
+    text-decoration: none;
+    outline: 0;
+}
+.footer1{
+    line-height: 1;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+section{
+    line-height: 1;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.hashpower-tabs {
+   
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 32px 100px 32px;
+}
+
+.tabs-bg {
+    background-image: none;
+    background-position: 50% -35px;
+    background-repeat: no-repeat;
+}
+
+.v55{
+    color: #fff;
+    font-size: 48px;
+    line-height: 54px;
+    font-family: Gilroy,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

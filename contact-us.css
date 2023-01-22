@@ -1,0 +1,343 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.page-contact-us .d-none {
+    display: none !important; }
+  
+  .single-page.page-contact-us .m-auto {
+    margin: auto; }
+  
+  .single-page.page-contact-us .b-1 {
+    border-bottom: 2px solid #eee;
+    margin-top: 1em; }
+  
+  .single-page.page-contact-us .f-20 {
+    font-size: 20px; }
+  
+  .single-page.page-contact-us .h-200 {
+    height: 200px !important; }
+  
+  .single-page.page-contact-us .h-100 {
+    height: 100px !important; }
+  
+  .single-page.page-contact-us .mt-1-5 {
+    margin-top: 1.5em; }
+  
+  .single-page.page-contact-us .mt-0 {
+    margin-top: 0 !important; }
+  
+  .single-page.page-contact-us .mb-0 {
+    margin-bottom: 0 !important; }
+  
+  .single-page.page-contact-us .mb-1 {
+    margin-bottom: 1em !important; }
+  
+  .single-page.page-contact-us .mb--5 {
+    margin-bottom: .5em; }
+  
+  .single-page.page-contact-us .p-1-5 {
+    padding: 3.5em 0 0 1.5em !important; }
+  
+  .single-page.page-contact-us .p-1-2 {
+    padding: 1.2em !important; }
+  
+  .single-page.page-contact-us .spc-top {
+    margin-top: 2em !important;
+    padding-top: 2em !important; }
+  
+  .single-page.page-contact-us .text-green {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.4px;
+    color: #333; }
+  
+  .single-page.page-contact-us .text-grey {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.4px;
+    color: #555556 !important; }
+  
+  .single-page.page-contact-us .text-dark {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.4px;
+    color: #333; }
+  
+  .single-page.page-contact-us .text-head-cu {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 200;
+    margin-bottom: 30px; }
+  
+  .single-page.page-contact-us .text-center {
+    text-align: center; }
+  
+  .single-page.page-contact-us .text-left {
+    text-align: left !important; }
+  
+  .single-page.page-contact-us .d-flex-center {
+    display: flex;
+    justify-content: center; }
+  
+  .single-page.page-contact-us .hq {
+    height: 100px;
+    background-repeat: no-repeat; }
+    .single-page.page-contact-us .hq.one {
+      background-image: url(images/contact-us-building-1.png); }
+    .single-page.page-contact-us .hq.two {
+      background-image: url(images/contact-us-building-2.png); }
+    .single-page.page-contact-us .hq.three {
+      background-image: url(images/contact-us-building-3.png); }
+  
+  .single-page.page-contact-us .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.93);
+    z-index: -1;
+    transform: scale(0.96);
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
+    .single-page.page-contact-us .overlay .close {
+      text-decoration: none;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 40px;
+      background: #444;
+      border-radius: 50px;
+      margin: 20px;
+      color: #000;
+      transition: all 0.33s ease-in-out;
+      cursor: default; }
+    .single-page.page-contact-us .overlay .close:hover {
+      color: red;
+      background: #000;
+      box-shadow: 0 0 0 4px red inset;
+      transition: all 0.33s ease-in-out; }
+    .single-page.page-contact-us .overlay .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+      line-height: 42px; }
+      .single-page.page-contact-us .overlay .content .inner {
+        background: #2a2a2a;
+        border-radius: 18px;
+        padding: 30px 100px; }
+  
+  body.overlay-active .single-page.page-contact-us .overlay {
+    z-index: 999999;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.33s ease-in-out; }
+  
+  .single-page.page-contact-us .tf-container a {
+    color: inherit;
+    text-decoration: none; }
+  
+  .single-page.page-contact-us .tf-container .tf-number {
+    display: none; }
+  
+  .single-page.page-contact-us .c-card {
+    width: 340px;
+    height: 372px;
+    border-radius: 18px;
+    background-color: #fbfafa;
+    box-shadow: 0px 3px 24px 0 rgba(0, 0, 0, 0.14);
+    display: table;
+    justify-self: center;
+    position: relative;
+    margin-top: 50px; }
+    .single-page.page-contact-us .c-card.b-none {
+      box-shadow: none;
+      background: none; }
+      .single-page.page-contact-us .c-card.b-none:hover {
+        border: none; }
+    .single-page.page-contact-us .c-card .c-card-content {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: -0.3px;
+      padding: 1.5em;
+      text-align: center;
+      color: #333; }
+      .single-page.page-contact-us .c-card .c-card-content .c-card-img {
+        width: 80px;
+        height: 85px;
+        border-radius: 35px;
+        background-color: transparent;
+        margin-bottom: 20px;
+        background-image: url(images/contact-us-building.png);
+        background-repeat: no-repeat;
+        background-position: center center; }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-1 {
+          background-image: url(images/contact-us-building.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-2 {
+          background-image: url(images/contact-us-mailbox.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-3 {
+          background-image: url(images/contact-us-call.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-4 {
+          background-image: url(images/contact-us-mail.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-5 {
+          background-image: url(images/contact-us-clock.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-6 {
+          background-image: url(images/contact-us-docs.png); }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-7 {
+          background-image: url(images/contact-us-email.png);
+          opacity: 0.5; }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-8 {
+          background-image: url(images/contact-us-callback.png);
+          opacity: 0.5; }
+        .single-page.page-contact-us .c-card .c-card-content .c-card-img.i-9 {
+          background-image: url(images/contact-us-global.png); }
+      .single-page.page-contact-us .c-card .c-card-content .c-card-title .title-gray {
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: -0.4px;
+        color: rgba(11, 10, 20, 0.6);
+        margin-top: -28px; }
+      .single-page.page-contact-us .c-card .c-card-content .c-card-title .title-green {
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: -0.4px;
+        color: #333;
+        margin-bottom: 30px; }
+      .single-page.page-contact-us .c-card .c-card-content .c-card-extra {
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.5;
+        letter-spacing: -0.3px;
+        color: rgba(11, 10, 20, 0.6);
+        margin-top: 0px; }
+  
+  .single-page.page-contact-us .page-header {
+    background: url(images/contact-us-banner.jpg) no-repeat center right; }
+    .single-page.page-contact-us .page-header .icm-button-wrapper.page-header__primary-button
+  a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  .single-page.page-contact-us .page-content-container {
+    background: #fff !important; }
+  
+  .single-page.page-contact-us .page-content.global-markets-today {
+    background-image: url(/images/contact-us-btm-bg.png); }
+  
+  .single-page.page-contact-us .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-contact-us .page-content.global-markets-today .icm-button-wrapper a.live {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-contact-us .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    background: #000 !important;
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  .single-page.page-contact-us .grid-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+  
+  .single-page.page-contact-us .grid-section-50 {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  
+  @media screen and (min-width: 701px) {
+    .single-page.page-contact-us .a-lg {
+      margin: 0 auto; }
+    .single-page.page-contact-us .ml-15-lg {
+      margin-left: 1.5em; }
+    .single-page.page-contact-us .d-flex-lg {
+      display: flex; }
+    .single-page.page-contact-us .c-card.lg {
+      width: 450px;
+      height: 200px; } }
+  
+  @media screen and (max-width: 1100px) and (min-width: 701px) {
+    .single-page.page-contact-us .p-3-xs {
+      padding: 0 3em !important; } }
+  
+  @media screen and (max-width: 1100px) and (min-width: 1001px) {
+    .single-page.page-contact-us .xs {
+      padding: 1em 0 0 1.5em !important; } }
+  
+  @media screen and (max-width: 1000px) and (min-width: 701px) {
+    .single-page.page-contact-us .grid-section {
+      grid-template-columns: 50% 50%; } }
+  
+  @media screen and (max-width: 450px) and (min-width: 301px) {
+    .single-page.page-contact-us .p-3-xs {
+      padding: 0 1.5em !important; } }
+  
+  @media screen and (max-width: 300px) and (min-width: 200px) {
+    .single-page.page-contact-us .p-3-xs {
+      padding: 0 2em !important; } }
+  
+  @media screen and (max-width: 800px) and (min-width: 200px) {
+    .single-page.page-contact-us .w-100 {
+      width: 100% !important; } }
+  
+  @media screen and (max-width: 700px) and (min-width: 200px) {
+    .single-page.page-contact-us .mt-0-xs {
+      margin-top: 0; }
+    .single-page.page-contact-us .grid-section {
+      grid-template-columns: 100%; } }
+  
+  @media screen and (max-width: 1140px) {
+    .single-page.page-contact-us .grid-section-50 {
+      grid-template-columns: 50% 50%; } }
+  
+  @media screen and (max-width: 940px) {
+    .single-page.page-contact-us .grid-section-50 {
+      grid-template-columns: 100%; } }
+  
+  /*# sourceMappingURL=contact-us.css.map */

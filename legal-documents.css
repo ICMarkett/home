@@ -1,0 +1,302 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.page-legal-documents .page-content-container a {
+    color: rgba(12, 155, 255, 0.74);
+    cursor: pointer; }
+  
+  .single-page.page-legal-documents .double-sidebar-block {
+    position: relative;
+    z-index: 1;
+    width: 308px;
+    margin: 0 auto;
+    border-radius: 0;
+    float: right;
+    margin: 0px 40px 40px 80px; }
+    .single-page.page-legal-documents .double-sidebar-block .contact-block {
+      position: relative;
+      padding: 0;
+      background: #e9e9e9;
+      margin: 50px auto;
+      border-radius: 0;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+      z-index: 2; }
+      .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-header {
+        padding: 42px 33px 38px; }
+        .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-header .header-label {
+          font-size: 28px;
+          line-height: 1;
+          letter-spacing: -0.6px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+        .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-header .header-title {
+          margin-top: 22px;
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: -0.3px;
+          text-align: left;
+          color: rgba(11, 10, 20, 0.8); }
+      .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-pre-imaged {
+        position: relative;
+        padding: 28px 33px 23px 100px;
+        background: #f2f2f2;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8); }
+        .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-pre-imaged a {
+          color: rgba(0, 0, 0, 0.8) !important; }
+        .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-pre-imaged.chat-img::before {
+          content: "";
+          position: absolute;
+          left: 33px;
+          top: 15px;
+          width: 40px;
+          height: 40px;
+          background: transparent no-repeat center center;
+          background-size: contain;
+          background-image: url(images/refer-a-friend-live-chat.png); }
+        .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-pre-imaged.email-img {
+          background: #e9e9e9; }
+          .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-pre-imaged.email-img::before {
+            content: "";
+            position: absolute;
+            left: 33px;
+            top: 15px;
+            width: 40px;
+            height: 40px;
+            background: transparent no-repeat center center;
+            background-size: contain;
+            background-image: url(images/refer-a-friend-email-support.png); }
+      .single-page.page-legal-documents .double-sidebar-block .contact-block .contact-phone {
+        background: #353535;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 2.18;
+        letter-spacing: -1.7px;
+        text-align: center;
+        color: #34E834; }
+    .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding-top: 214px;
+      padding-bottom: 64px;
+      border-radius: 0;
+      background-image: url(/images/legal-documents-facts-bg.png) !important;
+      box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.14); }
+      .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background::before {
+        content: "";
+        position: absolute;
+        left: 52px;
+        top: 87px;
+        width: 204px;
+        height: 52px;
+        background: transparent no-repeat center center;
+        background-size: contain;
+        background-image: url(images/ICM-logo-transparentBG.svg); }
+      .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background.sidebar-trueecn::before {
+        background-image: url(images/true-logo.png); }
+      .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block__message {
+        font-size: 28px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 40px;
+        margin-bottom: 40px; }
+      .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block {
+        text-align: center; }
+        .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block .icm-btn.icm-btn-primary {
+          background: #34E834 !important;
+          color: rgba(31, 29, 49, 0.8) !important;
+          line-height: 1 !important;
+          padding: 14px 25px !important;
+          border-radius: 30px;
+          border: none !important;
+          width: max-content;
+          font-size: 12px !important;
+          font-weight: 900 !important;
+          text-transform: uppercase; }
+        .single-page.page-legal-documents .double-sidebar-block .sidebar-cta-card-container.random-background .bottom-block b {
+          font-weight: 900; }
+  
+  .single-page.page-legal-documents .pre-image-item {
+    padding-left: 33px;
+    position: relative; }
+    .single-page.page-legal-documents .pre-image-item::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 10px;
+      width: 14px;
+      height: 14px;
+      transform: rotate(45deg);
+      border: 1px solid #b5b5b5;
+      background: #34e834;
+      box-shadow: 0 0 2px 2px #fff inset; }
+  
+  .single-page.page-legal-documents .note {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.6); }
+    .single-page.page-legal-documents .note::before {
+      content: "* "; }
+  
+  .single-page.page-legal-documents .page-header {
+    background: url(images/legal-documents-banner.jpg) no-repeat center right; }
+    .single-page.page-legal-documents .page-header .icm-button-wrapper.page-header__primary-button
+  a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  .single-page.page-legal-documents .page-content-container {
+    background: #fff !important; }
+  
+  /* .single-page.page-legal-documents .page-content.global-markets-today {
+    background-image: url(/assets/img/single_market_page/legal-documents-btm-bg.png); } */
+  
+  .single-page.page-legal-documents .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-legal-documents .page-section .first-section {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important; }
+  
+  .single-page.page-legal-documents .page-first-text {
+    margin-bottom: 47px;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: rgba(11, 10, 20, 0.8); }
+  
+  .single-page.page-legal-documents .accordion {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 40vw; }
+    .single-page.page-legal-documents .accordion ul {
+      list-style: none;
+      padding-left: 0px;
+      margin-top: 16px; }
+      .single-page.page-legal-documents .accordion ul li::before {
+        content: "- ";
+        font-size: 24px;
+        font-weight: 900; }
+      .single-page.page-legal-documents .accordion ul li a {
+        color: #838383;
+        font-size: 19px;
+        font-weight: 500; }
+  
+  .single-page.page-legal-documents .collapses {
+    display: none; }
+  
+  .single-page.page-legal-documents .collapses-active {
+    display: block; }
+  
+  .single-page.page-legal-documents .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900; }
+    .single-page.page-legal-documents .title h4 {
+      font-weight: 900; }
+  
+  .single-page.page-legal-documents .page-first-text::before {
+    display: none; }
+  
+  .single-page.page-legal-documents .page-content.global-markets-today .icm-button-wrapper a.live, .single-page.page-legal-documents .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important; }
+  
+  .single-page.page-legal-documents .page-content.global-markets-today .icm-button-wrapper a.demo {
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  .single-page.page-legal-documents .grid-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+    .single-page.page-legal-documents .grid-section .content-head {
+      margin-bottom: 0 !important; }
+    .single-page.page-legal-documents .grid-section .grid-content {
+      padding: 20px; }
+    .single-page.page-legal-documents .grid-section .content-inside {
+      font-size: 16px;
+      line-height: 1.56; }
+  
+  @media screen and (max-width: 1040px) {
+    .single-page.page-legal-documents .page-section .first-section .page-first-image {
+      min-height: 300px; } }
+  
+  @media screen and (max-width: 960px) {
+    .single-page.page-legal-documents .page-section .first-section {
+      padding-top: 80px !important; }
+    .single-page.page-legal-documents .double-sidebar-block {
+      margin: 80px 40px 80px 80px !important; } }
+  
+  @media screen and (max-width: 940px) {
+    .single-page.page-legal-documents .grid-section {
+      grid-template-columns: 100%; }
+      .single-page.page-legal-documents .grid-section .gc-1 {
+        grid-row: 1; }
+      .single-page.page-legal-documents .grid-section .gc-4 {
+        grid-row: 2; }
+      .single-page.page-legal-documents .grid-section .gc-2 {
+        grid-row: 3;
+        margin-top: 40px; }
+      .single-page.page-legal-documents .grid-section .gc-5 {
+        grid-row: 4; }
+      .single-page.page-legal-documents .grid-section .gc-3 {
+        grid-row: 5;
+        margin-top: 40px; }
+      .single-page.page-legal-documents .grid-section .gc-6 {
+        grid-row: 6; } }
+  
+  @media screen and (max-width: 870px) {
+    .single-page.page-legal-documents .page-section .first-section {
+      padding-top: 80px !important; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.page-legal-documents .double-sidebar-block {
+      float: initial !important;
+      margin: -50px auto 100px !important; }
+    .single-page.page-legal-documents .accordion {
+      width: 90vw; } }
+  
+  /*# sourceMappingURL=legal-documents.css.map */

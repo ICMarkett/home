@@ -1,0 +1,415 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+i[x] {
+    display: none !important; }
+  
+  .single-page.page-teamviewer {
+    /*fix for Ipad - ipad Pro*/
+    /*to cover responsive images background for support*/ }
+    .single-page.page-teamviewer .bg-dark {
+      background: #000; }
+    .single-page.page-teamviewer .bg-gray {
+      background: #F9FAFB; }
+    .single-page.page-teamviewer .bg-light {
+      background: #F5F5F5; }
+    .single-page.page-teamviewer .bg-white {
+      background: white; }
+    .single-page.page-teamviewer .gray2 {
+      color: #9B9999 !important; }
+    .single-page.page-teamviewer .white {
+      color: #fff !important; }
+    .single-page.page-teamviewer .d-none {
+      display: none !important; }
+    .single-page.page-teamviewer .m-auto {
+      margin: auto; }
+    .single-page.page-teamviewer .mx-3 {
+      margin: 3em; }
+    .single-page.page-teamviewer .b-1 {
+      border-bottom: 2px solid #eee;
+      margin-top: 1em; }
+    .single-page.page-teamviewer .f-20 {
+      font-size: 20px; }
+    .single-page.page-teamviewer .f-400 {
+      font-weight: 400 !important; }
+    .single-page.page-teamviewer .h-200 {
+      height: 200px !important; }
+    .single-page.page-teamviewer .h-100 {
+      height: 100px !important; }
+    .single-page.page-teamviewer .m-3 {
+      margin: 3em 0 !important; }
+    .single-page.page-teamviewer .mt-1-5 {
+      margin-top: 1.5em; }
+    .single-page.page-teamviewer .mt-2 {
+      margin-top: 2em; }
+    .single-page.page-teamviewer .mr-1 {
+      margin-right: 10px; }
+    .single-page.page-teamviewer .mr-15 {
+      margin-right: 15px; }
+    .single-page.page-teamviewer .mt-0 {
+      margin-top: 0 !important; }
+    .single-page.page-teamviewer .mb-0 {
+      margin-bottom: 0 !important; }
+    .single-page.page-teamviewer .mb-1 {
+      margin-bottom: 1em !important; }
+    .single-page.page-teamviewer .mb--5 {
+      margin-bottom: .5em; }
+    .single-page.page-teamviewer .p-1-5 {
+      padding: 3.5em 0 0 1.5em !important; }
+    .single-page.page-teamviewer .p-1-2 {
+      padding: 1.2em !important; }
+    .single-page.page-teamviewer .p3x {
+      padding: 0 3em !important; }
+    .single-page.page-teamviewer .p-0-2 {
+      padding: 0 2em !important; }
+    .single-page.page-teamviewer .p-0-3 {
+      padding: 0 3em !important; }
+    .single-page.page-teamviewer .spc-top {
+      margin-top: 2em !important;
+      padding-top: 2em !important; }
+    .single-page.page-teamviewer .text-green {
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.4px;
+      color: #333; }
+    .single-page.page-teamviewer .text-grey {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.4px;
+      color: #555556 !important; }
+    .single-page.page-teamviewer .text-dark {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.4px;
+      color: #333; }
+    .single-page.page-teamviewer .text-head-cu {
+      font-size: 48px;
+      line-height: 60px;
+      font-weight: 200;
+      margin-bottom: 30px; }
+    .single-page.page-teamviewer .text-center {
+      text-align: center; }
+    .single-page.page-teamviewer .text-left {
+      text-align: left !important; }
+    .single-page.page-teamviewer .text-margin {
+      font-size: 18px !important;
+      font-weight: bold !important;
+      line-height: 1.5 !important;
+      text-align: left !important;
+      margin: 10px 5px 0 5px !important; }
+    .single-page.page-teamviewer .d-flex {
+      display: flex; }
+    .single-page.page-teamviewer .d-flex-center {
+      display: flex;
+      justify-content: center; }
+    .single-page.page-teamviewer .d-flex-block, .single-page.page-teamviewer .d-flex-block-sm, .single-page.page-teamviewer .d-flex-block-md {
+      display: block !important;
+      margin: 0 auto; }
+    .single-page.page-teamviewer .col-33 {
+      width: 33.3% !important; }
+    .single-page.page-teamviewer .col-40 {
+      width: 40%; }
+    .single-page.page-teamviewer .col-60 {
+      width: 60%; }
+    .single-page.page-teamviewer .num-step {
+      color: #E5E5E5;
+      float: right;
+      font-size: 150px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .single-page.page-teamviewer .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.93);
+      z-index: -1;
+      transform: scale(0.96);
+      opacity: 0;
+      transition: all 0.5s ease-in-out; }
+      .single-page.page-teamviewer .overlay .close {
+        text-decoration: none;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 40px;
+        background: #444;
+        border-radius: 50px;
+        margin: 20px;
+        color: #000;
+        transition: all 0.33s ease-in-out;
+        cursor: default; }
+      .single-page.page-teamviewer .overlay .close:hover {
+        color: red;
+        background: #000;
+        box-shadow: 0 0 0 4px red inset;
+        transition: all 0.33s ease-in-out; }
+      .single-page.page-teamviewer .overlay .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        line-height: 42px; }
+        .single-page.page-teamviewer .overlay .content .inner {
+          background: #2a2a2a;
+          border-radius: 18px;
+          padding: 30px 100px; }
+    body.overlay-active .single-page.page-teamviewer .overlay {
+      z-index: 999999;
+      opacity: 1;
+      transform: scale(1);
+      transition: all 0.33s ease-in-out; }
+    .single-page.page-teamviewer .tf-container a {
+      color: inherit;
+      text-decoration: none; }
+    .single-page.page-teamviewer .tf-container .tf-number {
+      display: none; }
+    .single-page.page-teamviewer .sup {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 1em;
+      line-height: 1.2em; }
+    .single-page.page-teamviewer .c-img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 200px;
+      padding: 3em 1.5em; }
+      .single-page.page-teamviewer .c-img.i-1 {
+        background-image: url(images/step1.png); }
+    .single-page.page-teamviewer .c-card {
+      width: 340px;
+      height: 372px;
+      border-radius: 18px;
+      display: table;
+      justify-self: center;
+      position: relative; }
+      .single-page.page-teamviewer .c-card .c-card-content {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.56;
+        letter-spacing: -0.3px;
+        padding: 1.5em;
+        text-align: center;
+        color: #333; }
+        .single-page.page-teamviewer .c-card .c-card-content .c-card-img {
+          width: 80px;
+          height: 85px;
+          border-radius: 35px;
+          background-color: transparent;
+          margin-bottom: 20px;
+          background-repeat: no-repeat;
+          background-position: center center; }
+        .single-page.page-teamviewer .c-card .c-card-content .c-card-title .title-gray {
+          font-size: 20px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: -0.4px;
+          color: rgba(11, 10, 20, 0.6);
+          margin-top: -28px; }
+        .single-page.page-teamviewer .c-card .c-card-content .c-card-title .title-green {
+          font-size: 20px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: -0.4px;
+          color: #333;
+          margin-bottom: 30px; }
+        .single-page.page-teamviewer .c-card .c-card-content .c-card-extra {
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2.5;
+          letter-spacing: -0.3px;
+          color: rgba(11, 10, 20, 0.6);
+          margin-top: 0px; }
+    .single-page.page-teamviewer .img-res {
+      width: 80%;
+      margin-top: 5em; }
+    .single-page.page-teamviewer .h86 {
+      height: 86px; }
+    .single-page.page-teamviewer .page-header {
+      background: url(images/homebanner.png) no-repeat center right; }
+      .single-page.page-teamviewer .page-header .icm-button-wrapper.page-header__primary-button a.icm-btn.icm-btn-primary {
+        border-radius: 2px !important;
+        padding: 25px !important;
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        text-transform: uppercase; }
+    .single-page.page-teamviewer .page-content-container {
+      background: #fff !important; }
+    /* .single-page.page-teamviewer .page-content.global-markets-today {
+      background-image: url(/assets/img/single_market_page/contact-us-btm-bg.png); } */
+    .single-page.page-teamviewer .page-header__menu-container .page-header__menu .menu-item .menu-title {
+      padding-left: 0 !important;
+      text-transform: uppercase; }
+    .single-page.page-teamviewer .page-content.global-markets-today .icm-button-wrapper a.live {
+      border-radius: 0 !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+    .single-page.page-teamviewer .page-content.global-markets-today .icm-button-wrapper a.demo {
+      border-radius: 0 !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase !important;
+      color: #fff !important;
+      margin-left: 9px; }
+    .single-page.page-teamviewer .grid-section {
+      display: grid;
+      grid-template-columns: 33% 33% 33%; }
+    .single-page.page-teamviewer .grid-section-50 {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+    @media screen and (min-width: 1200px) {
+      .single-page.page-teamviewer .p3-lgx {
+        padding: 2.5em 0 0 0 !important; }
+      .single-page.page-teamviewer .p3-lg {
+        padding: 2.5em 0 !important; }
+      .single-page.page-teamviewer .p3x {
+        padding: 0 0 0 3em !important; }
+      .single-page.page-teamviewer .m-05-lg {
+        margin: 0 5em !important; }
+      .single-page.page-teamviewer .mx-5-lg {
+        margin: 5em 0; } }
+    .single-page.page-teamviewer .img-res {
+      width: 100%;
+      margin-top: 5em; }
+    .single-page.page-teamviewer .col-40 {
+      width: 50% !important; }
+    .single-page.page-teamviewer .col-60 {
+      width: 50% !important; }
+    @media screen and (min-width: 701px) {
+      .single-page.page-teamviewer .a-lg {
+        margin: 0 auto;
+        width: 310px;
+        text-align: left;
+        padding: 0 0 3em 2em; }
+      .single-page.page-teamviewer .ml-15-lg {
+        margin-left: 1.5em; }
+      .single-page.page-teamviewer .d-flex-lg {
+        display: flex; }
+      .single-page.page-teamviewer .c-card.lg {
+        width: 450px;
+        height: 150px !important; } }
+    @media screen and (min-width: 1001px) {
+      .single-page.page-teamviewer .d-flex-block, .single-page.page-teamviewer .d-flex-block-sm, .single-page.page-teamviewer .d-flex-block-md {
+        display: flex !important; } }
+    @media screen and (min-width: 701px) {
+      .single-page.page-teamviewer .d-flex-block-sm {
+        display: flex !important; }
+      .single-page.page-teamviewer .d-flex-block-md {
+        display: flex !important; } }
+    @media screen and (max-width: 1100px) and (min-width: 701px) {
+      .single-page.page-teamviewer .p-3-xs {
+        padding: 1em 3em !important; } }
+    @media screen and (max-width: 1100px) and (min-width: 1001px) {
+      .single-page.page-teamviewer .xs {
+        padding: 1em 0 0 1.5em !important; }
+      .single-page.page-teamviewer .res-xs.dp {
+        margin-top: -128px !important; } }
+    @media screen and (max-width: 851px) and (min-width: 751px) {
+      .single-page.page-teamviewer .res-xs.high {
+        margin-top: -145px !important; } }
+    @media screen and (max-width: 1100px) and (min-width: 701px) {
+      .single-page.page-teamviewer .res-xs {
+        margin-top: -130px !important;
+        font-size: 100px !important; } }
+    @media screen and (max-width: 1000px) and (min-width: 201px) {
+      .single-page.page-teamviewer .p-0-2 {
+        padding: 0 1em !important; }
+      .single-page.page-teamviewer .flex-csm {
+        display: flex !important;
+        justify-content: center !important; }
+      .single-page.page-teamviewer .h250 {
+        height: 250px !important; }
+      .single-page.page-teamviewer .text-margin {
+        text-align: center !important;
+        margin: 10px 5px 0 5px !important; }
+      .single-page.page-teamviewer .mx-3 {
+        margin: 0; } }
+    @media screen and (max-width: 700px) and (min-width: 501px) {
+      .single-page.page-teamviewer .fxs {
+        margin-top: -90px !important;
+        font-size: 150px !important; } }
+    @media screen and (max-width: 500px) and (min-width: 200px) {
+      .single-page.page-teamviewer .fxs {
+        margin-top: -90px !important;
+        font-size: 100px !important; } }
+    @media screen and (max-width: 700px) and (min-width: 200px) {
+      .single-page.page-teamviewer .grid-section {
+        grid-template-columns: 100% !important; }
+      .single-page.page-teamviewer .col-33 {
+        width: 100% !important; }
+      .single-page.page-teamviewer .mt-1-xs {
+        margin-top: 0; }
+      .single-page.page-teamviewer .img-res {
+        width: 80%;
+        margin-top: 1em; } }
+    @media screen and (max-width: 450px) and (min-width: 301px) {
+      .single-page.page-teamviewer .p-3-xs {
+        padding: 0 1.5em !important; } }
+    @media screen and (max-width: 300px) and (min-width: 200px) {
+      .single-page.page-teamviewer .p-3-xs {
+        padding: 0 2em !important; } }
+    @media screen and (max-width: 800px) and (min-width: 200px) {
+      .single-page.page-teamviewer .w-100 {
+        width: 100% !important; } }
+    @media screen and (max-width: 700px) and (min-width: 601px) {
+      .single-page.page-teamviewer .c-img {
+        background-size: contain !important;
+        min-height: 350px !important; } }
+    @media screen and (max-width: 600px) and (min-width: 420px) {
+      .single-page.page-teamviewer .c-img {
+        background-size: cover !important;
+        min-height: 250px !important; } }
+    @media screen and (max-width: 419px) and (min-width: 200px) {
+      .single-page.page-teamviewer .c-img {
+        background-size: contain; } }
+    @media screen and (max-width: 700px) and (min-width: 200px) {
+      .single-page.page-teamviewer .col-40 {
+        width: 100% !important; }
+      .single-page.page-teamviewer .col-60 {
+        width: 100% !important; }
+      .single-page.page-teamviewer .mt-0-xs {
+        margin-top: 0; } }
+    @media screen and (max-width: 1140px) {
+      .single-page.page-teamviewer .grid-section-50 {
+        grid-template-columns: 50% 50%; } }
+    @media screen and (max-width: 940px) {
+      .single-page.page-teamviewer .grid-section-50 {
+        grid-template-columns: 100%; } }
+  
+  /*# sourceMappingURL=teamviewer.css.map */

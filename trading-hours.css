@@ -1,0 +1,266 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.single-page.page-trading-hours .sidebar-block {
+    display: block !important; }
+  
+  .single-page.page-trading-hours .sidebar-cta-card-container.random-background {
+    position: relative;
+    width: 308px !important;
+    padding-top: 236px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+    background-image: url(/images/trading-hours-facts-bg.png) !important;
+    box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.14); }
+    .single-page.page-trading-hours .sidebar-cta-card-container.random-background::before {
+      content: '';
+      position: absolute;
+      left: 52px;
+      top: 141px;
+      width: 204px;
+      height: 52px;
+      background: transparent no-repeat center center;
+      background-size: contain;
+      background-image: url(/images/ICM-logo-transparentBG.svg); }
+    .single-page.page-trading-hours .sidebar-cta-card-container.random-background .bottom-block__message {
+      line-height: 1.29; }
+    .single-page.page-trading-hours .sidebar-cta-card-container.random-background .bottom-block {
+      text-align: center; }
+      .single-page.page-trading-hours .sidebar-cta-card-container.random-background .bottom-block .icm-btn.icm-btn-primary {
+        background: #34E834 !important;
+        color: rgba(31, 29, 49, 0.8) !important;
+        line-height: 1 !important;
+        padding: 14px 25px !important;
+        border-radius: 30px;
+        border: none !important;
+        width: max-content;
+        font-size: 12px !important;
+        font-weight: 900 !important;
+        text-transform: uppercase; }
+      .single-page.page-trading-hours .sidebar-cta-card-container.random-background .bottom-block b {
+        font-weight: 900; }
+  
+  .single-page.page-trading-hours table {
+    box-shadow: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%; }
+  
+  .single-page.page-trading-hours .table-header {
+    background-color: #f4f4f4;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #009600; }
+  
+  .single-page.page-trading-hours th {
+    padding: 16px; }
+  
+  .single-page.page-trading-hours tr {
+    padding: 16px;
+    background-color: #fefefe;
+    border-bottom: 2px solid #f2f2f2; }
+  
+  .single-page.page-trading-hours td {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.68);
+    padding: 16px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1; }
+  
+  .single-page.page-trading-hours .trading-hours-block__header {
+    font-weight: 300;
+    margin-bottom: 32px; }
+  
+  .single-page.page-trading-hours .trading-hours-block__item:not(:last-child) {
+    margin-bottom: 8px; }
+  
+  .single-page.page-trading-hours .trading-hours-block__expand-button {
+    background-color: #303030;
+    color: rgba(52, 232, 52, 0.8);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 18px;
+    position: relative; }
+  
+  .single-page.page-trading-hours .trading-hours-block__expand-button[data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\E080";
+    position: absolute;
+    color: #34E834;
+    font-size: 20px;
+    line-height: 1;
+    right: 20px;
+    top: 20px;
+    transform: rotate(-90deg); }
+  
+  .single-page.page-trading-hours .trading-hours-block__expand-button[data-toggle="collapse"].collapsed {
+    background: #f4f4f4;
+    color: #525252; }
+    .single-page.page-trading-hours .trading-hours-block__expand-button[data-toggle="collapse"].collapsed:after {
+      color: #000;
+      transform: rotate(90deg); }
+  
+  .single-page.page-trading-hours .page-content-container {
+    background: #fff !important; }
+    .single-page.page-trading-hours .page-content-container .page-content.highlighted-content {
+      background: #fafbfa; }
+  
+  .single-page.page-trading-hours .page-header {
+    background: url(images/trading-hours-banner.jpg) no-repeat center right; }
+    .single-page.page-trading-hours .page-header .icm-button-wrapper.page-header__primary-button
+  a.icm-btn.icm-btn-primary {
+      border-radius: 2px !important;
+      padding: 25px !important;
+      font-size: 20px !important;
+      font-weight: 900 !important;
+      text-transform: uppercase; }
+  
+  /* .single-page.page-trading-hours .page-content.global-markets-today {
+    background-image: url(/assets/img/single_market_page/mt5-btm-bg.png); } */
+  
+  .single-page.page-trading-hours .page-header__menu-container .page-header__menu .menu-item .menu-title {
+    padding-left: 0 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-trading-hours .page-content.global-markets-today .icm-button-wrapper a.live {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase; }
+  
+  .single-page.page-trading-hours .page-content.global-markets-today .icm-button-wrapper a.demo {
+    border-radius: 0 !important;
+    padding: 25px !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    margin-left: 9px; }
+  
+  .single-page.page-trading-hours .grid-section {
+    display: grid;
+    grid-template-columns: auto 308px; }
+    .single-page.page-trading-hours .grid-section .content-head {
+      margin-bottom: 0 !important; }
+    .single-page.page-trading-hours .grid-section .grid-content {
+      padding: 20px; }
+    .single-page.page-trading-hours .grid-section .content-inside {
+      font-size: 16px;
+      line-height: 1.56; }
+    .single-page.page-trading-hours .grid-section .gi-1 {
+      padding-right: 32px; }
+  
+  .single-page.page-trading-hours .contact-block {
+    position: relative;
+    width: 308px;
+    padding: 0;
+    background: #e9e9e9;
+    margin: 50px auto;
+    border-radius: 0;
+    z-index: 2; }
+    .single-page.page-trading-hours .contact-block .contact-header {
+      padding: 42px 33px 38px 33px; }
+      .single-page.page-trading-hours .contact-block .contact-header .header-label {
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: -0.6px;
+        text-align: left;
+        color: rgba(11, 10, 20, 0.8); }
+      .single-page.page-trading-hours .contact-block .contact-header .header-title {
+        margin-top: 22px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: -0.3px;
+        text-align: left;
+        color: rgba(11, 10, 20, 0.8); }
+    .single-page.page-trading-hours .contact-block .contact-pre-imaged {
+      position: relative;
+      padding: 28px 33px 23px 100px;
+      background: #f2f2f2;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: -0.4px;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.8); }
+      .single-page.page-trading-hours .contact-block .contact-pre-imaged a {
+        color: rgba(0, 0, 0, 0.8) !important; }
+      .single-page.page-trading-hours .contact-block .contact-pre-imaged.chat-img::before {
+        content: "";
+        position: absolute;
+        left: 33px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        background: transparent no-repeat center center;
+        background-size: contain;
+        background-image: url(images/trading-hours-chat.png); }
+      .single-page.page-trading-hours .contact-block .contact-pre-imaged.email-img {
+        background: #e9e9e9; }
+        .single-page.page-trading-hours .contact-block .contact-pre-imaged.email-img::before {
+          content: "";
+          position: absolute;
+          left: 33px;
+          top: 15px;
+          width: 40px;
+          height: 40px;
+          background: transparent no-repeat center center;
+          background-size: contain;
+          background-image: url(images/trading-hours-email.png); }
+    .single-page.page-trading-hours .contact-block .contact-phone {
+      background: #353535;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 2.18;
+      letter-spacing: -1.7px;
+      text-align: center;
+      color: #34E834; }
+  
+  .single-page.page-trading-hours .top-img {
+    position: relative;
+    padding-left: 198px; }
+    .single-page.page-trading-hours .top-img::before {
+      content: "";
+      position: absolute;
+      left: 0px !important;
+      top: 0px !important;
+      width: 120px !important;
+      height: 120px !important;
+      background: transparent no-repeat center center;
+      background-size: contain;
+      background-image: url(images/trading-hours-hours.png); }
+  
+  @media screen and (max-width: 940px) {
+    .single-page.page-trading-hours .grid-section {
+      grid-template-columns: 100%; }
+      .single-page.page-trading-hours .grid-section .gi-1 {
+        padding-right: 0; } }
+  
+  @media screen and (max-width: 768px) {
+    .single-page.page-trading-hours .contact-block {
+      margin: 40px auto; } }
+  
+  @media screen and (max-width: 640px) {
+    .single-page.page-trading-hours .page-section .top-img {
+      position: relative;
+      padding-left: 0;
+      padding-top: 148px; } }
+  
+  /*# sourceMappingURL=trading-hours.css.map */
