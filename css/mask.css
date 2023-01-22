@@ -1,0 +1,13 @@
+.waiting-mask {
+    display: none !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/logo.png) center center no-repeat #000;
+    background-size: 280px;
+    opacity: 0.5;
+    z-index: 99999; }
+  
+  /*# sourceMappingURL=mask.css.map */

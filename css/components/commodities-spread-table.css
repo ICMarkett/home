@@ -1,0 +1,1148 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+i[x] {
+  display: none !important; }
+
+.pt-20 {
+  padding-top: 20px !important; }
+
+.single-page.page-live .landing-page.register-content-wrapper h1.header-title {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  border-left: 5px solid #34e834;
+  padding-left: 15px;
+  margin-bottom: 20px; }
+
+.single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap {
+  box-shadow: 0px 0px 16px 0px #e3e3e3; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .next_btn button.btn.step-back {
+    margin-right: 6px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line {
+    flex: 0 0 80px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .process_line_text {
+    color: #000000; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.current .process_line_text {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin-right: -30px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field-label {
+    position: unset;
+    display: block;
+    color: #000000;
+    line-height: 16px;
+    margin-top: 3px;
+    text-transform: unset;
+    font-size: 14px;
+    font-weight: 500;
+    transform: unset;
+    transition: unset;
+    transform-origin: unset; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field-input {
+    height: 37px !important;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 0 0 0 10px;
+    color: #000;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.input .searchDropdown {
+    margin-bottom: 20px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .wp-icm-open-account input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #f9f9f9 inset; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field::before {
+    content: unset; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown input, .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown.notSearched input {
+    top: 0 !important;
+    background: #fcfcfc url(../icons/svg/Dropdown.png) no-repeat 98% !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.current .step_line .step_icon {
+    border: 1px solid #34e834;
+    color: #000000;
+    background: #34e834; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line .step_line .step_icon {
+    background: white;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #cccccc; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line:nth-last-child(2) .step_line .step_icon {
+    background: white url(../icm-open-account/icons/Fund_your_account.svg) no-repeat 50% 50%;
+    color: transparent !important;
+    background-size: 100%; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country {
+    position: relative;
+    z-index: 2; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country span.select-icon {
+      position: absolute;
+      right: 7px;
+      top: 8px;
+      z-index: 100; }
+    .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input-select-country svg.h-6.w-6 {
+      height: 20px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap h1.reg_title {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px !important;
+    margin-top: 10px;
+    text-align: left;
+    color: #000000;
+    padding-bottom: 10px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form.register_wrapper_step1.active_step {
+    max-width: 550px;
+    margin: 0 auto; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.input {
+    margin-bottom: 8px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .reg_process {
+    padding-top: 20px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.info-wrap.footer-info p {
+    font-size: 12px;
+    line-height: 20px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .next_btn button:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15); }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line_text {
+    width: 55%;
+    margin-left: 36%;
+    margin-top: 5%; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .step_line {
+    border-right: 3px solid #34e834; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .step_line {
+    width: 25%; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .signup-buttons-header {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form_wrap {
+    margin-top: 30px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .rounded_el {
+    font-size: 14px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btn {
+    height: 40px;
+    line-height: 37px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btns_group .selected {
+    background: #00c800;
+    color: black; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group_title {
+    color: #000000;
+    text-transform: unset;
+    font-weight: 500;
+    width: auto;
+    font-size: 14px;
+    margin-bottom: 10px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .input_group,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .input_group .field,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .input_group,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .input_group .field,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_5 .searchDropdown.searched {
+    width: unset !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .searchDropdown.el_wrap.notSearched.choose-month {
+    position: relative;
+    top: -9px;
+    left: 4px; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .register_form,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .active_step {
+    max-width: 550px;
+    margin: 0 auto; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group {
+    margin-bottom: 8px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.home-page .single-page .page-section h1,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.single-market-page .single-page .page-section h1,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap html.common-page .single-page .page-section h1 {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #000000; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap ::placeholder {
+    text-align: left !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .trade-platform-button.select_btn {
+    max-width: 300px !important;
+    background: transparent no-repeat center center;
+    background-size: contain; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .select_btn.trade-platform-button.mt5 {
+    background-image: url(../icm-open-account/img/platform-mt5.png) !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .account-type-button.select_btn {
+    max-width: 300px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .field::after {
+    content: none; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .has-label .field-input {
+    top: 0px;
+    /* padding: 0; */ }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group_title h1 {
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .input_group.account-based-currency-group {
+    width: 300px !important;
+    margin-left: 0; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap .process_line.complete .step_icon {
+    background: #34e834 !important;
+    border-color: #34e834 !important;
+    color: #000000 !important;
+    font-weight: bold; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group {
+    padding: 0;
+    margin: 0;
+    width: 550px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group.security_q_wrap {
+    padding-top: 10px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .field {
+    width: 550px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group_title {
+    width: 550px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .declaration_wrap {
+    margin-top: 0px !important; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group.checkbox_wrap.i_agree_wrap {
+    padding: 20px 0 0px 0 !important;
+    margin-bottom: 10px !important;
+    display: block !important;
+    height: auto;
+    overflow: hidden; }
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_2 .searchDropdown.searched,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group_title,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .searchDropdown,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .searchDropdown input,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .field,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_4 .input_group,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .input_group_title,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .searchDropdown,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .field,
+  .single-page.page-live .landing-page.register-content-wrapper .wp-icm-open-account .register_wrap #step_7 .input_group {
+    width: 550px !important; }
+
+.single-page.page-live .wp-icm-open-account #step_2 .input_group_title,
+.single-page.page-live .wp-icm-open-account .options_list,
+.single-page.page-live .wp-icm-open-account .select_btns_group.sel2item,
+.single-page.page-live .wp-icm-open-account .input_group,
+.single-page.page-live .wp-icm-open-account .input_group .field,
+.single-page.page-live .wp-icm-open-account .el_wrap {
+  max-width: unset !important; }
+
+html.home-page .single-page,
+html.single-market-page .single-page {
+  padding-top: 0px !important; }
+
+html.home-page .single-page .page-header .page-header__description,
+html.single-market-page .single-page .page-header .page-header__description {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 0 0 10px #000;
+  opacity: 0.8; }
+
+article.page-header {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important; }
+
+html.home-page .single-page .page-header .page-header__heading--style,
+html.single-market-page .single-page .page-header .page-header__heading--style,
+html.common-page .single-page .page-header .page-header__heading--style {
+  font-size: 34px !important;
+  font-weight: 500;
+  text-shadow: 0 0 10px #000; }
+
+html.home-page .single-page .page-header .page-header__description,
+html.single-market-page .single-page .page-header .page-header__description,
+html.common-page .single-page .page-header .page-header__description {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 30px !important;
+  font-size: 16px !important;
+  font-weight: 300;
+  text-shadow: 0 0 10px #000;
+  opacity: 0.8; }
+
+html.home-page .single-page .page-header__menu-container,
+html.single-market-page .single-page .page-header__menu-container,
+html.common-page .single-page .page-header__menu-container {
+  padding: 15px 0 !important; }
+
+.wp-icm-open-account #step_2 .searchDropdown.searched,
+.wp-icm-open-account #step_4 .input_group_title,
+.wp-icm-open-account #step_4 .searchDropdown,
+.wp-icm-open-account #step_4 .searchDropdown input,
+.wp-icm-open-account #step_4 .field,
+.wp-icm-open-account #step_4 .input_group,
+.wp-icm-open-account #step_7 .input_group_title,
+.wp-icm-open-account #step_7 .searchDropdown,
+.wp-icm-open-account #step_7 .searchDropdown input,
+.wp-icm-open-account #step_7 .field,
+.wp-icm-open-account #step_7 .input_group {
+  width: 550px !important; }
+
+@media (max-width: 991px) {
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_2
+.searchDropdown.searched,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.input_group_title,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.searchDropdown,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.searchDropdown
+input,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.field,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.input_group,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.input_group_title,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.searchDropdown,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.field,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.input_group {
+    width: 100% !important; } }
+
+@media (max-width: 760px) {
+  .single-page.page-live
+.landing-page.register-content-wrapper
+h1.header-title {
+    margin-top: 10px; }
+  .wp-icm-open-account .process_line .step_line .step_icon {
+    width: 35px;
+    height: 35px;
+    line-height: 36px; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form_wrap {
+    margin-top: 0px; }
+  .single-page.page-live h1.reg_title,
+  .single-page.page-live .input_group_title h1 {
+    font-size: 16px !important;
+    margin-bottom: 31px !important;
+    padding-bottom: 20px; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_2
+.searchDropdown.searched,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.input_group_title,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.searchDropdown,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.searchDropdown
+input,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.field,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_4
+.input_group,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.input_group_title,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.searchDropdown,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.field,
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_7
+.input_group {
+    width: 100% !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.input_group.account-based-currency-group {
+    width: 100% !important;
+    margin-left: 0; }
+  .single-page.page-live .wp-icm-open-account .register_form_wrap form {
+    padding: 0 0px !important;
+    width: 100%; }
+  .single-page.page-live .wp-icm-open-account .register_wrap h1.reg_title,
+  .single-page.page-live
+.wp-icm-open-account
+.register_wrap
+.input_group_title
+h1 {
+    font-size: 16px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    line-height: initial !important; } }
+
+html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper,
+html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper,
+html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper {
+  padding: 0; }
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.h1-title {
+    font-size: 20px;
+    font-weight: 500;
+    border-left: 5px solid #34e834;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper h1.reg_title.step-title {
+    max-width: 550px;
+    font-size: 20px !important;
+    text-align: left !important;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+    font-weight: 500 !important;
+    padding-bottom: 20px;
+    margin-top: 0 !important; }
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .register_wrap {
+    max-width: 1184px;
+    box-shadow: 0px 0px 16px 0px #e3e3e3; }
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group {
+    max-width: 550px; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input {
+      margin-bottom: 10px !important; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country {
+      position: relative;
+      z-index: 1 !important; }
+      html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon,
+      html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon,
+      html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon {
+        position: absolute;
+        z-index: 10;
+        right: 10px;
+        top: 30px; }
+        html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6,
+        html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6,
+        html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group.input-select-country span.select-icon svg.h-6.w-6 {
+          height: 20px; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group input#countries {
+      height: 40px !important; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .el_wrap {
+      max-width: 550px; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-label {
+      position: unset;
+      color: #666666;
+      line-height: 16px;
+      margin-top: 3px;
+      font-size: 14px;
+      font-weight: 500;
+      transform: unset;
+      transition: unset;
+      transform-origin: unset; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::after,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field::before {
+      content: none; }
+    html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input,
+    html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input,
+    html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .input_group .field-input {
+      position: unset;
+      border-radius: 3px;
+      height: 40px;
+      border: 1px solid #afafaf !important;
+      padding: 0 0 0 10px;
+      line-height: 16px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      background: transparent;
+      border: none;
+      -webkit-appearance: none;
+      outline: none; }
+  html.home-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap,
+  html.single-market-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap,
+  html.common-page .single-page .page-content-container .page-content.demo-register-content-wrapper .wp-icm-open-account .el_wrap {
+    width: 100%;
+    max-width: 550px;
+    text-align: left; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap div#step_4 {
+  max-width: 700px; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap div#step_4 .input_group {
+    width: 100% !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap div#step_4 .select_btns_group {
+    width: 100% !important;
+    flex-flow: wrap; }
+    .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap div#step_4 .select_btns_group .select_btn {
+      max-width: 200px;
+      margin-bottom: 10px;
+      height: unset;
+      line-height: 20px;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.options_list
+li {
+  border-top: 1px solid #fbfbfb;
+  min-height: 30px;
+  line-height: 30px;
+  margin-left: 0px;
+  padding: 0px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.options_list
+li.selected :hover {
+    background-color: #00c800;
+    color: #000000; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.options_list
+li:hover {
+    background-color: #00c800;
+    color: #000000; }
+
+.wp-icm-open-account .process_line:first-child {
+  display: none; }
+
+.wp-icm-open-account .process_line:last-child {
+  display: none; }
+
+.wp-icm-open-account .select_btn img {
+  top: -1px !important;
+  right: 2px;
+  position: relative; }
+
+.wp-icm-open-account
+div#step_2
+.input_group.item3
+.searchDropdown
+.options_list {
+  top: 38px;
+  z-index: 1000 !important; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.input_group {
+  width: 100% !important;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px !important;
+  margin-bottom: 15px !important; }
+
+div#step_4 .select_btn.select_btn_large.rounded_el {
+  border-radius: 50px !important; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.process_line.complete
+.process_line_text {
+  color: #000000;
+  font-weight: bold; }
+
+.input_group.item3.birthdate {
+  padding-top: 10px; }
+
+.wp-icm-open-account input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #f9f9f9 inset !important; }
+
+.single-page.page-live .wp-icm-open-account button.step-back {
+  background-color: #333333 !important;
+  color: #ffffff !important; }
+
+html.home-page
+.single-page
+.page-content-container
+.page-content.demo-register-content-wrapper
+.wp-icm-open-account
+.input_group
+.field-input,
+html.single-market-page
+.single-page
+.page-content-container
+.page-content.demo-register-content-wrapper
+.wp-icm-open-account
+.input_group
+.field-input,
+html.common-page
+.single-page
+.page-content-container
+.page-content.demo-register-content-wrapper
+.wp-icm-open-account
+.input_group
+.field-input {
+  border-radius: 4px;
+  border: 1px solid #d7d7d7 !important;
+  color: #000;
+  background: #f9f9f9; }
+
+.wp-icm-open-account.demo .reg_logo {
+  text-align: center;
+  flex: 0 0 80px;
+  border-bottom: 1px solid #f2f2f2; }
+
+.wp-icm-open-account.demo .reg_process {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px; }
+
+html.home-page
+.single-page
+.page-content-container
+.page-content.demo-register-content-wrapper
+h1.reg_title.step-title,
+html.single-market-page
+.single-page
+.page-content-container
+.page-content.demo-register-content-wrapper
+h1.reg_title.step-title {
+  font-size: 16px !important;
+  color: #000000;
+  margin-top: 0 !important; }
+
+.page-content.demo-register-content-wrapper
+.input_group.input.input-select-country {
+  padding-bottom: 10px; }
+
+@media (max-width: 760px) {
+  .wp-icm-open-account .register_wrap h1.reg_title {
+    line-height: normal;
+    margin: 0px !important; }
+  .wrapper-md {
+    display: flex;
+    flex-direction: column; }
+  .input_group.item3.birthdate .input_group_items .field.el_wrap {
+    margin: 0 !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.searchDropdown.el_wrap.notSearched.choose-month {
+    position: relative;
+    top: -9px;
+    left: 0px;
+    margin: 0; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.select_btns_group
+.select_btn {
+    max-width: 100% !important; } }
+
+.register_form .input_group.help_wrap {
+  padding-top: 10px !important; }
+
+div#step_4 .input_group_items.select_btns_group.single_select.additional_qt {
+  position: relative; }
+  div#step_4 .input_group_items.select_btns_group.single_select.additional_qt .parsley-errors-list {
+    position: absolute;
+    bottom: -16px !important; }
+
+.account-type-button.select_btn.rounded_el.acctype_standard_account.selected {
+  margin-bottom: 8px; }
+
+.register_form.question-ans .field.el_wrap {
+  margin: 0 !important; }
+
+.wp-icm-open-account .question-ans .field {
+  height: 40px !important; }
+
+.wp-icm-open-account .main_register_wrap {
+  color: #000000; }
+
+.wp-icm-open-account a {
+  text-decoration: underline !important; }
+
+.parsley-addtional-question a {
+  color: #d32121 !important; }
+
+.declaration-scrolling-container {
+  max-height: 380px;
+  overflow-y: scroll; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.declaration {
+  max-width: 700px !important;
+  margin: 0 auto; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.input_group.knockoutError {
+  padding-bottom: 50px !important; }
+
+div#step_4
+.input_group.knockoutError
+.input_group_items.select_btns_group.single_select.additional_qt
+.parsley-errors-list {
+  bottom: -51px !important; }
+
+.input_group.security_q_wrap {
+  margin-bottom: 128px !important;
+  min-height: 110px; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.select_btns_group
+.select_btn.select_btn_large.rounded_el.long-answer {
+  max-width: 100% !important; }
+
+.wp-icm-open-account .declaration p {
+  line-height: 22px !important; }
+
+.wp-icm-open-account .checkbox:not(checked) + label {
+  padding: 3px 0 0 40px !important; }
+
+@media (max-width: 760px) {
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.select_btns_group
+.select_btn.select_btn_large.rounded_el.long-answer {
+    max-width: 100% !important;
+    height: unset;
+    padding: 5px 10px 5px 10px;
+    line-height: 18px;
+    font-size: 12px; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+#step_5
+.input_group.help_wrap {
+    margin-top: 30px; } }
+
+.wp-icm-open-account .section_title {
+  width: 100% !important; }
+  .wp-icm-open-account .section_title h3 {
+    margin-bottom: 10px !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    margin-top: 14px !important;
+    padding-bottom: 2px;
+    display: inline-block;
+    border-bottom: none !important;
+    font-weight: 500 !important; }
+
+.wp-icm-open-account
+.field.el_wrap.birth_year-wrap.has-label.error
+.parsley-errors-list {
+  width: 360px !important;
+  bottom: -30px !important; }
+
+.input_group.account-based-currency-group.disallow-to-change
+.input-select-country {
+  max-width: 454px; }
+
+.input_group.account-based-currency-group.disallow-to-change
+.input-select-country {
+  max-width: 454px !important; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.account-based-currency-group.disallow-to-change
+.input-select-country {
+  max-width: 454px !important; }
+
+.register_form.question-ans.joint_steps_form.active_step
+.select_btn.select_btn_large.rounded_el {
+  max-width: 200px;
+  border-radius: 50px; }
+
+.register_form.question-ans.joint_steps_form.active_step
+.input_group_items.select_btns_group.single_select.additional_qt {
+  flex-wrap: wrap;
+  position: relative; }
+  .register_form.question-ans.joint_steps_form.active_step
+.input_group_items.select_btns_group.single_select.additional_qt .parsley-errors-list {
+    margin-top: 2px;
+    bottom: -6px; }
+
+.register_form.question-ans.joint_steps_form.active_step
+.select_btn.select_btn_large.rounded_el {
+  max-width: 200px;
+  border-radius: 50px; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group {
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid #dddddd; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step,
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step {
+  max-width: 700px !important;
+  margin: 0 auto; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.select_btn {
+  min-height: 40px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  height: auto !important;
+  padding-top: 9px; }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group {
+  margin-bottom: 20px !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd; }
+
+.register_form.question-ans.joint_steps_form.active_step
+.select_btn.select_btn_large.rounded_el.long-answer {
+  max-width: 100%;
+  height: unset; }
+
+.single-page.page-demo .wp-icm-open-account .options_list {
+  max-width: 100% !important; }
+
+@media (max-width: 760px) {
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.input_group.knockoutError {
+    padding-bottom: 100px !important; }
+    .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+div#step_4
+.input_group.knockoutError .parsley-errors-list {
+      bottom: -77px !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.select_btn.select_btn_large.rounded_el.long-answer {
+    height: unset !important;
+    line-height: 22px !important;
+    padding: 5px 0 5px 0;
+    font-size: 12px !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.knockoutError {
+    padding-bottom: 66px !important; } }
+
+.single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.knockoutError {
+  padding-bottom: 50px !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.knockoutError .parsley-errors-list {
+    margin-top: 2px;
+    bottom: -39px !important; }
+
+@media (max-width: 760px) {
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.knockoutError
+.parsley-errors-list {
+    margin-top: 2px;
+    bottom: -79px !important; }
+  .single-page.page-live
+.landing-page.register-content-wrapper
+.wp-icm-open-account
+.register_wrap
+.register_form.question-ans.joint_steps_form.active_step
+.input_group.knockoutError {
+    padding-bottom: 100px !important; } }
+
+.commodities-spread-table .header-bar-mobile div {
+  width: 50%; }
+
+.commodities-spread-table .header-bar-mobile div:nth-child(2) {
+  text-align: center; }
+
+.commodities-spread-table .header-bar-tablet div {
+  width: 33.3%; }
+
+.commodities-spread-table .header-bar-tablet div:nth-child(3) {
+  text-align: center; }
+
+.commodities-spread-table .header-bar-desktop {
+  justify-content: space-around; }
+  .commodities-spread-table .header-bar-desktop div:first-child {
+    width: 45%; }
+
+@media screen and (min-width: 640px) {
+  .commodities-spread-table .scrollable-tab-bar-container {
+    margin: 0 !important; } }
+
+.single-design-search {
+  display: flex;
+  justify-content: space-between; }
+  .single-design-search > * {
+    display: inline-block;
+    letter-spacing: -0.3px;
+    line-height: initial !important;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px; }
+  .single-design-search .group.skin {
+    display: flex; }
+    .single-design-search .group.skin > span.skin-label {
+      padding-top: 3px;
+      margin-right: 30px; }
+    .single-design-search .group.skin > span.skin-light {
+      margin-right: 10px; }
+  .single-design-search .group.min-max {
+    padding-top: 5px;
+    font-size: 12px; }
+  .single-design-search .group.search {
+    position: relative; }
+    .single-design-search .group.search::before {
+      position: absolute;
+      font-family: 'Glyphicons Halflings';
+      top: 3px;
+      right: 14px;
+      content: "\E003";
+      color: #626262;
+      font-size: 14px; }
+  .single-design-search .spreads-search-box {
+    margin-left: 30px;
+    margin-top: -8px !important;
+    border-radius: 30px !important;
+    border: solid 1px #eaeaea !important;
+    background: #f4f4f4 !important;
+    height: auto !important;
+    padding: 9px 35px 9px 9px !important;
+    outline: none !important; }
+
+.skin-toggle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer; }
+  .skin-toggle.skin-light {
+    background: #e2e3e3; }
+  .skin-toggle.skin-dark {
+    background: #000; }
+
+.single-design-table .spread-table {
+  box-shadow: none; }
+
+.single-design-table .spread-table .table-row {
+  background: transparent !important;
+  line-height: initial; }
+
+.single-design-table.light-skin .spread-table {
+  background: #fff;
+  color: #000; }
+
+.single-design-table.light-skin .header-bar.header-bar-desktop {
+  font-size: 16px;
+  color: #000;
+  background: #e2e3e3; }
+
+.single-design-table.light-skin .column-header {
+  background: #f4f4f4;
+  font-size: 14px;
+  color: #009600; }
+
+.single-design-table.light-skin .table-row {
+  border-bottom: 0.5px solid #e4e3e3;
+  height: 64px; }
+
+.single-design-table.dark-skin .spread-table {
+  background: #000;
+  color: #fff; }
+
+.single-design-table.dark-skin .header-bar.header-bar-desktop {
+  font-size: 16px;
+  color: #fff;
+  background: #000; }
+
+.single-design-table.dark-skin .column-header {
+  background: #222;
+  font-size: 14px;
+  color: #009600; }
+
+.single-design-table.dark-skin .table-row {
+  border-bottom: 0.5px solid #2b2b2b;
+  height: 64px; }
+
+@media screen and (max-width: 960px) {
+  .single-design-table.light-skin .spread-table, .single-design-table.dark-skin .spread-table {
+    background: #fff;
+    color: #000; }
+  .single-design-table.light-skin .header-bar.header-bar-desktop, .single-design-table.dark-skin .header-bar.header-bar-desktop {
+    font-size: 16px;
+    color: #000;
+    background: #e2e3e3; }
+  .single-design-table.light-skin .column-header, .single-design-table.dark-skin .column-header {
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #009600; }
+  .single-design-table.light-skin .table-row, .single-design-table.dark-skin .table-row {
+    border-bottom: 0.5px solid #e4e3e3;
+    height: 64px; } }
+
+/*# sourceMappingURL=commodities-spread-table.css.map */

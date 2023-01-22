@@ -1,0 +1,74 @@
+/* ICM Primary values from UX design */
+/* Width - container, element, card, */
+/* Margin */
+/* padding */
+/* Border */
+/*
+  Roboto font related weights
+   https://fonts.google.com/specimen/Roboto?selection.family=Roboto:100,300,400,500,700,900
+*/
+/* font color, background color */
+/* UI elements specific color */
+/* Card specific color */
+/* max width properties for UI Cards for different number of cards in a container */
+/* one are more cards */
+/* three are more cards */
+.spread-table {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
+  .spread-table .table-rows-wrap {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px; }
+  .spread-table .column-header,
+  .spread-table .table-row {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .spread-table .column-header,
+  .spread-table .table-row:nth-child(odd) {
+    background-color: #f2f2f2; }
+  .spread-table .table-row:nth-child(even) {
+    background-color: #ffffff; }
+  .spread-table .column-header {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999; }
+  .spread-table .column-name:first-child,
+  .spread-table .table-cell:first-child {
+    width: 92px; }
+  .spread-table .table-cell {
+    font-size: 16px;
+    font-weight: 500; }
+    .spread-table .table-cell.c-true-ecn, .spread-table .table-cell.c-standard, .spread-table .table-cell.c-symbol-group, .spread-table .table-cell.c-all {
+      display: none; }
+
+@media screen and (max-width: 639px) {
+  .table-cell:nth-child(3) {
+    font-weight: 300; } }
+
+@media screen and (max-width: 959px) {
+  .table-cell:nth-child(3),
+  .table-cell:nth-child(5) {
+    font-weight: 300; } }
+
+@media screen and (min-width: 960px) {
+  .column-name:not(:first-child),
+  .table-cell:not(:first-child) {
+    width: 32px;
+    font-weight: 500;
+    /* Reset all the cells weight to 500 */ }
+  .column-name:nth-child(2),
+  .table-cell:nth-child(2) {
+    font-size: 14px;
+    font-weight: 300;
+    width: 300px; }
+  .column-name:nth-child(2) {
+    width: 278px; }
+  .table-cell:nth-child(4),
+  .table-cell:nth-child(6) {
+    font-weight: 300; } }
+
+/*# sourceMappingURL=spread-table-component.css.map */

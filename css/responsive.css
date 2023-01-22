@@ -1,0 +1,25 @@
+a.rugbybutton {
+    margin-right: 10px;
+  }
+  @media (max-width: 1280px) {
+  html.reg-live .goto-support{
+    position: absolute !important;
+      bottom: 90px !important;
+      right: 30px !important;
+  }
+  }
+  @media only screen and (max-width: 1120px) and (min-width: 1024px) {
+    .fixed-bottom-bar .fixed-bottom-bar-inner .second {
+      
+      width: calc(100% - 760px);
+    }
+    }
+  
+  
+  
+  @media (max-width: 960px) {
+    .fixed-bottom-bar-inner .second a.rugbybutton img{ max-width: 160px; }
+  }
+  @media (max-width: 375px) {
+    .fixed-bottom-bar-inner .second a.rugbybutton img{ max-width: 136px; }
+  }
