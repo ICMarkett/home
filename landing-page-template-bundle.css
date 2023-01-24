@@ -1,0 +1,958 @@
+.wp-icm-open-account .options_list {
+    overflow-y: auto !important;
+  }
+  .wp-icm-open-account .reg_header {
+    display: none;
+  }
+  .show-live-form,
+  .show-demo-form {
+    cursor: pointer;
+  }
+  .modal-mask-fixed {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: black;
+    opacity: 0.4;
+  }
+  .landing-reg-lang .landing-reg-lang-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .landing-reg-lang-name .flag {
+    top: 0;
+    display: inline-block;
+  }
+  .landing-reg-lang.ready {
+    opacity: 0.9;
+  }
+  .landing-reg-lang:hover {
+    opacity: 1;
+  }
+  .landing-reg-lang:hover .landing-reg-lang-name {
+    color: #ffffff;
+  }
+  .landing-reg-lang > div {
+    padding: 7px 25px 7px 7px;
+    background-position: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .landing-reg-lang .name {
+    display: inline-block;
+    padding-left: 5px;
+  }
+  .landing-reg-lang .reg_lang_list li {
+    background-size: auto;
+  }
+  .landing-reg-lang .reg_lang_list {
+    display: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    margin: 7px 0 0;
+    background: #cccccc;
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  .landing-reg-lang .reg_lang_list li {
+    text-align: left;
+    padding: 3px 10px 0;
+    cursor: pointer;
+    margin: 5px 0;
+    line-height: 30px;
+  }
+  .landing-reg-lang .reg_lang_list li {
+    background-position: 2px;
+    white-space: nowrap;
+  }
+  .landing-reg-lang .reg_lang_list li:hover {
+    color: #ffffff;
+  }
+  .landing-reg-lang.opened {
+    opacity: 1;
+  }
+  .landing-reg-lang.opened .reg_lang_list {
+    display: block !important;
+  }
+  .landing-reg-lang.closed .reg_lang_list {
+    display: none !important;
+  }
+  
+  .modal-mask-fixed:after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url("~/assets/icm-open-account/images/oval.svg");
+    background-size: 120px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+  }
+  .landing-page .to-top {
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+    border-radius: 5px;
+    opacity: 0.4;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #cccccc;
+    color: #000000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .landing-page .to-top:hover {
+    opacity: 1;
+    color: #ffffff;
+  }
+  
+  .landing-page .wp-icm-open-account .register_wrap {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  html.ru h2 span:last-child,
+  html.it h2 span:last-child,
+  html.cz h2 span:last-child,
+  html.vn h2 span:last-child {
+    font-weight: bold;
+  }
+  
+  html.es .white .reasons ul li,
+  html.pt .white .reasons ul li,
+  html.th .white .reasons ul li,
+  html.ru .white .reasons ul li,
+  html.it .white .reasons ul li,
+  html.cz .white .reasons ul li,
+  html.vn .white .reasons ul li {
+    min-height: 300px;
+  }
+  
+  .landing-page .banner .banner-bottom ul {
+    white-space: nowrap;
+  }
+  
+  html.es ul.open li {
+    width: 290px;
+  }
+  
+  html.locale-ar .banner .banner-bottom ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  .banner .banner-bottom ul li p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  html.locale-ar .banner .banner-bottom ul li p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  html.locale-ar .white .content .reasons ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  
+  html.locale-ar .white .reasons ul li {
+    margin: 0 0 28px 2% !important;
+  }
+  
+  html.locale-ar .white .reasons ul li.last {
+    margin: 0 0 28px 0 !important;
+  }
+  
+  html.locale-ar .banner .banner-bottom ul li {
+    margin-right: 20px !important;
+    padding: 0 !important;
+  }
+  
+  html.locale-ar .banner .banner-bottom ul li span {
+    float: right;
+    text-align: right !important;
+  }
+  
+  html.locale-ar .box {
+    text-align: right !important;
+  }
+  
+  html.locale-ar .box .title {
+    background-position-x: right !important;
+    padding: 0 45px 11px 0 !important;
+  }
+  
+  html.locale-ar .white .reasons ul li p {
+    text-align: right !important;
+  }
+  
+  html.locale-ar .white .reasons ul li p.title {
+    background-position-x: right !important;
+    padding: 0 40px 0 0 !important;
+  }
+  
+  html.locale-ar ul.open li a {
+    text-align: right !important;
+    padding: 15px 86px 15px 15px !important;
+    background: url(~/assets/icm-open-account/images/icon1.png) no-repeat 90%
+      center #515151 !important;
+  }
+  
+  html.locale-ar ul.open li:first-child a {
+    background: url(~/assets/icm-open-account/images/icon1.png) no-repeat 90%
+      center #c7007a !important;
+  }
+  
+  html.locale-ar ul.open li a:hover {
+    background-color: #fff000 !important;
+    color: black !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .register_wrap {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .field-label {
+    text-align: right !important;
+    right: 0 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .parsley-errors-list {
+    text-align: right !important;
+    right: 0 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .checkbox:not(checked) + label:before {
+    left: inherit !important;
+    right: 0;
+  }
+  
+  html.locale-ar .wp-icm-open-account .input_group.checkbox_wrap {
+    text-align: right !important;
+    right: 0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .checkbox:not(checked) + label {
+    padding: 0 35px 0 0 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .checkbox:not(checked) + label:before {
+    left: inherit !important;
+    right: 0;
+  }
+  
+  html.locale-ar .wp-icm-open-account .checkbox:not(checked) + label:after {
+    left: inherit !important;
+    right: 6px;
+  }
+  
+  html.locale-ar .wp-icm-open-account .register_process_wrap {
+    border-right: inherit !important;
+    border-left: 1px solid #f2f2f2 !important;
+    border-radius: 0 30px 30px 0 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .process_line {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .step_line {
+    border-right: inherit !important;
+    border-left: 1px solid #f2f2f2 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .process_line .step_line .step_icon {
+    position: absolute !important;
+    left: 0 !important;
+  }
+  
+  html.locale-ar .wp-icm-open-account .process_line_text {
+    margin-right: 0 !important;
+    right: 45%;
+    text-align: right !important;
+  }
+  
+  html.locale-ar ul.open {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  html.locale-ar .wp-icm-open-account .input_group .input_group_title {
+    text-align: right !important;
+  }
+  html.locale-ar .wp-icm-open-account .input_group .input_group_title > * {
+    text-align: right !important;
+  }
+  html.locale-ar .wp-icm-open-account .input_group .input_group_items {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
+  }
+  html.locale-ar .wp-icm-open-account .input_group .input_group_items > div {
+    margin: 0 3px !important;
+  }
+  html.locale-ar .wp-icm-open-account .searchDropdown input,
+  html.locale-ar .wp-icm-open-account .searchDropdown.notSearched input {
+    background-position: 10px !important;
+    text-align: right !important;
+  }
+  html.locale-ar
+    .wp-icm-open-account
+    .process_line:nth-last-child(2)
+    .step_line
+    .step_icon {
+    -webkit-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+  }
+  html.locale-ar .wp-icm-open-account .has-label input {
+    background-position-x: 10px !important;
+    text-align: right !important;
+  }
+  html.locale-ar .wp-icm-open-account .options_list {
+    direction: rtl;
+  }
+  html.locale-ar .wp-icm-open-account .options_list li {
+    text-align: right;
+  }
+  
+  .landing-page .wp-icm-open-account .reg_modal_btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .landing-page .wp-icm-open-account .reg_modal_btns button:last-child {
+    margin-left: 0 !important;
+  }
+  .landing-page .wp-icm-open-account .reg_modal_btns .empty-space {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+  }
+  html.locale-ar .landing-page .wp-icm-open-account .reg_modal_btns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  html.locale-ar .landing-page .wp-icm-open-account .step_line {
+    right: 0 !important;
+  }
+  
+  .browser-safari.version-6 .wp-icm-open-account .reg_process > div,
+  .browser-safari.version-7 .wp-icm-open-account .reg_process > div,
+  .browser-safari.version-8 .wp-icm-open-account .reg_process > div,
+  .browser-ie.version-9 .wp-icm-open-account .reg_process > div {
+    display: block;
+  }
+  
+  .browser-safari.version-6 .wp-icm-open-account .process_line,
+  .browser-safari.version-7 .wp-icm-open-account .process_line,
+  .browser-safari.version-8 .wp-icm-open-account .process_line,
+  .browser-ie .wp-icm-open-account .process_line {
+    height: 130px;
+  }
+  
+  .browser-safari.version-6 .wp-icm-open-account .process_line:first-child,
+  .browser-safari.version-7 .wp-icm-open-account .process_line:first-child,
+  .browser-safari.version-8 .wp-icm-open-account .process_line:first-child,
+  .browser-ie .wp-icm-open-account .process_line:first-child {
+    height: 50px;
+  }
+  
+  .browser-safari.version-6 .wp-icm-open-account .process_line:last-child,
+  .browser-safari.version-7 .wp-icm-open-account .process_line:last-child,
+  .browser-safari.version-8 .wp-icm-open-account .process_line:last-child,
+  .browser-ie .wp-icm-open-account .process_line:last-child {
+    height: auto;
+  }
+  
+  .browser-safari.version-6 ul.open li.open-account-empty-space,
+  .browser-safari.version-7 ul.open li.open-account-empty-space,
+  .browser-safari.version-8 ul.open li.open-account-empty-space,
+  .browser-ie ul.open li.open-account-empty-space {
+    width: 30px;
+  }
+  
+  html.locale-ar .browser-ie .white .content .reasons ul li {
+    float: right;
+  }
+  
+  html.locale-ar .browser-ie .box .text .title,
+  html.locale-ar .browser-ie .white .content .reasons ul li p.title {
+    background-position-x: right;
+  }
+  
+  .browser-ie.version-9 .box.five {
+    display: block;
+  }
+  
+  .browser-ie.version-9 .box.five div {
+    display: inline-block;
+  }
+  
+  .browser-ie .box.five div.empty-space {
+    width: 5%;
+  }
+  
+  html.locale-ar .browser-ie.version-9 .box.five,
+  html.locale-ar .browser-ie.version-9 .banner .banner-bottom ul,
+  html.locale-ar .browser-ie.version-9 .banner .banner-bottom ul li p,
+  html.locale-ar .browser-ie.version-9 .white .content .reasons ul,
+  html.locale-ar .browser-ie.version-9 .wp-icm-open-account .register_wrap,
+  html.locale-ar
+    .browser-ie.version-9
+    .wp-icm-open-account
+    .input_group.checkbox_wrap,
+  html.locale-ar .browser-ie.version-9 .wp-icm-open-account .process_line,
+  html.locale-ar .browser-safari.version-6 ul.open,
+  html.locale-ar .browser-safari.version-7 ul.open,
+  html.locale-ar .browser-safari.version-8 ul.open,
+  html.locale-ar .browser-ie.version-9 ul.open,
+  html.locale-ar
+    .browser-ie.version-9
+    .wp-icm-open-account
+    .input_group
+    .input_group_items,
+  html.locale-ar
+    .browser-ie.version-9
+    .landing-page
+    .wp-icm-open-account
+    .reg_modal_btns {
+    direction: rtl;
+  }
+  
+  html.locale-ar
+    .browser-mozilla.version-11
+    .wp-icm-open-account
+    .complete.process_line
+    .step_line,
+  html.locale-ar
+    .browser-ie
+    .wp-icm-open-account
+    .complete.process_line
+    .step_line {
+    border-right: 0 !important;
+    border-left: 1px solid #00c800 !important;
+  }
+  
+  .browser-mozilla.version-11 .wp-icm-open-account .register_process_wrap,
+  .browser-mozilla.version-11 .wp-icm-open-account .register_form_wrap,
+  .browser-ie .wp-icm-open-account .register_process_wrap,
+  .browser-ie .wp-icm-open-account .register_form_wrap {
+    display: block !important;
+  }
+  
+  .browser-mozilla.version-11 .wp-icm-open-account .register_process_wrap,
+  .browser-mozilla.version-11 .wp-icm-open-account .register_form_wrap,
+  .browser-ie.version-9 .wp-icm-open-account .register_process_wrap,
+  .browser-ie.version-9 .wp-icm-open-account .register_form_wrap {
+    display: inline-block !important;
+  }
+  
+  .browser-safari.version-6 .wp-icm-open-account .register_process_wrap,
+  .browser-safari.version-6 .wp-icm-open-account .register_form_wrap,
+  .browser-safari.version-7 .wp-icm-open-account .register_process_wrap,
+  .browser-safari.version-7 .wp-icm-open-account .register_form_wrap,
+  .browser-safari.version-8 .wp-icm-open-account .register_process_wrap,
+  .browser-safari.version-8 .wp-icm-open-account .register_form_wrap {
+    display: block !important;
+  }
+  
+  .browser-safari.version-8 .wp-icm-open-account .register_form_wrap {
+    width: 68%;
+  }
+  
+  .landing-page .flag {
+    display: none !important;
+  }
+  
+  .landing-page.reg-forms-only .landing-page-container .container .header,
+  .landing-page.reg-forms-only .landing-page-container .container .white,
+  .landing-page.reg-forms-only .landing-page-container .container .blue,
+  .landing-page.reg-forms-only .landing-page-container .container .grey .content,
+  .landing-page.reg-forms-only .landing-page-container .container .to-top,
+  .landing-page.reg-forms-only .landing-page-container .container .footer,
+  .landing-page.reg-forms-only .landing-page-container .container .reg-form-name,
+  .landing-page.reg-forms-only .landing-page-container .container .grey .open {
+    display: none !important;
+  }
+  
+  .landing-page.reg-forms-only .wp-icm-open-account .main_register_wrap,
+  .landing-page.reg-forms-only .landing-page-container .container .grey {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .landing-page.reg-forms-only.show-form-demo .reg-form-demo-wrap,
+  .landing-page.reg-forms-only.show-form-live .reg-form-live-wrap {
+    display: block !important;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    html.locale-ar .wp-icm-open-account .process_line_text {
+      right: 35% !important;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .landing-page .banner .banner-bottom ul {
+      white-space: inherit;
+    }
+  
+    html.locale-ar .banner .banner-bottom ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .landing-page .wp-icm-open-account .reg_modal_btns {
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+    }
+    .landing-page .wp-icm-open-account .reg_modal_btns .empty-space {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 730px) and (max-width: 960px) {
+    /*medium.css*/
+    .content {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .break {
+      display: none;
+    }
+    .banner .logo {
+      padding: 80px 0 0;
+    }
+    .banner .banner-bottom {
+      background: url("images/transparent-bg.png")
+        repeat;
+      height: 145px;
+    }
+    .banner .banner-bottom ul {
+      text-align: right;
+    }
+    .banner .banner-bottom ul li {
+      width: 30%;
+      border: none;
+    }
+    .blue {
+      padding: 50px 0 0 0;
+    }
+    .blue img.big {
+      width: 90%;
+      margin: 0 5%;
+      position: static;
+    }
+    .white .reasons ul li {
+      width: 27%;
+    }
+    .white .reasons ul li.last {
+      margin: 0 2% 28px 0;
+    }
+    .box.five {
+      padding: 0 0 30px;
+    }
+    .white .reasons ul li.medium-last {
+      margin-right: 0;
+    }
+    html.locale-ar .white .reasons ul li.last {
+      margin: 0 0 28px 2% !important;
+    }
+    html.locale-ar .white .reasons ul li.medium-last {
+      margin-left: 0 !important;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    /*small.css*/
+    .content {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .break {
+      display: none;
+    }
+    .banner .logo {
+      display: table !important;
+      max-width: none;
+      width: auto;
+    }
+    .logo img {
+      width: 250px;
+    }
+    h2 {
+      font-size: 44px;
+    }
+    ul.open {
+      padding: 45px 0 45px;
+    }
+    .banner {
+      height: 764px;
+    }
+    .banner ul.open li,
+    .grey ul.open li {
+      width: 44%;
+    }
+    html.es ul.open li,
+    html.es .grey ul.open li {
+      width: 216px;
+      margin: 0 0 30px 0;
+    }
+    .banner ul.open li a span,
+    .grey ul.open li a span {
+      font-size: 20px;
+    }
+    .banner ul.open li a,
+    .banner ul.open li:first-child a,
+    .grey ul.open li a,
+    .grey ul.open li:first-child a {
+      padding: 15px 0px 15px 55px;
+      background-position: 5px center;
+      font-size: 12px;
+    }
+    ul.open li a:hover,
+    ul.open li:first-child a:hover {
+      background-position: 5px center;
+    }
+    .white h2 {
+      font-size: 40px;
+      letter-spacing: -1px;
+      margin-bottom: 45px;
+    }
+    .banner .logo {
+      padding: 45px 0 20px;
+    }
+    .banner .banner-bottom {
+      background: url("images/transparent-bg.png")
+        repeat;
+      height: 115px;
+    }
+    html.locale-ar .banner .banner-bottom ul {
+      text-align: right;
+    }
+    .banner .banner-bottom ul li {
+      width: 45%;
+      border: none;
+      max-width: 43%;
+    }
+    .blue {
+      padding: 50px 0 20px 0;
+    }
+    .blue img.big {
+      width: 90%;
+      margin: 0 5%;
+      position: static;
+    }
+    .box {
+      padding: 0 0 35px;
+    }
+    .box.four {
+      padding: 0 0 45px;
+    }
+    .box .image-container {
+      display: none;
+    }
+  
+    .blue img {
+      padding: 0 0 15px;
+    }
+    .blue h5 {
+      margin: 0 auto 35px;
+    }
+    .box .text {
+      width: 100%;
+    }
+    .box.five .text.first,
+    .box.five {
+      padding: 0 0 35px 0;
+    }
+    .box.five .empty-space {
+      display: none;
+    }
+    .box.five {
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+    }
+    .white {
+      padding-top: 100px;
+    }
+    .white.second {
+      padding: 45px 0 35px;
+    }
+    .white h5 {
+      margin: 0 auto 50px;
+    }
+    .white .reasons ul li {
+      width: 90%;
+      min-height: 1px;
+      padding: 5%;
+    }
+    .grey {
+      padding: 45px 0;
+    }
+    .grey ul.open {
+      padding-bottom: 35px;
+    }
+    .grey h4 {
+      line-height: 100%;
+    }
+    .grey h2 {
+      font-size: 40px;
+      line-height: 47px;
+    }
+    .footer ul li {
+      border: none;
+    }
+  
+    html.es .white .reasons ul li,
+    html.pt .white .reasons ul li,
+    html.ru .white .reasons ul li,
+    html.it .white .reasons ul li,
+    html.cz .white .reasons ul li,
+    html.vn .white .reasons ul li {
+      min-height: inherit;
+    }
+    html.locale-ar .white .reasons ul li {
+      margin: 0 0 28px 0 !important;
+    }
+  
+    .browser-safari.version-6 .wp-icm-open-account .register_process_wrap,
+    .browser-safari.version-7 .wp-icm-open-account .register_process_wrap,
+    .browser-safari.version-8 .wp-icm-open-account .register_process_wrap {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    /*iphone3.css*/
+    .banner ul.open li,
+    .grey ul.open li {
+      margin: 0;
+    }
+    .banner {
+      height: 810px;
+    }
+    .banner h2 {
+      margin: 23px 0 33px;
+    }
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .banner h3 {
+      font-size: 20px;
+    }
+    .banner .socials ul li {
+      margin: 0 10px;
+    }
+    .banner ul {
+      padding: 30px 0 0 0;
+    }
+    .banner .banner-bottom ul li span.small {
+      font-size: 12px;
+      padding-top: 3px;
+    }
+    .banner .banner-bottom {
+      height: 115px;
+    }
+    .white h2 {
+      margin-bottom: 50px;
+    }
+    .box.four {
+      padding: 0 0 50px 0;
+    }
+    .white.second {
+      padding: 50px 0;
+    }
+    .grey h2 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .grey h3 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .white h5 {
+      font-size: 17px;
+      line-height: 22px;
+    }
+    .white.second h2 {
+      margin-bottom: 20px;
+    }
+    .white h5 {
+      margin: 0 auto 30px;
+    }
+    .white h4 {
+      margin: 0 auto 35px;
+    }
+    .white.second {
+      padding: 50px 0 30px;
+    }
+    .grey .socials {
+      margin-bottom: 40px;
+    }
+    .wp-icm-open-account .reg_login {
+      display: none !important;
+    }
+    html.locale-ar .banner ul.open li,
+    html.locale-ar .grey ul.open li {
+      width: 80% !important;
+    }
+    .banner ul.open li:first-child,
+    .grey ul.open li:first-child {
+      margin: 0 0 30px 0;
+    }
+    .banner ul.open li.open-account-empty-space {
+      display: none !important;
+    }
+  
+    .browser-safari.version-6 ul.open li.open-account-empty-space,
+    .browser-safari.version-7 ul.open li.open-account-empty-space,
+    .browser-safari.version-8 ul.open li.open-account-empty-space,
+    .browser-ie ul.open li.open-account-empty-space {
+      display: none !important;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .banner .banner-bottom ul li span {
+      font-size: 30px;
+    }
+  
+    ul.open {
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+    }
+    .banner ul.open li,
+    .grey ul.open li {
+      width: 80%;
+    }
+  
+    .wp-icm-open-account .select_btn {
+      width: 100% !important;
+      /*margin: 5px 0!important;*/
+    }
+    .wp-icm-open-account .sel3item .select_btn:last-child {
+      margin-left: 0 !important;
+    }
+    .wp-icm-open-account .sel4item .select_btn:last-child {
+      margin-left: 0 !important;
+    }
+    .wp-icm-open-account #step_4 .select_btns_group,
+    .wp-icm-open-account #step_7 .select_btns_group,
+    .wp-icm-open-account #step_2 .searchDropdown.searched,
+    .wp-icm-open-account #step_4 .input_group_title,
+    .wp-icm-open-account #step_4 .searchDropdown,
+    .wp-icm-open-account #step_4 .searchDropdown input,
+    .wp-icm-open-account #step_4 .field,
+    .wp-icm-open-account #step_4 .input_group,
+    .wp-icm-open-account #step_7 .input_group_title,
+    .wp-icm-open-account #step_7 .searchDropdown,
+    .wp-icm-open-account #step_7 .searchDropdown input,
+    .wp-icm-open-account #step_7 .field,
+    .wp-icm-open-account #step_7 .input_group,
+    .wp-icm-open-account #step_2 .input_group,
+    .wp-icm-open-account #step_2 .input_group .field,
+    .wp-icm-open-account #step_5 .input_group,
+    .wp-icm-open-account #step_5 .input_group .field,
+    .wp-icm-open-account #step_5 .searchDropdown.searched,
+    .wp-icm-open-account .select_btns_group.sel2item,
+    .wp-icm-open-account #step_2 .select_btns_group {
+      width: 100% !important;
+    }
+    .wp-icm-open-account .input_group.item3 .el_wrap {
+      display: block !important;
+      width: auto !important;
+    }
+    .wp-icm-open-account .item3 .searchDropdown.notSearched input {
+      background-position: 95% !important;
+    }
+    .banner .banner-bottom ul li {
+      white-space: nowrap;
+      text-align: left;
+    }
+    .banner .banner-bottom ul li span.small {
+      float: none;
+      display: inline-block;
+    }
+    .sel4item {
+    }
+  }
+  
+  html.cz *,
+  html.vn *,
+  html.ru *,
+  html.it * {
+    font-family: "Roboto Condensed", sans-serif !important;
+  }
