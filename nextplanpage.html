@@ -33,6 +33,40 @@
   border-radius: 5px ;
 }
 
+
+
+.button{
+padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+.button:hover{
+  background-color: wheat;
+  color: black;
+  opacity: 1;
+  transition: 0.1s ease;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.qr-code1{
+  
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.qr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -1393,10 +1427,7 @@ a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visit
                                     <img src="images/icons8-exchange-bitcoin-50.png" >
                                   Pay via Bitcoin
                                 </div>
-                                <div class="column" onclick="openTab('b2');" style="background:rgb(18, 18, 138);">
-                                    <img src="images/icons8-ethereum-50.png" >
-                                    Pay via Ethereum
-                                </div>
+                               
                                
                               </div>
                         </div>
@@ -1406,7 +1437,7 @@ a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visit
                 
                 
                 <!-- Full-width columns: (hidden by default) -->
-                <div id="b1" class="containerTab" style="display:none;background:rgb(42, 65, 7)">
+                <div id="b1" class="containerTab"  style="display:none;background:rgb(255, 255, 255); color: black;border: 2px solid #ccc; box-shadow: 0 3px 6px rgba(0,0,0,0.13);">
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
                     <div>
                       
@@ -1419,15 +1450,23 @@ a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visit
                       <div class="copy-address">
                           <span class="col-sm-3 col-form-label">Payment BTC address:</span>
                           <div class="field">
-                              <input class="form-control" type="text" id="myInput1" value="3JU4TSp51GeVRdMRwJViLKKx7yGk1ARAjF" readonly="">
+                              <input class="form-control"  spellcheck="false" type="text" id="myInput1" value="3JU4TSp51GeVRdMRwJViLKKx7yGk1ARAjF" readonly="">
 
                           </div>
                       </div>
                       <div class="qr-code">
+                      <div class="qr-code1">
+                        <button class="button">Generate QR Code</button>
+                      </div>
+                        
                           <div class="qr" id="qr-code" style="margin: 10px;">
-                            <img  width="130" height="130" src="images/qr_code_png.png"  >
+
+
+
+                            <img  class="img" src="" >
+                            
                         </div>
-                          <span>Payment by QR code</span>
+                         
                       </div>
                      </div>
                   </div>
@@ -1470,16 +1509,16 @@ a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visit
 
 
 
-                   <div style="background-color: black; margin-top: 36px; border-radius: 12px;">
+                   <div style="background-color: black; margin-top: 36px; border-radius: 12px; ">
 
                     <div class="title_page small">
                         <div class="content">
-                            <h1>
+                            <h1 style="font-size: 22px;">
                                 My orders
                             </h1>
                         </div>
                     </div>
-                    <div class="table-content">
+                    <div class="table-content" >
                         <div class="table-wrap">
                             <div class="table-body my-orders">
                                 <div class="table-row title my-orders-title">
@@ -1491,8 +1530,8 @@ a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visit
                                                   
 
 
-                                                    <div class="table-row my-orders-content">
-                                        <div class="table-td">
+                                                    <div class="table-row my-orders-content" style="display: none;">
+                                        <div class="table-td" >
                                                                             <div class="openDetails icon-01">4b057d9b-2ea9-4d27-a7099588</div>
                                                                     </div>
                                         <div class="table-td">15 600 GH/s</div>
@@ -1702,5 +1741,34 @@ document.addEventListener("click", closeAllSelect);
       //Copies the selected text to clipboard
       document.execCommand("copy");
     };</script>
-  
+
+    
+  <script>
+    const wrapper = document.querySelector(".containerTab")
+qrInput = wrapper.querySelector(".form-control"),
+generateBtn = wrapper.querySelector(".button"),
+qrImg = wrapper.querySelector(".img");
+let preValue;
+
+generateBtn.addEventListener("click", () => {
+    let qrValue = qrInput.value.trim();
+    if(!qrValue || preValue === qrValue) return;
+    preValue = qrValue;
+    generateBtn.innerText = "Generating QR Code...";
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
+    qrImg.addEventListener("load", () => {
+        wrapper.classList.add("active");
+        generateBtn.innerText = "Generate QR Code";
+    });
+});
+
+qrInput.addEventListener("keyup", () => {
+    if(!qrInput.value.trim()) {
+        wrapper.classList.remove("active");
+        preValue = "";
+    }
+});
+  </script>
+
+ 
 </html>
